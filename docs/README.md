@@ -24,6 +24,8 @@ completion, Flashflicks will satisfy the following MVP criteria:
 * [DB schema]
 * [Sample State]
 
+[wireframes]: wireframes
+
 ## Implementation Timeline
 
 ### Phase 1: Backend setup and Front end User Authentication (Day 1-2)
