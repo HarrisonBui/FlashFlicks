@@ -21,7 +21,7 @@ completion, Flashflicks will satisfy the following MVP criteria:
 ## Design Docs
 
 * [View Wireframes](wireframes)
-* [React Components](component-heirachy.md)
+* [React Components](component-heirarchy.md)
 * [API endpoints]
 * [DB schema]
 * [Sample State]
