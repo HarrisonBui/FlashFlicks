@@ -18,7 +18,7 @@ completion, Flashflicks will satisfy the following MVP criteria:
 
 ## Design Docs
 
-* [View Wireframes]
+* [View Wireframes][wireframes]
 * [React Components]
 * [API endpoints]
 * [DB schema]
@@ -33,27 +33,28 @@ Host site on Heroku.
 
 ### Phase 2: Movie Model, API, and components (Day 3-4)
 
-**Objective** Users can view all movies and also a particular movie.
+**Objective:** Users can view all movies and also a particular movie.
 
 ### Phase 3: Movie Lists (Day 5-6)
 
-**Objective** Movie Lists contain movies and can be created, destroyed,
+**Objective:** Movie Lists contain movies and can be created, destroyed,
 edited and destroyed through the API.
 
 ### Phase 4: Review model, API and components (Day 7)
 
-**Objective** Users can view all reviews for a movie, and can also create
+**Objective:** Users can view all reviews for a movie, and can also create
 reviews.
 
 ### Phase 5: Search (Day 8)
 
-**Objective** Movies can be searched by title and director.
+**Objective:** Movies can be searched by title and director.
 
 ### Phase 6: Styling (Day 9)
 
-**Objective** Polish website interface.  
+**Objective:** Polish website interface.  
 
 ### Bonus Features
 - Browse by category
 - Tags
 - User Profile
+- Search by cast
