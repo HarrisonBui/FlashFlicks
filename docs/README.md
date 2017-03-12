@@ -1,9 +1,11 @@
 # Flashflicks
 
+[trello] (https://trello.com/b/8n3rYzQe/flashflicks)
+
 ## Minimum Viable Product
 
-Flashflicks is a web application inspired from [Goodreads.com](https://www.goodreads.com/)
-built using a Ruby on Rails backend with a and React/Redux frontend
+Flashflicks is a web application inspired from [Goodreads](https://www.goodreads.com/)
+built using a Ruby on Rails backend with a and React/Redux front end
 architecture.  Users are able to catalogue and review movies that they
 have seen and compile a list of movies they plan on seeing.  At project
 completion, Flashflicks will satisfy the following MVP criteria:
@@ -18,13 +20,11 @@ completion, Flashflicks will satisfy the following MVP criteria:
 
 ## Design Docs
 
-* [View Wireframes][wireframes]
-* [React Components]
+* [View Wireframes](wireframes)
+* [React Components](component-heirachy)
 * [API endpoints]
 * [DB schema]
 * [Sample State]
-
-[wireframes]: wireframes
 
 ## Implementation Timeline
 
