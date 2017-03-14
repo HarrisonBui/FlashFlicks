@@ -14,7 +14,6 @@ column name | data type | details
 id          | integer   | not null, primary key
 title       | string    | not null
 director    | string    | not null
-user_id     | integer   | not null
 description | text      | not null
 image_url   | string    | not null
 youtube_url | string    |
@@ -51,8 +50,8 @@ watch_status_id | integer   | not null, indexed
 column name     | data type | details
 ----------------|-----------|-----------------------
 id              | integer   | not null, primary key
-user_id         | integer   | not null, indexed
-movie_id        | integer   | not null, indexed
+user_id         | integer   | not null, foreign key, indexed
+movie_id        | integer   | not null, foreign key, indexed
 title           | string    | not null
 rating          | integer   | not null
 body            | text      | not null
