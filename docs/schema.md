@@ -16,6 +16,8 @@ title       | string    | not null
 director    | string    | not null
 description | text      | not null
 image_url   | string    | not null
+rating      | integer   |
+year        | integer   | not null
 youtube_url | string    |
 
 ## movie_lists
@@ -29,22 +31,8 @@ title       | string    | not null
 column name     | data type | details
 ----------------|-----------|-----------------------
 id              | integer   | not null, primary key
-movie_list_id   | integer   | not null, indexed
-movie_id        | integer   | not null, indexed
-
-## watch_status
-column name     | data type | details
-----------------|-----------|-----------------------
-id              | integer   | not null, primary key
-name            | string    | not null, indexed
-
-## watch_status_movies
-column name     | data type | details
-----------------|-----------|-----------------------
-id              | integer   | not null, primary key
-user_id         | integer   | not null, indexed
-movie_id        | integer   | not null, indexed
-watch_status_id | integer   | not null, indexed
+movie_list_id   | integer   | not null, foreign key, indexed
+movie_id        | integer   | not null, foreign key, indexed
 
 ## reviews
 column name     | data type | details
