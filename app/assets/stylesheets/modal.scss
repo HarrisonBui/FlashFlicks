@@ -1,20 +1,35 @@
 .login-form{
   color: #8B0000;
   position: absolute;
-  bottom: 25px;
+  bottom: 29px;
+  left: 50px;
 }
 
 .submit{
   margin-top: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #8B0000;
+  color: white;
+  width: 118px;
 }
 
+.submit:hover{
+  background-color: #DAA520;
+  transition-duration: .2s;
+}
 
-.nav-link{
+.navlink, .guest{
   right: -50%;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 10px;
 }
 
 .errors{
   font-size: 10px;
+  bottom: 29px;
 }
 
 .modal{
@@ -23,7 +38,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 200px;
-  height: 150px;
+  height: 194px;
   border: 1px solid lightgrey;
   border-radius: 2px;
   background-color: #EEEEEE;

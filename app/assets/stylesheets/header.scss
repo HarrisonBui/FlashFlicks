@@ -46,13 +46,16 @@
 }
 
 .login:hover , .signup:hover {
-  background-color: #B22222;
+  background-color: #DAA520;
   transition-duration: .4s;
 }
 
 .login, .signup {
   background-color: #8B0000;
   border-radius: 12px;
+  border-color: #8B0000;
+  box-shadow: none;
+
   color: white;
   text-decoration: none;
   padding: 5px;
