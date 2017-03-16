@@ -6,10 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+user1 = User.create(username: 'Guest', password: 'BarryAllenGuest')
+
 movie1 = Movie.create(title: 'Forrest Gump',
                       director: 'Robert Zemeckis',
                       description: 'Great Movie',
                       rating: 5,
                       year: 1994,
                       image_url: 'http://2.bp.blogspot.com/-i03dWHqsKuY/Ucw2YpUKlOI/AAAAAAAAAFQ/NqfUh7pHZZQ/s1456/forrest-gump-poster-1994-tom-hanks.png'
-)
+                      )
