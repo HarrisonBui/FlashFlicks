@@ -3,8 +3,8 @@ import { Link } from 'react-router';
 
 const sessionLinks = () => (
   <nav className="login-signup">
-    <Link to="/login" className="current">Login</Link>&nbsp;
-    <Link to="/signup" className="current">Sign Up</Link>
+    <Link to="/login" className="login">Login</Link>&nbsp;
+    <Link to="/signup" className="signup">Sign Up</Link>
   </nav>
 );
 
