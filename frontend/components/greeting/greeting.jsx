@@ -3,13 +3,13 @@ import { Link } from 'react-router';
 
 const sessionLinks = () => (
   <nav className="login-signup">
-    <Link to="/login" activeClassName="current">Login</Link>&nbsp;
-    <Link to="/signup" activeClassName="current">Sign Up</Link>
+    <Link to="/login" className="current">Login</Link>&nbsp;
+    <Link to="/signup" className="current">Sign Up</Link>
   </nav>
 );
 
 const welcomeGreeting = (currentUser, logout) => (
-  <hgroup>
+  <hgroup className="welcomeGreeting-container">
     <h2 className="header-name">Hi, {currentUser.username}!</h2>
     <button className="header-button" onClick={logout}>Log Out</button>
   </hgroup>
