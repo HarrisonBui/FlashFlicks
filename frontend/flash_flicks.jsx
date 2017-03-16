@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
 import Modal from 'react-modal';
+import fetchMovies from './util/movie_api_util';
 
 document.addEventListener('DOMContentLoaded', () => {
+  window.fetchMovies = fetchMovies;
   let store;
   if (window.currentUser) {
     const preloadedState = { session: { currentUser: window.currentUser } };
