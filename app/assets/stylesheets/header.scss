@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   min-width: 100%;
-  max-height: 45px;
+  min-height: 40px;
   padding-right: 15px;
 
 }
@@ -21,6 +21,10 @@
 .title{
   display: flex;
   max-width: 300px;
+  background-color: #8B0000;
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
 }
 
 .header-button{

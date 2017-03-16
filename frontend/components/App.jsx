@@ -1,10 +1,11 @@
 import React from 'react';
 import GreetingContainer from './greeting/greeting_container';
+import { Link } from 'react-router';
 
 const App = ({ children }) => (
   <div>
     <div className="header-container">
-      <h1 className="title">FLASH FLICKS</h1>
+      <Link to={'/'}className="title">FLASH FLICKS</Link>
       <GreetingContainer />
     </div>
     { children }
