@@ -15,6 +15,7 @@ class SessionForm extends React.Component {
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.openModal = this.openModal.bind(this);
 		this.closeModal = this.closeModal.bind(this);
+		this.handleGuestLogin = this.handleGuestLogin.bind(this);
 	}
 
 	componentDidUpdate() {
@@ -41,6 +42,14 @@ class SessionForm extends React.Component {
 		} else {
 			this.props.signup({user});
 		}
+	}
+
+	handleGuestLogin(e) {
+		e.preventDefault();
+		this.state.username = "Guest";
+		this.state.password = "BarryAllenGuest";
+		const user = this.state;
+		this.props.login({user});
 	}
 
 	navLink() {
@@ -111,7 +120,8 @@ class SessionForm extends React.Component {
 							</label>
 							<br/>
 							<input className="submit" type="submit" value="Submit" />&nbsp;
-							{this.navLink()}
+							{this.navLink()}&nbsp;
+							<a className="guest" onClick={this.handleGuestLogin}>Guest</a>
 						</div>
 					</form>
 				</Modal>
