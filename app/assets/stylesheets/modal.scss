@@ -1,6 +1,7 @@
 .login-form{
   color: #8B0000;
-  bottom: 50px;
+  position: absolute;
+  bottom: 25px;
 }
 
 .submit{
@@ -22,7 +23,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 200px;
-  height: auto;
+  height: 150px;
   border: 1px solid lightgrey;
   border-radius: 2px;
   background-color: #EEEEEE;
