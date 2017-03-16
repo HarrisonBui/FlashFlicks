@@ -10,7 +10,7 @@ class SessionForm extends React.Component {
 			username: "",
 			password: "",
 			modalOpen: false,
-			modalType: 'login'
+			modalType: 'Login'
 		};
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.openModal = this.openModal.bind(this);
@@ -36,7 +36,7 @@ class SessionForm extends React.Component {
 	handleSubmit(e) {
 		e.preventDefault();
 		const user = this.state;
-		if (this.state.modalType === 'login') {
+		if (this.state.modalType === 'Login') {
 			this.props.login({user});
 		} else {
 			this.props.signup({user});
@@ -44,16 +44,16 @@ class SessionForm extends React.Component {
 	}
 
 	navLink() {
-		if (this.state.modalType === "login") {
-			return <button onClick={this.openModal.bind(this, 'signup')}>sign up instead!</button>;
+		if (this.state.modalType === "Login") {
+			return <a className="navlink" onClick={this.openModal.bind(this, 'Sign up')}>Sign up!</a>;
 		} else {
-			return <button onClick={this.openModal.bind(this, 'login')}>Login instead!</button>;
+			return <a className="navlink" onClick={this.openModal.bind(this, 'Login')}>Log in!</a>;
 		}
 	}
 
 	renderErrors() {
 		return(
-			<ul>
+			<ul className="errors">
 				{this.props.errors.map((error, i) => (
 					<li key={`error-${i}`}>
 						{error}
@@ -78,36 +78,40 @@ class SessionForm extends React.Component {
 		return (
 			<div >
 				<nav className="login-signup">
-					<button className="login" onClick={this.openModal.bind(this, 'login')}>Login</button>
+					<button className="login" onClick={this.openModal.bind(this, 'Login')}>Login</button>
 					&nbsp;&nbsp;
-					<button className="signup" onClick={this.openModal.bind(this, 'signup')}>Sign up!</button>
+					<button className="signup" onClick={this.openModal.bind(this, 'Sign up')}>Sign up!</button>
 				</nav>
 				<Modal
 					contentLabel="Modal"
+					className="modal"
 					isOpen={this.state.modalOpen}
 					onRequestClose={this.closeModal}
 					style={ModalStyle}>
 					<br/>
-					Please {this.state.modalType} or {this.navLink()}
+					{this.state.modalType}
 					<form onSubmit={this.handleSubmit} >
 						{this.renderErrors()}
 						<div className="login-form">
 							<br/>
-							<label> Username:
+							<label>
 								<input type="text"
 									value={this.state.username}
 									onChange={this.update("username")}
-									className="login-input" />
+									className="login-input"
+									placeholder={'Username'}/>
 							</label>
 							<br/>
-							<label> Password:
+							<label>
 								<input type="password"
 									value={this.state.password}
 									onChange={this.update("password")}
-									className="login-input" />
+									className="login-input"
+									placeholder={'Password'}/>
 							</label>
 							<br/>
-							<input type="submit" value="Submit" />
+							<input className="submit" type="submit" value="Submit" />&nbsp;
+							{this.navLink()}
 						</div>
 					</form>
 				</Modal>
