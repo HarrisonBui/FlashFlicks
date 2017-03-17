@@ -18,8 +18,14 @@
 
 }
 
-.movie-index-item {
-  text-decoration: none;
+.movie-index-item h6, h4 {
+  margin: 1px;
+}
+
+
+.movie-index-item:hover {
+  background-color: grey;
+  transition-duration: .3s;
 }
 
 .outside-movie {

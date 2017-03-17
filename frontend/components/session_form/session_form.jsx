@@ -10,7 +10,7 @@ class SessionForm extends React.Component {
 			username: "",
 			password: "",
 			modalOpen: false,
-			modalType: 'Login'
+			modalType: 'login'
 		};
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.openModal = this.openModal.bind(this);
@@ -37,7 +37,7 @@ class SessionForm extends React.Component {
 	handleSubmit(e) {
 		e.preventDefault();
 		const user = this.state;
-		if (this.state.modalType === 'Login') {
+		if (this.state.modalType === 'login') {
 			this.props.login({user});
 		} else {
 			this.props.signup({user});
@@ -53,10 +53,10 @@ class SessionForm extends React.Component {
 	}
 
 	navLink() {
-		if (this.state.modalType === "Login") {
-			return <a className="navlink" onClick={this.openModal.bind(this, 'Sign up')}>Sign up</a>;
+		if (this.state.modalType === "login") {
+			return <a className="navlink" onClick={this.openModal.bind(this, 'signup')}>Sign Up</a>;
 		} else {
-			return <a className="navlink" onClick={this.openModal.bind(this, 'Login')}>Log in</a>;
+			return <a className="navlink" onClick={this.openModal.bind(this, 'login')}>Login</a>;
 		}
 	}
 
@@ -87,9 +87,9 @@ class SessionForm extends React.Component {
 		return (
 			<div >
 				<nav className="login-signup">
-					<button className="login" onClick={this.openModal.bind(this, 'Log in')}>Login</button>
+					<a className="login" onClick={this.openModal.bind(this, 'login')}>Login</a>
 					&nbsp;&nbsp;
-					<button className="signup" onClick={this.openModal.bind(this, 'Sign up')}>Sign up</button>
+					<a className="signup" onClick={this.openModal.bind(this, 'signup')}>Sign up</a>
 				</nav>
 				<Modal
 					contentLabel="Modal"

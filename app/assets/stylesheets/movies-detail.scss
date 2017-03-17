@@ -1,0 +1,41 @@
+.movie-detail-img {
+  max-height: 350px;
+  min-height: 350px;
+  max-width: 250px;
+  min-width: 250px;
+  padding-left: 20px;
+  padding-top: 40px;
+}
+
+.movie-detail-detail-container {
+  display: inline-block;
+  min-width: 70%;
+  border: 1px solid pink;
+}
+
+.move-detail-cont2 {
+  border: 1px solid white;
+}
+
+.movie-detail {
+  display: flex;
+  text-align: center;
+   border: 1px solid yellow;
+}
+
+.title-detail h2 {
+  text-align: center;
+}
+
+.movie-detail p {
+  padding-top: 145px;
+  padding-left: 180px;
+
+
+}
+
+.rating {
+  z-index: 1;
+
+  padding-top: 41px;
+}

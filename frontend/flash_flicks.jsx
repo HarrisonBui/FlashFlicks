@@ -5,8 +5,8 @@ import Root from './components/root';
 import Modal from 'react-modal';
 import fetchMovies from './util/movie_api_util';
 
+
 document.addEventListener('DOMContentLoaded', () => {
-  window.fetchMovies = fetchMovies;
   let store;
   if (window.currentUser) {
     const preloadedState = { session: { currentUser: window.currentUser } };
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     store = configureStore();
   }
-
+  
   Modal.setAppElement(document.body);
   const root = document.getElementById('root');
   ReactDOM.render(<Root store={store}/>, root);
