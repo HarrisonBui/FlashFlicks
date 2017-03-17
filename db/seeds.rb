@@ -87,7 +87,7 @@ movie7 = Movie.create(title: 'La La Land',
                       image_url: 'http://t2.gstatic.com/images?q=tbn:ANd9GcRhFtgdSYQ89vUMjMJal2D8H39qBCkh9ptCEoZEsafOzkeQPTu2'
                       )
 
-movie8 = Movie.create(title: 'Room',
+movie9 = Movie.create(title: 'Room',
                       director: 'Lenny Abrahamson',
                       description: 'Held captive for years in an enclosed space, a woman (Brie Larson) and her young son (Jacob Tremblay) finally gain their freedom, allowing the boy to experience the outside world for the first time.',
                       rating: 5,
