@@ -13,11 +13,17 @@ class MovieIndex extends React.Component {
                      movie={movie}/>
     ));
     return(
-      <div className='movie-index'>
-        <h2>{this.props.title}</h2>
-        <ul className='movie-list'>
-          {movies}
-        </ul>
+      <div>
+        <div>
+          <h2>{this.props.title}</h2>
+        </div>
+        <div className='outside-movie'>
+          <div className='movie-index'>
+            <div className='movie-list'>
+              {movies}
+            </div>
+          </div>
+        </div>
     </div>
     );
   }

@@ -1,4 +1,46 @@
 .movie-img{
-  max-height: 100px;
-  max-width: 100px;
+  max-height: 200px;
+  min-height: 220px;
+  max-width: 200px;
+  min-width: 160px;
+}
+
+.movie-index {
+  display: flex;
+  justify-content: center;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.movie-index-item {
+  text-decoration: none;
+}
+
+.outside-movie {
+  display: flex;
+  flex-direction: row;
+}
+
+.show h2 {
+  color: 	#4B0082;
+  height: 10%;
+  font-family: cursive;
+  font-size: 33px;
+}
+
+.show {
+  text-align: center;
+}
+
+.movie-list-item h4, h6{
+  color: white;
+}
+
+a {
+  text-decoration: none;
 }

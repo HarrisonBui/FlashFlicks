@@ -18,7 +18,7 @@ class Show extends React.Component {
     return(
       <div className='show'>
         <MoiveIndexContainer movies={this.props.movies}
-                            title='Show All Movies'/>
+                            title='Show Movies'/>
       </div>
     );
   }
