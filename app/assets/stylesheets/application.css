@@ -16,7 +16,7 @@
 
 body {
   font-family: sans-serif;
-  background-color: #696969;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("http://stammtec.de/wp-content/uploads/2012/08/wood.jpg");
   padding: 0px;
   margin: 0px;
 }
