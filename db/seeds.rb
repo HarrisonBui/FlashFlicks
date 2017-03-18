@@ -87,10 +87,25 @@ movie7 = Movie.create(title: 'La La Land',
                       image_url: 'http://t2.gstatic.com/images?q=tbn:ANd9GcRhFtgdSYQ89vUMjMJal2D8H39qBCkh9ptCEoZEsafOzkeQPTu2'
                       )
 
+movie8 = Movie.create(title: 'Moana',
+                      director: 'John Musker, Ron Clements',
+                      description: 'An adventurous teenager sails out on a daring mission to save her people. During her journey, Moana meets the once-mighty demigod Maui, who guides her in her quest to become a master way-finder. Together they sail across the open ocean on an action-packed voyage, encountering enormous monsters and impossible odds. Along the way, Moana fulfills the ancient quest of her ancestors and discovers the one thing she always sought: her own identity.',
+                      rating: 2,
+                      year: 2016,
+                      image_url: 'http://t3.gstatic.com/images?q=tbn:ANd9GcTJOaSVrzlgewVqmUgUz4W5ty2KUeHH6s-aYSIr_Qw8v2EBrtCS'
+                      )
+
 movie9 = Movie.create(title: 'Room',
                       director: 'Lenny Abrahamson',
                       description: 'Held captive for years in an enclosed space, a woman (Brie Larson) and her young son (Jacob Tremblay) finally gain their freedom, allowing the boy to experience the outside world for the first time.',
                       rating: 5,
                       year: 2016,
                       image_url: 'http://t1.gstatic.com/images?q=tbn:ANd9GcSu9dR_6oOzsDvAq76vlBqPsyYNHdLw3jRRrmJVb7EBPTQBryV1'
+                      )
+movie10 = Movie.create(title: 'Predator',
+                      director: 'John McTiernan',
+                      description: 'Dutch (Arnold Schwarzenegger), a soldier of fortune, is hired by the U.S. government to secretly rescue a group of politicians trapped in Guatemala. But when Dutch and his team, which includes weapons expert Blain (Jesse Ventura) and CIA agent George (Carl Weathers), land in Central America, something is gravely wrong. After finding a string of dead bodies, the crew discovers they are being hunted by a brutal creature with superhuman strength and the ability to disappear into its surroundings.',
+                      rating: 4,
+                      year: 1987,
+                      image_url: 'http://www.gstatic.com/tv/thumb/movieposters/10094/p10094_p_v8_ap.jpg'
                       )
