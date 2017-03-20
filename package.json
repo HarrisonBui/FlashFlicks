@@ -15,8 +15,8 @@
     "url": "git+https://github.com/HarrisonBui/FlashFlicks.git"
   },
   "engines": {
-    "node": "4.1.1",
-    "npm": "2.1.x"
+    "node": "6.2.1",
+    "npm": "3.9.x"
   },
   "keywords": [],
   "author": "",
