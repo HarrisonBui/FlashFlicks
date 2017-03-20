@@ -11,7 +11,6 @@ class SessionForm extends React.Component {
 			password: "",
 			modalOpen: false,
 			modalType: 'login',
-			errors: false
 		};
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.openModal = this.openModal.bind(this);
@@ -75,6 +74,7 @@ class SessionForm extends React.Component {
 	}
 
 	openModal(modalType) {
+				this.props.errors[0] = "";
 		this.setState({
 			modalOpen: true,
 			modalType
@@ -83,7 +83,6 @@ class SessionForm extends React.Component {
 
 	closeModal() {
 		this.props.errors[0] = "";
-
 		this.setState({modalOpen: false});
 	}
 
