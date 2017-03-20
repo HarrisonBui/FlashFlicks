@@ -15,14 +15,14 @@ class MovieDetail extends React.Component{
 
     const fullstar = <img
       className="icon"
-      src="http://icons.iconarchive.com/icons/psdblast/flat-christmas/512/star-icon.png"
+      src="http://res.cloudinary.com/dufjsfgjv/image/upload/v1490030369/star-icon_bnkv7r.png"
       width="12"
       height="12"
       />;
 
     const emptystar = <img
       className="icon"
-      src="http://www.iconsdb.com/icons/preview/icon-sets/web-2-orange-2/outline-star-xxl.png"
+      src="http://res.cloudinary.com/dufjsfgjv/image/upload/v1490030471/outline-star-xxl_jbipvt.png"
       width="12"
       height="12"
       />;

@@ -8,8 +8,6 @@
   justify-content: space-between;
   min-width: 100%;
   min-height: 55px;
-
-
 }
 
 .welcomeGreeting-container {
@@ -22,7 +20,8 @@
   display: flex;
   background-color: #8B0000;
   color: white;
-  padding: 22px;
+  padding: 19px;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .title:hover{
@@ -61,5 +60,6 @@
 .login, .signup {
   box-sizing: border-box;
   color: white;
-  padding: 22px;
+  padding: 20px;
+  font-family: 'Permanent Marker', cursive;
 }
