@@ -22,10 +22,14 @@
   margin: 1px;
 }
 
+.movie-index-item {
+  padding: 5px;
+}
 
 .movie-index-item:hover {
   background-color: black;
   transition-duration: .2s;
+  padding: 10px;
 }
 
 .outside-movie {
