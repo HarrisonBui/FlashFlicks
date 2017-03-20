@@ -1,10 +1,10 @@
 .movie-detail-img {
-  max-height: 350px;
-  min-height: 350px;
-  max-width: 250px;
-  min-width: 250px;
+  max-height: 379px;
+  min-height: 379px;
+  max-width: 273px;
+  min-width: 273px;
   padding-left: 20px;
-  padding-top: 40px;
+  padding-top: 80px;
 }
 
 .movie-detail-container {
@@ -12,10 +12,10 @@
   width: 85vw;
   margin: auto;
   color: 	#808000;
+  font-size: 20px;
 }
 
-.move-detail-cont2 {
-
+.movie-detail-items {
 }
 
 .movie-detail {
@@ -25,7 +25,7 @@
 }
 
 .title-detail {
-  padding-top: 40px;
+  padding-top: 80px;
   text-align: center;
   margin: 1px;
 }
@@ -35,10 +35,11 @@
 }
 
 .movie-detail p {
-  padding-top: 50px;
+  padding-top: 40px;
   padding-left: 80px;
   padding-right: 80px;
-  text-align: center;
+  text-align: left;
+
 }
 
 .rating {

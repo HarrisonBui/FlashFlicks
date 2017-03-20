@@ -97,7 +97,7 @@ movie8 = Movie.create(title: 'Moana',
 
 movie9 = Movie.create(title: 'Room',
                       director: 'Lenny Abrahamson',
-                      description: 'Held captive for years in an enclosed space, a woman (Brie Larson) and her young son (Jacob Tremblay) finally gain their freedom, allowing the boy to experience the outside world for the first time.',
+                      description: 'ROOM tells the extraordinary story of Jack, a spirited 5-year-old who is looked after by his loving and devoted mother. Like any good mother, Ma dedicates herself to keeping Jack happy and safe, nurturing him with warmth and love and doing typical things like playing games and telling stories. Their life, however, is anything but typical--they are trapped--confined to a 10-by-10-foot space that Ma has euphemistically named Room. Ma has created a whole universe for Jack within Room, and she will stop at nothing to ensure that, even in this treacherous environment, Jack is able to live a complete and fulfilling life. But as Jack curiosity about their situation grows, and Ma resilience reaches its breaking point, they enact a risky plan to escape, ultimately bringing them face-to-face with what may turn out to be the scariest thing yet: the real world.',
                       rating: 5,
                       year: 2016,
                       image_url: 'http://t1.gstatic.com/images?q=tbn:ANd9GcSu9dR_6oOzsDvAq76vlBqPsyYNHdLw3jRRrmJVb7EBPTQBryV1'
@@ -108,4 +108,12 @@ movie10 = Movie.create(title: 'Predator',
                       rating: 4,
                       year: 1987,
                       image_url: 'http://www.gstatic.com/tv/thumb/movieposters/10094/p10094_p_v8_ap.jpg'
+                      )
+
+movie11 = Movie.create(title: 'Snowden',
+                      director: 'Oliver Stone',
+                      description: 'Disillusioned with the intelligence community, top contractor Edward Snowden (Joseph Gordon-Levitt) leaves his job at the National Security Agency. He now knows that a virtual mountain of data is being assembled to track all forms of digital communication -- not just from foreign governments and terrorist groups, but from ordinary Americans. When Snowden decides to leak this classified information, he becomes a traitor to some, a hero to others and a fugitive from the law.',
+                      rating: 2,
+                      year: 2016,
+                      image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490037155/snowden_yyjsqc.jpg'
                       )
