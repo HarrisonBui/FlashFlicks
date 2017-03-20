@@ -10,7 +10,8 @@ class SessionForm extends React.Component {
 			username: "",
 			password: "",
 			modalOpen: false,
-			modalType: 'login'
+			modalType: 'login',
+			errors: false
 		};
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.openModal = this.openModal.bind(this);
@@ -63,11 +64,12 @@ class SessionForm extends React.Component {
 	renderErrors() {
 		return(
 			<ul className="errors">
-				{this.props.errors.map((error, i) => (
-					<li key={`error-${i}`}>
+				{this.props.errors.map((error, i) => {
+					this.setState.errors = true;
+					return(<a key={`error-${i}`}>
 						{error}
-					</li>
-				))}
+					</a>);
+				})}
 			</ul>
 		);
 	}
@@ -80,6 +82,8 @@ class SessionForm extends React.Component {
 	}
 
 	closeModal() {
+		this.props.errors[0] = "";
+
 		this.setState({modalOpen: false});
 	}
 
@@ -100,7 +104,7 @@ class SessionForm extends React.Component {
 					<br/>
 					{this.state.modalType}
 					<form onSubmit={this.handleSubmit} >
-						{this.renderErrors()}
+							{this.renderErrors()}
 						<div className="login-form">
 							<br/>
 							<label>

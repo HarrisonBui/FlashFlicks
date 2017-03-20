@@ -14,6 +14,7 @@ class MovieIndexItem extends React.Component {
       width="12"
       height="12"
       />;
+
     const emptystar = <img
       className="icon"
       src="http://www.iconsdb.com/icons/preview/icon-sets/web-2-orange-2/outline-star-xxl.png"
