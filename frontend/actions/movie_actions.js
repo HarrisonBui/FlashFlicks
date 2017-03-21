@@ -20,3 +20,7 @@ export const requestMovies = () => dispatch => (
 export const requestMovieDetail = ( movie ) => dispatch => (
   APIutil.fetchMovieDetail(movie).then(mov => dispatch(receiveMovieDetail(mov)))
 );
+
+export const requestUsersMovies = () => dispatch => (
+  APIutil.fetchUsersMovies().then(movie => dispatch(receiveMovies(movie)))
+);

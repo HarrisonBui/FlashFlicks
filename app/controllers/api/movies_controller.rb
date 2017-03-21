@@ -5,6 +5,11 @@ class Api::MoviesController < ApplicationController
     render 'api/movies/index'
   end
 
+  def users_movies
+    @movies = current_user.movies
+    render 'api/movies/index'
+  end
+
   def movie_detail
     @movie = Movie.find(params[:id])
   end
