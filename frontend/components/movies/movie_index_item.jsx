@@ -24,15 +24,18 @@ class MovieIndexItem extends React.Component {
 
     return(
       <div className='movie-index-item'  id={this.props.movie.id} key={this.props.movie.id}>
+        <div className='cover'></div>
         <Link to={`movie-detail/${this.props.movie.id}`}className='movie-list-item'>
           <img className="movie-img" src={this.props.movie.image_url}></img>
-          <h4>{this.props.movie.title}</h4>
-            <Rating
-                full={ fullstar }
-                empty={ emptystar }
-                initialRate={ this.props.movie.rating }
-                readonly={ true }
-                />
+          <div className="show-title-rating">
+            <h4>{this.props.movie.title}</h4>
+              <Rating
+                  full={ fullstar }
+                  empty={ emptystar }
+                  initialRate={ this.props.movie.rating }
+                  readonly={ true }
+                  />
+            </div>
         </Link>
       </div>
     );

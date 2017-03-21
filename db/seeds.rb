@@ -117,3 +117,74 @@ movie11 = Movie.create(title: 'Snowden',
                       year: 2016,
                       image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490037155/snowden_yyjsqc.jpg'
                       )
+
+movie12 = Movie.create(title: 'The Dark Knight',
+                      director: 'Christopher Nolan',
+                      description: 'The follow-up to Batman Begins, The Dark Knight reunites director Christopher Nolan and star Christian Bale, who reprises the role of Batman/Bruce Wayne in his continuing war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to destroy organized crime in Gotham for good. The triumvirate proves effective. But soon the three find themselves prey to a rising criminal mastermind known as The Joker, who thrusts Gotham into anarchy and forces Batman closer to crossing the fine line between hero and vigilante.',
+                      rating: 5,
+                      year: 2008,
+                      image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490050492/thedarkknight_ux9gb1.jpg'
+                      )
+movie13 = Movie.create(title: 'Catch Me If You Can',
+                      director: 'Steven Spielberg',
+                      description: 'New Rochelle, the 1960s. High schooler Frank Abagnale Jr. idolizes his father, who is in trouble with the IRS. When his parents separate, Frank runs away to Manhattan with $25 in his checking account, vowing to regain dad losses and get his parents back together. Just a few years later, the FBI tracks him down in France; he is extradited, tried, and jailed for passing more than $4,000,000 in bad checks. Along the way, he is posed as a Pan Am pilot, a pediatrician, and an attorney. And, from nearly the beginning of this life of crime, he is been pursued by a dour FBI agent, Carl Hanratty. What starts as cat and mouse becomes something akin to father and son.',
+                      rating: 5,
+                      year: 2002,
+                      image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490052273/Catch_Me_If_You_Can_2002_movie_qrq8nb.jpg'
+                      )
+
+movie14 = Movie.create(title: 'Logan',
+                      director: 'James Mangold',
+                      description: 'In the near future, a weary Logan (Hugh Jackman) cares for an ailing Professor X (Patrick Stewart) at a remote outpost on the Mexican border. His plan to hide from the outside world gets upended when he meets a young mutant (Dafne Keen) who is very much like him. Logan must now protect the girl and battle the dark forces that want to capture her.',
+                      rating: 4,
+                      year: 2017,
+                      image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490052434/logan_hwoyhg.jpg'
+                      )
+
+movie15 = Movie.create(title: 'The Boss Baby',
+                      director: 'Tom McGrath',
+                      description: 'A new baby arrival impacts a family, told from the point of view of a delightfully unreliable narrator -- a wildly imaginative 7-year-old named Tim. The most unusual Boss Baby (Alec Baldwin) arrives at Tim home in a taxi, wearing a suit and carrying a briefcase. The instant sibling rivalry must soon be put aside when Tim discovers that Boss Baby is actually a spy on a secret mission, and only he can help thwart a dastardly plot that involves an epic battle between puppies and babies.',
+                      rating: 3,
+                      year: 2017,
+                      image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490052688/bossbaby_truwqe.jpg'
+                      )
+
+movie16 = Movie.create(title: 'The Prestige',
+                      director: 'Christopher Nolan',
+                      description: 'In the end of the Nineteenth Century, in London, Robert Angier, his beloved wife Julia McCullough and Alfred Borden are friends and assistants of a magician. When Julia accidentally dies during a performance, Robert blames Alfred for her death and they become enemies. Both become famous and rival magicians, sabotaging the performance of the other on the stage. When Alfred performs a successful trick, Robert becomes obsessed trying to disclose the secret of his competitor with tragic consequences.',
+                      rating: 5,
+                      year: 2006,
+                      image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490052855/Prestige_poster_is8cie.jpg'
+                      )
+
+movie17 = Movie.create(title: "You've Got Mail",
+                      director: 'Nora Ephron',
+                      description: "Struggling boutique bookseller Kathleen Kelly (Meg Ryan) hates Joe Fox (Tom Hanks), the owner of a corporate Foxbooks chain store that just moved in across the street. When they meet online, however, they begin an intense and anonymous Internet romance, oblivious of each other's true identity. Eventually Joe learns that the enchanting woman he's involved with is actually his business rival. He must now struggle to reconcile his real-life dislike for her with the cyber love he's come to feel.",
+                      rating: 5,
+                      year: 1998,
+                      image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490052973/youvegotmail_g632gz.jpg'
+                      )
+
+movie18 = Movie.create(title: "Knocked Up",
+                      director: 'Judd Apatow',
+                      description: "When Alison Scott is promoted in E! Television, she goes to a night-club to celebrate with her older married sister Debbie. Alison meets the pothead reckless Ben Stone and while having a small talk with Ben, Debbie's husband Pete calls her to tell that their daughter has chicken pox. Debbie leaves the place but Allison stays with Ben, drinking and dancing along all night; completely wasted, they end up having a one night stand. Ben does not use condom and eight weeks later, Allison discovers that she is pregnant. She calls Ben and they decide to try to stay together and have the baby. However, Ben needs to grow-up first to raise a family of his own.",
+                      rating: 2,
+                      year: 2007,
+                      image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490053171/Knockedupmp_mm4q22.jpg'
+                      )
+
+movie19 = Movie.create(title: "Hidden Figures",
+                      director: 'Ted Melfi',
+                      description: "HIDDEN FIGURES is the incredible untold story of Katherine G. Johnson (Taraji P. Henson), Dorothy Vaughan (Octavia Spencer) and Mary Jackson (Janelle Monáe)-brilliant African-American women working at NASA, who served as the brains behind one of the greatest operations in history: the launch of astronaut John Glenn into orbit, a stunning achievement that restored the nation's confidence, turned around the Space Race, and galvanized the world. The visionary trio crossed all gender and race lines to inspire generations to dream big.",
+                      rating: 4,
+                      year: 2017,
+                      image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490053327/hiddenfigures_rqvlj5.jpg'
+                      )
+
+movie20 = Movie.create(title: "Wonder Woman",
+                      director: 'Patty Jenkins',
+                      description: "Before she was Wonder Woman (Gal Gadot), she was Diana, princess of the Amazons, trained to be an unconquerable warrior. Raised on a sheltered island paradise, Diana meets an American pilot (Chris Pine) who tells her about the massive conflict that's raging in the outside world. Convinced that she can stop the threat, Diana leaves her home for the first time. Fighting alongside men in a war to end all wars, she finally discovers her full powers and true destiny.",
+                      rating: 5,
+                      year: 2017,
+                      image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490053463/wonderwoman_vkqypd.jpg'
+                      )
