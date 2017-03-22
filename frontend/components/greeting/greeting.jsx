@@ -22,6 +22,10 @@ class Greeting extends React.Component {
   });
 }
 
+componentDidMount() {
+  this.props.requestAllMovielists();
+}
+
 conditionalRedirect(path) {
   if (this.props.currentUser) {
     this.props.router.push(path);
@@ -48,7 +52,6 @@ conditionalRedirect(path) {
   }
 
   render() {
-
     let movielistButton = (
       <button onClick={() => this.conditionalRedirect('/movielists')}>
         Movielists
@@ -77,4 +80,4 @@ conditionalRedirect(path) {
   }
 }
 
-export default Greeting;
+export default withRouter(Greeting);

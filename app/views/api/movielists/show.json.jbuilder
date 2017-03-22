@@ -1,3 +1,3 @@
-json.extract! movielist,  :id, :title, :user_id
-json.extract! movies, :id, :title, :director, :year, :rating, :description,
-                      :image_url, :youtube_url
+json.set! @movielist.id do
+  json.partial! 'api/movielists/movielist', movielist: @movielist
+end

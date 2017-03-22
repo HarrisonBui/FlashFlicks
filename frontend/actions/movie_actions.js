@@ -2,7 +2,6 @@ import * as APIutil from '../util/movie_api_util';
 
 export const RECEIVE_MOVIES = 'RECEIVE_MOVIES';
 export const RECEIVE_MOVIE_DETAIL = 'RECEIVE_MOVIE_DETAIL';
-export const RECEIVE_MOVIES_BY_MOVIELIST = 'RECEIVE_MOVIES_BY_MOVIELIST';
 export const RECEIVE_MOVIE = 'RECEIVE_MOVIE';
 
 export const receiveMovies = ( movies ) => ({
@@ -18,11 +17,6 @@ export const receiveMovie = ( movie ) => ({
 export const receiveMovieDetail = ( movie ) => ({
   type: RECEIVE_MOVIE_DETAIL,
   movie
-});
-
-export const receiveMoviesByMovielist = (movielistId) => ({
-  type: RECEIVE_MOVIES_BY_MOVIELIST,
-  movielistId
 });
 
 export const requestMovies = () => dispatch => (

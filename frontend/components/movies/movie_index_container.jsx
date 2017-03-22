@@ -4,8 +4,10 @@ import requestMovies from '../../actions/movie_actions';
 import updateMovielist from '../../actions/movielist_actions';
 
 const mapStateToProps = (state, ownProps) => ({
+  currentUser: state.session.currentUser,
   movies: ownProps.movies,
   title: ownProps.title,
+  movielist: ownProps.movielist
 });
 
 const mapDispatchToProps = (dispatch) => ({

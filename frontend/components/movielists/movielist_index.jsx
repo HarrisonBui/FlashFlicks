@@ -21,7 +21,7 @@ class Movielists extends React.Component {
   }
 
   componentWillMount() {
-    this.props.requestMovielists().then(() => {
+    this.props.requestAllMovielists().then(() => {
       const shownMovies = this.props.movielists[0].movies.map(id => (
         this.props.movies[id]
       ));
@@ -103,9 +103,6 @@ class Movielists extends React.Component {
       </div>
     );
 
-    const errors = this.props.errors.map((error, idx) => (
-      <li key={idx}>-{error}</li>
-    ));
 
     return(
       <div className='movielist-view'>
@@ -126,9 +123,7 @@ class Movielists extends React.Component {
                style={modalStyle}
                contentLabel='Modal'>
           <h4 className='movielist-form-title'>New Movielist</h4>
-          <ul>
-            {errors}
-          </ul>
+
           <form className='movielist-form'>
             <input placeholder='Title'
                    onChange={this.handleInput}

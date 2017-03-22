@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import MovieDetail from './movie_detail';
+import  MovieDetail  from './movie_detail';
 import { requestMovieDetail } from '../../actions/movie_actions';
 import { requestAllMovielists, updateMovielist } from '../../actions/movielist_actions';
 

@@ -1,8 +1,5 @@
 @movielists.each do |movielist|
   json.set! movielist.id do
-    json.extract! movielist,
-      :id,
-      :title,
-      :user_id
+    json.partial! 'api/movielists/movielist', movielist: movielist
   end
 end

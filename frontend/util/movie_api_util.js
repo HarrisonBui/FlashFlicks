@@ -5,10 +5,10 @@ export const fetchMovies = () => (
   })
 );
 
-export const fetchMovie = (movie) => (
+export const fetchMovie = (id) => (
   $.ajax({
     method: 'GET',
-    url: `api/movies/${movie.id}`
+    url: `api/movies/${id}`
   })
 );
 

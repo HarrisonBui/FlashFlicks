@@ -13,16 +13,18 @@ export const createMovielist = (movielist) => (
   })
 );
 
-export const updateMovielist = (id) => (
+export const updateMovielist = (movielist) => (
   $.ajax({
     method: 'PATCH',
-    url: `api/movielists/${id}`
+    url: `api/movielists/${movielist.id}`,
+    data: {movielist}
+
   })
 );
 
-export const deleteMovielist = (id) => (
+export const deleteMovielist = (movielist) => (
   $.ajax({
     method: 'DELETE',
-    url: `api/movielists/${id}`
+    url: `api/movielists/${movielist.id}`
   })
 );

@@ -9,7 +9,7 @@ class MovieIndex extends React.Component {
   }
 
   handleClick(e) {
-  if (e.target.id === 'delete-movielistmovies') {
+  if (e.target.id === 'delete-movielist_movies') {
     e.preventDefault();
     const movieId = parseInt(e.target.parentElement.parentElement.id);
     const idx = this.props.movielist.movies.indexOf(movieId);

@@ -11,14 +11,66 @@ class MovieDetail extends React.Component{
       movielistModalOpen: false,
       movielists: this.props.movielists
     };
-    
+
+    this.handleInput = this.handleInput.bind(this);
+    this.updateMovielist_movies = this.updateMovielist_movies.bind(this);
   }
 
   componentDidMount(){
     this.props.requestMovieDetail(this.props.params.id);
   }
 
+  componentWillReceiveProps(nextProps) {
+    if ( !this.props.currentUser && nextProps.currentUser) {
+      this.props.requestAllMovielists();
+    }
+    if ( this.props.movielists !== nextProps.movielists ) {
+      this.setState({movielists: nextProps.movielists});
+    }
+  }
+
+  handleInput(e) {
+    const listId = e.target.value;
+    let newMovielist_movies = this.state.movielists;
+    const idx = newMovielist_movies[listId].movies.indexOf(this.props.movie.id);
+    if ( idx === -1 ) {
+      newMovielist_movies[listId].movies.push(this.props.movie.id);
+    } else {
+      newMovielist_movies[listId].movies.splice(idx, 1);
+    }
+    this.setState({
+      movielists: newMovielist_movies
+    });
+  }
+
+  updateMovielist_movies(e) {
+  e.preventDefault();
+  Object.values(this.state.movielists).forEach((movielist) => {
+    let movie_ids = movielist.movies;
+    if ( movie_ids.length === 0) {
+      movie_ids = [''];
+    }
+    this.props.updateMovielist({
+      id: movielist.id,
+      movie_ids
+    });
+  });
+  this.setState({movielistModalOpen: false});
+}
+
   render(){
+
+  let movielistButton;
+  if ( this.props.currentUser ) {
+    movielistButton = (
+      <button onClick={() => this.setState({movielistModalOpen:true})}>
+        Add to Movielists</button>
+    );
+  } else {
+    movielistButton = '';
+  }
+
+
 
     const fullstar = <img
       className="icon"
@@ -34,7 +86,6 @@ class MovieDetail extends React.Component{
       height="12"
       />;
 
-    const movie = this.props.movie;
 
     return(
       <div className='movie-detail-container'>
@@ -58,6 +109,18 @@ class MovieDetail extends React.Component{
               </div>
             </div>
           </div>
+
+          <Modal isOpen={this.state.movielistModalOpen}
+             onRequestClose={() => this.setState({movielistModalOpen: false})}
+             className='modal'
+             style={modalStyle}
+             contentLabel='Modal'>
+            <form className='movielist_movies-form'>
+              <h4>Movielists</h4>
+
+              <button onClick={this.updateMovielist_movies}>Submit</button>
+            </form>
+          </Modal>
         </div>
       </div>
     );

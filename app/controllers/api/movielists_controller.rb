@@ -1,7 +1,12 @@
 class Api::MovielistsController < ApplicationController
 
   def index
-    @movielists = Movielist.where("user_id = #{current_user.id}")
+    if current_user
+      @movielists = Movielist.includes(:movies).where("user_id = ?", current_user.id)
+      render 'api/movielists/index'
+    else
+      render json: {}, status: 200
+    end
   end
 
   def create

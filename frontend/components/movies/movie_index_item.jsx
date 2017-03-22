@@ -9,15 +9,15 @@ class MovieIndexItem extends React.Component {
 
   render() {
 
-    let removeMovielistmoviesButton;
+    let removeMovielist_moviesButton;
     if ( this.props.movielist ) {
-      removeMovielistmoviesButton = (
-    <button id='delete-movielistmovies'>
+      removeMovielist_moviesButton = (
+    <button id='delete-movielist_movies'>
       Remove
     </button>
         );
       } else {
-        removeMovielistmoviesButton = '';
+        removeMovielist_moviesButton = '';
       }
 
     const fullstar = <img
@@ -47,7 +47,7 @@ class MovieIndexItem extends React.Component {
                   initialRate={ this.props.movie.rating }
                   readonly={ true }
                   />
-              {removeMovielistmoviesButton}
+                {removeMovielist_moviesButton}
             </div>
         </Link>
       </div>

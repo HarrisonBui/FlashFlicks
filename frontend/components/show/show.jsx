@@ -1,10 +1,13 @@
 import React from 'react';
 import MoiveIndexContainer from '../movies/movie_index_container';
 
+
 class Show extends React.Component {
   constructor(props) {
     super(props);
   }
+
+  
 
   componentWillMount() {
     this.props.requestMovies();

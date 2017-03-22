@@ -8,7 +8,7 @@ import { requestUserMovies } from '../../actions/movie_actions';
 const mapStateToProps = (state, ownProps) => ({
   currentUser: state.session.currentUser,
   movielists: Object.keys(state.movielists).map(id => state.movielists[id]),
-  movies: state.movies,
+  movies: state.movies
 });
 
 const mapDispatchToProps = (dispatch) => ({
