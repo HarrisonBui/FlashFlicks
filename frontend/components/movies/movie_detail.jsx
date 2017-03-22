@@ -1,10 +1,17 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 import Rating from 'react-rating';
+import Modal from 'react-modal';
+import modalStyle from '../session_form/modal_style';
 
 class MovieDetail extends React.Component{
   constructor(props) {
     super(props);
+    this.state = {
+      movielistModalOpen: false,
+      movielists: this.props.movielists
+    };
+    
   }
 
   componentDidMount(){

@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
   attr_reader :password
 
   has_many :movielist
-  has_many :movies
+  has_many :movies, through: :movielists
 
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)

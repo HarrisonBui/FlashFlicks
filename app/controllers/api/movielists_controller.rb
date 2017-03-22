@@ -10,18 +10,39 @@ class Api::MovielistsController < ApplicationController
     @movielist.user_id = current_user.id
 
     if @movielist = Movielist.where("user_id = #{current_user.id}")
-      render 'api/movielists/index'
+      render 'api/movielists/show'
     else
       render json: @movielist.errors.full_messages, status: 422
     end
   end
 
+  def show
+    @movielist = Movielist.find_by_id(params[:id])
+    @movies = @movielist.movies
+    if @movielist
+      render :show
+    else
+      render(json: "Movielist not found", status: 404)
+    end
+  end
+
+  def update
+    @movielist = Movielist.find(params[:id])
+    if @movielist.user_id == current_user.id &&
+      @movielist.update_attributes(movielist_params)
+      render 'api/movielists/show'
+    else
+      render json: @movielist.errors.full_messages, status: 401
+    end
+  end
+
   def destroy
     @movielist = Movielist.find(params[:id])
-    id = @movielist.id
-    title = @movelist.title
-    @movielist.destroy
-    render json: { id: id, title: title }
+    if @movielist.user_id == current_user.id && @movielist.delete
+      render json: {}, status: 200
+    else
+      render json: ['Process not completed'], status: 400
+    end
   end
 
   private

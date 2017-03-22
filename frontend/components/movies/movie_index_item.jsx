@@ -8,6 +8,18 @@ class MovieIndexItem extends React.Component {
   }
 
   render() {
+
+    let removeMovielistmoviesButton;
+    if ( this.props.movielist ) {
+      removeMovielistmoviesButton = (
+    <button id='delete-movielistmovies'>
+      Remove
+    </button>
+        );
+      } else {
+        removeMovielistmoviesButton = '';
+      }
+
     const fullstar = <img
       className="icon"
       src="http://res.cloudinary.com/dufjsfgjv/image/upload/v1490030369/star-icon_bnkv7r.png"
@@ -35,6 +47,7 @@ class MovieIndexItem extends React.Component {
                   initialRate={ this.props.movie.rating }
                   readonly={ true }
                   />
+              {removeMovielistmoviesButton}
             </div>
         </Link>
       </div>

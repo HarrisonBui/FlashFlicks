@@ -1,4 +1,8 @@
-json.array! @movielists do |movielist|
-  json.id movielist.id
-  json.title movielist.title
+@movielists.each do |movielist|
+  json.set! movielist.id do
+    json.extract! movielist,
+      :id,
+      :title,
+      :user_id
+  end
 end
