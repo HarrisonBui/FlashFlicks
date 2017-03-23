@@ -3,6 +3,7 @@ import { requestMovies } from '../../actions/movie_actions';
 import Show from './show';
 
 const mapStateToProps = (state) => ({
+  currentUser: state.session.currentUser,
   movies: Object.keys(state.movies).map(id => state.movies[id])
 });
 

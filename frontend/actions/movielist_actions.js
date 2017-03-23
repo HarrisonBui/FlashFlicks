@@ -31,7 +31,7 @@ export const requestMovielist = (id) => dispatch => (
 
 export const createMovielist = (movielist) => dispatch => (
   APIutil.createMovielist(movielist)
-    .then(movielists => dispatch(receiveAllMovielists(movielists)))
+    .then(mov => dispatch(receiveMovielist(mov)))
 );
 
 export const updateMovielist = ( movielist) => dispatch => (
@@ -39,7 +39,7 @@ export const updateMovielist = ( movielist) => dispatch => (
     .then(mov => dispatch(receiveMovielist(mov)))
 );
 
-export const deleteMovielist = (id) => dispatch => (
-  APIutil.deleteMovielist(id)
-    .then(movielist => dispatch(removeMovielist(movielist)))
+export const deleteMovielist = (movielist) => dispatch => (
+  APIutil.deleteMovielist(movielist)
+    .then(mov => dispatch(removeMovielist(mov)))
 );

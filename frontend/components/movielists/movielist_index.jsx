@@ -122,7 +122,7 @@ class Movielists extends React.Component {
                className='modal'
                style={modalStyle}
                contentLabel='Modal'>
-          <h4 className='movielist-form-title'>New Movielist</h4>
+          <h4 className='movielist-form-title'>New Movie List</h4>
 
           <form className='movielist-form'>
             <input placeholder='Title'

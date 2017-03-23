@@ -12,12 +12,12 @@ export const fetchMovie = (id) => (
   })
 );
 
-export const fetchMovieDetail = (id) => {
-  return $.ajax({
+export const fetchMovieDetail = (id) => (
+  $.ajax({
     method: 'GET',
     url: `api/movies/detail/${id}`
-  });
-};
+  })
+);
 
 export const fetchUserMovies = () => (
   $.ajax({

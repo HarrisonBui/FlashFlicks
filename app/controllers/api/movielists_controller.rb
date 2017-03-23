@@ -14,7 +14,7 @@ class Api::MovielistsController < ApplicationController
     @movies = Movie.all
     @movielist.user_id = current_user.id
 
-    if @movielist = Movielist.where("user_id = #{current_user.id}")
+    if @movielist.save
       render 'api/movielists/show'
     else
       render json: @movielist.errors.full_messages, status: 422

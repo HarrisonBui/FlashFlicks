@@ -14,16 +14,13 @@ class Greeting extends React.Component {
 
     this.closeModal = this.closeModal.bind(this);
     this.conditionalRedirect = this.conditionalRedirect.bind(this);
+    this.logout = this.logout.bind(this);
   }
 
   closeModal() {
   this.setState({
     modalOpen: false
   });
-}
-
-componentDidMount() {
-  this.props.requestAllMovielists();
 }
 
 conditionalRedirect(path) {
@@ -36,6 +33,13 @@ conditionalRedirect(path) {
   }
 }
 
+logout(e) {
+  e.preventDefault();
+  this.props.logout().then(
+    () => this.props.router.push('/')
+  );
+}
+
   sessionLinks() {
     return(
       <SessionFormContainer />
@@ -46,35 +50,36 @@ conditionalRedirect(path) {
     return(
       <hgroup className="welcomeGreeting-container">
         <h2 className="header-name">Hi, {currentUser.username}!</h2>
-        <a className="header-button" onClick={logout}>Log Out</a>
+        <a className="header-button" onClick={this.logout}>Log Out</a>
       </hgroup>
     );
   }
 
   render() {
+
     let movielistButton = (
-      <button onClick={() => this.conditionalRedirect('/movielists')}>
-        Movielists
+      <button className='movielist-button' onClick={() => this.conditionalRedirect('/movielists')}>
+        Movie Lists
       </button>
     );
 
     return(
       <div>
-        <div className='nav-buttons'>
+        <div className='welcomeGreeting-container'>
           {movielistButton}
 
       <Modal isOpen={this.state.modalOpen}
              onRequestClose={this.closeModal}
-             className='modal'
+             className='modal2'
              style={modalStyle}
              contentLabel='Modal'>
         <div className='auth-required'>
-          <h3>Access Denied</h3>
-          <p>Please log in or sign up to view the page.</p>
+          <h3>Members Only</h3>
+          <p>Please Login or Signup to view the page.</p>
         </div>
         </Modal>
-      </div>
         {this.props.currentUser ? this.welcomeGreeting(this.props.currentUser, this.props.logout) : this.sessionLinks()}
+      </div>
       </div>
       );
   }

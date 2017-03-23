@@ -71,7 +71,6 @@ class MovieDetail extends React.Component{
   }
 
 
-
     const fullstar = <img
       className="icon"
       src="http://res.cloudinary.com/dufjsfgjv/image/upload/v1490030369/star-icon_bnkv7r.png"
@@ -86,6 +85,25 @@ class MovieDetail extends React.Component{
       height="12"
       />;
 
+    const movie = this.props.movie;
+    const movielist_moviesCheckboxes = Object.values(this.state.movielists).map(
+      (movielist) => {
+        let checked = false;
+        if( movielist.movies.includes(movie.id)) {
+          checked = true;
+        }
+        return(
+          <label key={movielist.id}>{movielist.title}:
+            <input type='checkbox'
+                   name='movielist_movies_ids[]'
+                   value={movielist.id}
+                   key={movielist.id}
+                   checked={checked}
+                   onChange={this.handleInput}></input>
+          </label>
+        );
+      }
+    );
 
     return(
       <div className='movie-detail-container'>
@@ -96,6 +114,7 @@ class MovieDetail extends React.Component{
             </div>
             <div className='movie-detail-items'>
               <div className='movie-info'>
+              {movielistButton}
               <h2 className='title-detail'>{this.props.movie.title}</h2>
               <Rating
                 full={ fullstar }
@@ -117,7 +136,7 @@ class MovieDetail extends React.Component{
              contentLabel='Modal'>
             <form className='movielist_movies-form'>
               <h4>Movielists</h4>
-
+              {movielist_moviesCheckboxes}
               <button onClick={this.updateMovielist_movies}>Submit</button>
             </form>
           </Modal>

@@ -1,8 +1,8 @@
 import * as APIutil from '../util/movie_api_util';
 
 export const RECEIVE_MOVIES = 'RECEIVE_MOVIES';
-export const RECEIVE_MOVIE_DETAIL = 'RECEIVE_MOVIE_DETAIL';
 export const RECEIVE_MOVIE = 'RECEIVE_MOVIE';
+export const RECEIVE_MOVIE_DETAIL = 'RECEIVE_MOVIE_DETAIL';
 
 export const receiveMovies = ( movies ) => ({
   type: RECEIVE_MOVIES,

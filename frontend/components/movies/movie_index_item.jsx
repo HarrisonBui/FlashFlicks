@@ -12,13 +12,13 @@ class MovieIndexItem extends React.Component {
     let removeMovielist_moviesButton;
     if ( this.props.movielist ) {
       removeMovielist_moviesButton = (
-    <button id='delete-movielist_movies'>
-      Remove
-    </button>
-        );
-      } else {
-        removeMovielist_moviesButton = '';
-      }
+        <button id='delete-movielist_movies'>
+          Remove
+        </button>
+            );
+    } else {
+      removeMovielist_moviesButton = '';
+    }
 
     const fullstar = <img
       className="icon"

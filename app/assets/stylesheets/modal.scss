@@ -7,6 +7,7 @@
 
 .submit{
   margin-top: 15px;
+  margin-bottom: 6px;
   border-radius: 4px;
   cursor: pointer;
   background-color: #8B0000;
@@ -25,11 +26,13 @@
   cursor: pointer;
   font-size: 12px;
   padding: 10px;
+  padding-top: 5px;
 }
 
 .errors{
   font-size: 10px;
   bottom: 29px;
+  margin-right: 45px;
 }
 
 .modal{
@@ -39,7 +42,23 @@
   transform: translate(-50%, -50%);
   width: 200px;
   height: 194px;
-  border: 1px solid lightgrey;
+  border: 1px solid red;
+  border-radius: 2px;
+  background-color: #EEEEEE;
+  padding: 15px;
+  outline: none;
+  box-shadow: 0px 2px 10px #AAAAAA;
+  text-align: center;
+}
+
+.modal2{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: auto;
+  border: 1px solid red;
   border-radius: 2px;
   background-color: #EEEEEE;
   padding: 15px;
