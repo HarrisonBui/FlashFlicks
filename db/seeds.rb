@@ -191,3 +191,43 @@ movie20 = Movie.create(title: "Wonder Woman",
                       year: 2017,
                       image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490053463/wonderwoman_vkqypd.jpg'
                       )
+
+movie21 = Movie.create(title: "Mad Max: Fury Road",
+                      director: 'George Miller',
+                      description: "Years after the collapse of civilization, the tyrannical Immortan Joe enslaves apocalypse survivors inside the desert fortress the Citadel. When the warrior Imperator Furiosa (Charlize Theron) leads the despot's five wives in a daring escape, she forges an alliance with Max Rockatansky (Tom Hardy), a loner and former captive. Fortified in the massive, armored truck the War Rig, they try to outrun the ruthless warlord and his henchmen in a deadly high-speed chase through the Wasteland.",
+                      rating: 3,
+                      year: 2015,
+                      image_url: 'http://www.fatmovieguy.com/wp-content/uploads/2015/03/Mad-Max-Fury-Road-Movie-Poster-2.jpg'
+                      )
+movie22 = Movie.create(title: "The Godfather",
+                      director: 'Francis Ford Coppola',
+                      description: "Widely regarded as one of the greatest films of all time, this mob drama, based on Mario Puzo's novel of the same name, focuses on the powerful Italian-American crime family of Don Vito Corleone (Marlon Brando). When the don's youngest son, Michael (Al Pacino), reluctantly joins the Mafia, he becomes involved in the inevitable cycle of violence and betrayal. Although Michael tries to maintain a normal relationship with his wife, Kay (Diane Keaton), he is drawn deeper into the family business.",
+                      rating: 5,
+                      year: 1972,
+                      image_url: 'http://static.rogerebert.com/uploads/movie/movie_poster/the-godfather-1972/large_d4KNaTrltq6bpkFS01pYtyXa09m.jpg'
+                      )
+
+movie23 = Movie.create(title: "E.T. the Extra-Terrestrial",
+                      director: 'Steven Spielberg',
+                      description: "After a gentle alien becomes stranded on Earth, the being is discovered and befriended by a young boy named Elliott (Henry Thomas). Bringing the extraterrestrial into his suburban California house, Elliott introduces E.T., as the alien is dubbed, to his brother and his little sister, Gertie (Drew Barrymore), and the children decide to keep its existence a secret. Soon, however, E.T. falls ill, resulting in government intervention and a dire situation for both Elliott and the alien.",
+                      rating: 5,
+                      year: 1982,
+                      image_url: 'http://t1.gstatic.com/images?q=tbn:ANd9GcRGJHE2d9ETIgpONE3pUTXMcUoBMkahlppFmicaL8FG8ovE37x4w'
+                      )
+
+movie24 = Movie.create(title: "Power Rangers",
+                      director: 'Dean Israelite',
+                      description: "Five ordinary teens must become something extraordinary when they learn that their small town of Angel Grove - and the world - is on the verge of being obliterated by an alien threat. Chosen by destiny, our heroes quickly discover they are the only ones who can save the planet. But to do so, they will have to overcome their real-life issues and before it's too late, band together as the Power Rangers.
+",
+                      rating: 2,
+                      year: 2017,
+                      image_url: 'http://t1.gstatic.com/images?q=tbn:ANd9GcQT0t1q8_C6Rj71GrNkeSwvKbKDFTxv9_mC9fVVN4Ri25hNSHNb'
+                      )
+
+movie25 = Movie.create(title: "Chips",
+                      director: 'Dax Shepard',
+                      description: "Jon Baker and Frank Ponch Poncherello have just joined the California Highway Patrol in Los Angeles, but for very different reasons. Baker is a former motorbike rider who's trying to put his life and marriage back together. Poncherello is a cocky, undercover FBI agent who's investigating a multimillion dollar heist that may be an inside job. Forced to work together, the inexperienced rookie and hardened veteran begin clashing instead of clicking while trying to nab the bad guys.",
+                      rating: 4,
+                      year: 2017,
+                      image_url: 'http://t3.gstatic.com/images?q=tbn:ANd9GcRUO7VInvEbef4vqAFgFzSQ6aieDjmMLaL-zngg78LP8vhqmcQB'
+                      )

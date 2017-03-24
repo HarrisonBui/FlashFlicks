@@ -135,7 +135,7 @@ class MovieDetail extends React.Component{
             </div>
           </div>
 
-          <ReviewsContainer />
+
 
           <Modal isOpen={this.state.movielistModalOpen}
              onRequestClose={() => this.setState({movielistModalOpen: false})}
