@@ -34,10 +34,12 @@ export const createMovielist = (movielist) => dispatch => (
     .then(mov => dispatch(receiveMovielist(mov)))
 );
 
-export const updateMovielist = ( movielist) => dispatch => (
-  APIutil.updateMovielist(movielist)
+export const updateMovielist = ( movielist) => dispatch => {
+  return (
+    APIutil.updateMovielist(movielist)
     .then(mov => dispatch(receiveMovielist(mov)))
-);
+  );
+};
 
 export const deleteMovielist = (movielist) => dispatch => (
   APIutil.deleteMovielist(movielist)

@@ -24,6 +24,9 @@ movie1 = Movie.create(title: 'Forrest Gump',
                       image_url: 'http://2.bp.blogspot.com/-i03dWHqsKuY/Ucw2YpUKlOI/AAAAAAAAAFQ/NqfUh7pHZZQ/s1456/forrest-gump-poster-1994-tom-hanks.png'
                       )
 
+review1movie1 =  Review.create(movie_id: 1, user_id: 1,
+                rating: 3, body: "please work")
+
 movie2 = Movie.create(title: 'Arrival',
                       director: 'Denis Villeneuve',
                       description: 'Linguistics professor Louise Banks (Amy Adams)

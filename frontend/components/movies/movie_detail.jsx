@@ -3,6 +3,7 @@ import { withRouter } from 'react-router';
 import Rating from 'react-rating';
 import Modal from 'react-modal';
 import modalStyle from '../session_form/modal_style';
+import ReviewsContainer from '../review/reviews_container';
 
 class MovieDetail extends React.Component{
   constructor(props) {
@@ -18,6 +19,7 @@ class MovieDetail extends React.Component{
 
   componentDidMount(){
     this.props.requestMovieDetail(this.props.params.id);
+    this.props.requestReviews(this.props.params.id);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -128,6 +130,8 @@ class MovieDetail extends React.Component{
               </div>
             </div>
           </div>
+
+          <ReviewsContainer />
 
           <Modal isOpen={this.state.movielistModalOpen}
              onRequestClose={() => this.setState({movielistModalOpen: false})}

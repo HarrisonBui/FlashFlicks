@@ -65,8 +65,8 @@ class SessionForm extends React.Component {
 			<ul className="errors">
 				{this.props.errors.map((error, i) => {
 					this.setState.errors = true;
-					return(<a key={`error-${i}`}>
-						{error}
+					return(<a key={`error-${i }`}>
+						{error + " "}
 					</a>);
 				})}
 			</ul>

@@ -20,25 +20,30 @@ class Movielists extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentWillMount() {
-    this.props.requestAllMovielists().then(() => {
-      const shownMovies = this.props.movielists[0].movies.map(id => (
-        this.props.movies[id]
-      ));
-      this.setState({shownMovies});
-    });
-  }
 
-  componentWillReceiveProps(nextProps) {
-    let selectedList = (this.state.selectedList >= nextProps.movielists.length) ?
-      this.state.selectedList - 1 : this.state.selectedList;
-    const shownMovies = nextProps.movielists[selectedList].movies.map(id => (
-      this.props.movies[id]
-    ));
-    this.setState({
-      shownMovies,
-      selectedList,
-      selectedListTitle: nextProps.movielists[selectedList].title
+  componentWillMount() {
+    this.props.requestMovies()
+    .then(() => this.props.requestAllMovielists())
+    .then(() => {
+      if(this.props.movielists){
+
+          const shownMovies = this.props.movielists[0].movies.map(id => (
+            this.props.movies[id]
+          ));
+          this.setState({shownMovies});
+      }
+      if(this.props.movielists){
+        let selectedList = (this.state.selectedList >= this.props.movielists.length) ?
+        this.state.selectedList - 1 : this.state.selectedList;
+        const shownMovies = this.props.movielists[selectedList].movies.map(id => (
+          this.props.movies[id]
+        ));
+        this.setState({
+          shownMovies,
+          selectedList,
+          selectedListTitle: this.props.movielists[selectedList].title
+        });
+      }
     });
   }
 
@@ -106,17 +111,17 @@ class Movielists extends React.Component {
 
     return(
       <div className='movielist-view'>
+        <div className="selector-list">
+          <MovieIndexContainer movies={this.state.shownMovies}
+            title={this.state.selectedListTitle}
+            movielist={this.props.movielists[this.state.selectedList]}/>
+        </div>
         <div className='movielist-sidebar'>
-          <h4 className='title'>My Movielists</h4>
+          <h4 className='movielist-title'>My Movielists</h4>
           <ul className='movielist-list'>
             {movielists}
           </ul>
         </div>
-
-        <MovieIndexContainer movies={this.state.shownMovies}
-                            title={this.state.selectedListTitle}
-                            movielist={this.props.movielists[this.state.selectedList]}/>
-
         <Modal isOpen={this.state.modalOpen}
                onRequestClose={() => this.setState({modalOpen: false})}
                className='modal'

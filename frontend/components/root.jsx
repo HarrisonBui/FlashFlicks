@@ -10,7 +10,7 @@ import SessionFormContainer from './session_form/session_form_container';
 import MovieDetail from './movies/movie_detail_container';
 import { requestUserMovies, requestMovieDetail } from '../actions/movie_actions';
 import { requestAllMovielists } from '../actions/movielist_actions';
-
+import { requestReviews } from '../actions/review_actions';
 
 const Root = ({ store }) => {
 
@@ -28,12 +28,6 @@ const Root = ({ store }) => {
     }
   };
 
-  const requestLists = (nextState, replace, cb) => {
-    store.dispatch(requestUserMovies())
-    .then(store.dispatch(requestAllMovielists()))
-    .then(cb);
-};
-
   return (
 
   <Provider store={ store }>
@@ -41,7 +35,7 @@ const Root = ({ store }) => {
       <Route path="/" component={ App }>
         <IndexRoute component={ShowContainer}/>
         <Route path='/movie-detail/:id' component={MovieDetail}/>
-          <Route path='/movielists' component={MovielistIndexContainer}/>
+        <Route path='/movielists' component={MovielistIndexContainer}/>
 
       </Route>
     </Router>

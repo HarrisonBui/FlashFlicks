@@ -11,29 +11,31 @@ class MovieIndex extends React.Component {
   handleClick(e) {
   if (e.target.id === 'delete-movielist_movies') {
     e.preventDefault();
-    const movieId = parseInt(e.target.parentElement.parentElement.id);
+    const movieId = parseInt(e.target.parentElement.parentElement.parentElement.id);
     const idx = this.props.movielist.movies.indexOf(movieId);
     let newMovies = this.props.movielist.movies;
     newMovies.splice(idx, 1);
     if ( newMovies.length === 0) {
       newMovies = [''];
     }
+
     this.props.updateMovielist({
       id: this.props.movielist.id,
       movie_ids: newMovies
     });
     e.stopPropagation();
   } else if (e.target.className !== 'movie-list') {
-    let el = e.target;
-    while (el.className !== 'movie-index-item') {
-      el = el.parentElement;
-    }
+      let el = e.target;
+      while (el.className !== 'movie-index-item') {
+        el = el.parentElement;
+      }
     this.props.router.push(`/movie-detail/${el.id}`);
+    }
+    e.stopPropagation();
   }
-  e.stopPropagation();
-}
 
   render() {
+
     const movies = this.props.movies.map((movie, idx) => (
       <MovieIndexItem key={movie.id}
                      movie={movie}

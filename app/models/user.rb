@@ -10,6 +10,7 @@ class User < ActiveRecord::Base
 
   has_many :movielist
   has_many :movies, through: :movielists
+  has_many :reviews
 
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)

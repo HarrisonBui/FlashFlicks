@@ -23,6 +23,10 @@ class Greeting extends React.Component {
   });
 }
 
+componentWillMount() {
+  this.props.requestMovies();
+}
+
 conditionalRedirect(path) {
   if (this.props.currentUser) {
     this.props.router.push(path);

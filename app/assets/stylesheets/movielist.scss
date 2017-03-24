@@ -1,0 +1,26 @@
+
+.movielist-view {
+  color: white;
+}
+
+.selector-list {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+}
+
+.movielist-sidebar {
+  background-color: #8B0000;
+  display: inline-block;
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+}
+
+.movielist-list:hover {
+  cursor: pointer;
+}
+
+.movielist-title {
+  padding: 10px;
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+}
