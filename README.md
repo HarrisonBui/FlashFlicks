@@ -1,24 +1,18 @@
-# README
+# Flash Flicks
+Flash Flicks is a web application inspired from 'Goodreads'. Users can search
+for movies and catalogue them into their movie lists.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Live Site](https://flashflicks.herokuapp.com/#/)
 
-Things you may want to cover:
+## Technology
+Flash Flicks was built with Rails and React/Redux.
 
-* Ruby version
+## Features
+- Create User accounts
+- Create Movie Lists along with adding movies to those lists
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Features for the Future
+- Users can add movies that are not available already.
+- Search Bar
+- Personalize User accounts
+- Home page can be sorted by ratings or most viewed

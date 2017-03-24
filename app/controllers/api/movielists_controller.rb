@@ -44,7 +44,7 @@ class Api::MovielistsController < ApplicationController
   def destroy
     @movielist = Movielist.find(params[:id])
     if @movielist.user_id == current_user.id && @movielist.delete
-      render json: {}, status: 200
+      render @movielist
     else
       render json: ['Process not completed'], status: 400
     end

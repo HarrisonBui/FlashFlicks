@@ -24,7 +24,6 @@ class Movielists extends React.Component {
   componentWillMount() {
     this.props.requestMovies().then(() => this.props.requestAllMovielists()).then(() => {
       if (this.props.movielists) {
-
         const shownMovies = this.props.movielists[0].movies.map(id => (this.props.movies[id]));
         this.setState({shownMovies});
       }
