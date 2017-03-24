@@ -19,9 +19,12 @@
 
 .title{
   display: flex;
+  font-size: 25px;
   background-color: #8B0000;
   color: white;
-  padding: 19px;
+  padding: 15px;
+  height: auto;
+  width: auto;
   font-family: 'Cinzel', serif;
 }
 
@@ -40,7 +43,7 @@
   display: flex;
   font-size: 14px;
   max-height: 100%;
-  padding: 10px;
+  padding: 11px;
   padding-left: 8px;
   font-family: 'Cinzel', serif;
 }
@@ -49,10 +52,7 @@
     padding: 10px;
 }
 
-.header-button:hover {
-  background-color: #B22222;
-  transition-duration: .4s;
-}
+
 
 .login:hover , .signup:hover {
   background-color: #B22222;
@@ -75,7 +75,7 @@
   font-size: 16px;
   color: white;
   cursor: pointer;
-  margin-right: 70px;
+  margin-right: 20px;
 }
 
 .nav-buttons{

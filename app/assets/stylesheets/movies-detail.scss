@@ -15,9 +15,6 @@
   font-size: 20px;
 }
 
-.movie-detail-items {
-}
-
 .movie-detail {
   display: flex;
   text-align: center;
@@ -42,11 +39,11 @@
   font-family: 'Frank Ruhl Libre', sans-serif;
   line-height:  170%;
   letter-spacing: 1px;
-
+  font-size: 15px;
+  min-width: 20px;
 }
 
 .rating {
   z-index: 1;
-
   padding-top: 41px;
 }

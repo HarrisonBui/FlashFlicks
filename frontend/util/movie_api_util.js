@@ -19,9 +19,9 @@ export const fetchMovieDetail = (id) => (
   })
 );
 
-export const fetchUserMovies = () => (
-  $.ajax({
-    method: 'GET',
-    url: 'api/movies/user_movies'
-  })
-);
+// export const fetchUserMovies = () => (
+//   $.ajax({
+//     method: 'GET',
+//     url: 'api/movies/user_movies'
+//   })
+// );

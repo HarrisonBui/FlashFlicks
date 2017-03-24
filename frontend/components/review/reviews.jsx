@@ -117,13 +117,13 @@ class Reviews extends React.Component {
           <li className='review-item'
               key={review.id}>
             {deleteReviewButton}
-            <h4>{review.userName}</h4>
+            <h4>Reviewed By: {review.userName}</h4>
             <StarRatingComponent
                className='stars'
                name="rating"
                starCount={5}
                value={review.rating}
-               starColor={'#e6994c'}
+               starColor={'#FFD700'}
                emptyStarColor={'#ccc'}
                editing={false}/>
              <p>{review.body}</p>
@@ -142,7 +142,7 @@ class Reviews extends React.Component {
 
         <Modal isOpen={this.state.modalOpen}
                onRequestClose={() => this.setState({modalOpen: false})}
-               className='modal'
+               className='modal-review'
                style={modalStyle}
                contentLabel='Modal'>
 
@@ -156,7 +156,7 @@ class Reviews extends React.Component {
                      starCount={5}
                      value={this.state.review.rating}
                      onStarClick={this.handleRatingInput}
-                     starColor={'#e6994c'}
+                     starColor={'#FFD700'}
                      emptyStarColor={'#ccc'}/>
                  </div>
 

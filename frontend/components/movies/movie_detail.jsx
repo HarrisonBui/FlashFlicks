@@ -12,14 +12,16 @@ class MovieDetail extends React.Component{
       movielistModalOpen: false,
       movielists: this.props.movielists
     };
+    console.log(this.props);
 
     this.handleInput = this.handleInput.bind(this);
     this.updateMovielist_movies = this.updateMovielist_movies.bind(this);
   }
 
-  componentDidMount(){
+  componentWillMount(){
     this.props.requestMovieDetail(this.props.params.id);
     this.props.requestReviews(this.props.params.id);
+    this.props.requestAllMovielists();
   }
 
   componentWillReceiveProps(nextProps) {
@@ -65,7 +67,7 @@ class MovieDetail extends React.Component{
   let movielistButton;
   if ( this.props.currentUser ) {
     movielistButton = (
-      <button onClick={() => this.setState({movielistModalOpen:true})}>
+      <button className= 'add-toMovielist' onClick={() => this.setState({movielistModalOpen:true})}>
         Add to Movielists</button>
     );
   } else {
@@ -95,14 +97,16 @@ class MovieDetail extends React.Component{
           checked = true;
         }
         return(
-          <label key={movielist.id}>{movielist.title}:
-            <input type='checkbox'
-                   name='movielist_movies_ids[]'
-                   value={movielist.id}
-                   key={movielist.id}
-                   checked={checked}
-                   onChange={this.handleInput}></input>
-          </label>
+          <div className="checkboxes" key={`${movielist.id}checkboxes`}>
+            <label  key={movielist.id}>{movielist.title}:
+              <input type='checkbox'
+                     name='movielist_movies_ids[]'
+                     value={movielist.id}
+                     key={movielist.id}
+                     checked={checked}
+                     onChange={this.handleInput}></input>
+            </label>
+          </div>
         );
       }
     );
@@ -113,10 +117,10 @@ class MovieDetail extends React.Component{
           <div className='movie-detail'>
             <div className='movie-picture'>
               <img className='movie-detail-img' src={this.props.movie.image_url}></img>
+              {movielistButton}
             </div>
             <div className='movie-detail-items'>
               <div className='movie-info'>
-              {movielistButton}
               <h2 className='title-detail'>{this.props.movie.title}</h2>
               <Rating
                 full={ fullstar }
@@ -135,7 +139,7 @@ class MovieDetail extends React.Component{
 
           <Modal isOpen={this.state.movielistModalOpen}
              onRequestClose={() => this.setState({movielistModalOpen: false})}
-             className='modal'
+             className='modal-check'
              style={modalStyle}
              contentLabel='Modal'>
             <form className='movielist_movies-form'>

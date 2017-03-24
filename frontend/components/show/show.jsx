@@ -7,7 +7,7 @@ class Show extends React.Component {
   }
 
   componentWillMount() {
-    this.props.requestMovies();
+    this.props.requestMovies().then(() => this.props.requestAllMovielists());
   }
 
   componentWillReceiveProps() {

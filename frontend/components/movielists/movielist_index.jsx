@@ -33,9 +33,19 @@ class Movielists extends React.Component {
           ? this.state.selectedList - 1
           : this.state.selectedList;
         const shownMovies = this.props.movielists[selectedList].movies.map(id => (this.props.movies[id]));
+
         this.setState({shownMovies, selectedList, selectedListTitle: this.props.movielists[selectedList].title});
       }
     });
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if(nextProps.movies && nextProps.movielists[this.state.selectedList]){
+      const shownMovies = nextProps.movielists[this.state.selectedList].movies.map(id => (nextProps.movies[id]));
+      if(shownMovies.length !== this.state.shownMovies){
+        this.setState({shownMovies});
+      }
+    }
   }
 
   selectList(idx) {
@@ -77,22 +87,24 @@ class Movielists extends React.Component {
     ));
     movielists.push(
         <div className='movielist' onClick={() => this.setState({modalOpen: true})} key={'add'}>
-            <h5 className='add-button'>add movielist</h5>
+            <h5 className='add-button'>add movie list</h5>
         </div>
     );
 
     return (
       <div className='movielist-view'>
+        <div className='movielist-wrapper'>
+          <div className='movielist-sidebar'>
+            <h4 className='movielist-title'>My Movie Lists</h4>
+            <ul className='movielist-list'>
+              {movielists}
+            </ul>
+          </div>
+        </div>
         <div className="selector-list">
             <MovieIndexContainer movies={this.state.shownMovies} title={this.state.selectedListTitle} movielist={this.props.movielists[this.state.selectedList]}/>
         </div>
-        <div className='movielist-sidebar'>
-            <h4 className='movielist-title'>My Movielists</h4>
-            <ul className='movielist-list'>
-                {movielists}
-            </ul>
-        </div>
-        <Modal isOpen={this.state.modalOpen} onRequestClose={() => this.setState({modalOpen: false})} className='modal' style={modalStyle} contentLabel='Modal'>
+        <Modal isOpen={this.state.modalOpen} onRequestClose={() => this.setState({modalOpen: false})} className='modal-newmovielist' style={modalStyle} contentLabel='Modal'>
             <h4 className='movielist-form-title'>New Movie List</h4>
 
             <form className='movielist-form'>

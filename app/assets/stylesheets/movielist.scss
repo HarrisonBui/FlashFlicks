@@ -6,6 +6,8 @@
 // }
 .movielist-view {
   color: white;
+  display: flex;
+  flex-direction: row;
 }
 
 .selector-list {
@@ -14,10 +16,12 @@
 }
 
 .movielist-sidebar {
-  background-color: #8B0000;
+  // background-color: #8B0000;
   display: inline-block;
-    font-family: 'Cinzel', serif;
-    font-size: 12px;
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  margin-top: 21px;
+  width: 190px;
 }
 
 .movielist-list:hover {
@@ -28,4 +32,53 @@
   padding: 10px;
   font-family: 'Cinzel', serif;
   font-size: 20px;
+}
+
+.movielist-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.movielist-list h5 {
+  padding: 5px;
+  font-size: 12px;
+}
+
+.movielist:hover h5 {
+  background-color: #B22222;
+  transition-duration: .4s;
+}
+
+.add-button {
+  color: yellow;
+}
+
+.remove-movie{
+  cursor: pointer;
+  background-color: #B22222;
+  transition-duration: .2s;
+  border-radius: 12px;
+  border: none;
+  color: white;
+}
+
+.movielist-header {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  font-size: 29px;
+  color: #cc0000;
+  height: 10%;
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+  text-shadow: 0px 7px 7px #000000;
+}
+
+.movielist {
+  display: flex;
+  button {
+    color: white;
+    border: none;
+    background-color: Transparent;
+    cursor: pointer;
+  }
 }

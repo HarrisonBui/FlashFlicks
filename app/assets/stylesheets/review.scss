@@ -1,0 +1,168 @@
+.modal-review {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: auto;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  background-color: #EEEEEE;
+  padding: 15px;
+  outline: none;
+  box-shadow: 0px 2px 10px #AAAAAA;
+}
+
+.modal-check {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: auto;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  background-color: #EEEEEE;
+  padding: 15px;
+  outline: none;
+  box-shadow: 0px 2px 10px #AAAAAA;
+}
+
+
+
+.movielist_movies-form{
+  font-family: 'Cinzel', serif;
+  color: #8B0000;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  h4 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    background-color: #8B0000;
+    border-radius: 12px;
+    color: white;
+    font-family: 'Cinzel', serif;
+  }
+}
+
+.reviews-container h2 {
+  font-family: 'Cinzel', serif;
+  padding: none;
+  margin: none;
+  display: table-row;
+}
+
+.reviews-container button {
+  font-family: 'Cinzel', serif;
+  padding: 2px 8px;
+  margin: 0;
+  margin-bottom: 5px;
+  background: #8B0000;
+  border-radius: 12px;
+  color: white;
+  border: none;
+}
+
+.reviews-container button:hover {
+  cursor: pointer;
+}
+
+.review-item {
+  position: relative;
+  list-style: none;
+  border-top: 1px solid lightgrey;
+  padding-left: 15px;
+  max-width: 800px;
+}
+
+.review-item * {
+  margin: 5px;
+}
+
+.review-item i {
+  font-size: 11px;
+}
+
+.review-item p {
+  font-size: 16px;
+}
+
+.small-delete {
+  position: absolute;
+  top: -3px;
+  left: -6px;
+  font-size: 14px;
+  background-color: inherit;
+  visibility: hidden;
+  display: float;
+}
+
+.review-item:hover .small-delete {
+  visibility: visible;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.review-item .dv-star-rating-star {
+  margin: -6px;
+  padding: 1px;
+}
+
+.review-form {
+  width: 200px;
+}
+
+.review-form > * {
+  margin: 7px auto;
+  width: 100%
+}
+
+.review-form h3 {
+  font-family: 'Cinzel', serif;
+  margin-top: 0;
+}
+
+.review-form  {
+  color: #8B0000;
+  h5 {
+    font-weight: 500;
+    margin: 5px 0;
+    font-family: 'Cinzel', serif;
+  }
+  h3 {
+    font-family: 'Cinzel', serif;
+    margin-top: 0;
+  }
+  button {
+    background: #8B0000;
+    border-radius: 12px;
+    color: white;
+    border: none;
+    font-family: 'Cinzel', serif;
+  }
+}
+
+.review-form textarea {
+  resize: none;
+  max-width: 97%;
+  width: 97%;
+  height: 50px;
+  padding: 3px;
+  border: none;
+  border-radius: 1px;
+  box-shadow: inset 0 1px 1px #CCCCCC;
+}
+
+.dv-star-rating {
+  text-align: left;
+  margin: 0;
+  padding-left: 7px;
+}

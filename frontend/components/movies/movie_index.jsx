@@ -39,12 +39,12 @@ class MovieIndex extends React.Component {
     return(
       <div>
         <div className='movie-header'>
-          <h2>{this.props.title}</h2>
+          <h2 className='movielist-header'>{this.props.title}</h2>
         </div>
         <div className='outside-movie'>
           <div className='movie-index'>
             <div className='movie-list'>
-              <ul className='movie-list'
+              <ul className='movie-list-ul'
                 onClick={this.handleClick}>
               {movies}
               </ul>

@@ -12,7 +12,7 @@ class MovieIndexItem extends React.Component {
     let removeMovielist_moviesButton;
     if ( this.props.movielist ) {
       removeMovielist_moviesButton = (
-        <button id='delete-movielist_movies'>
+        <button className='remove-movie' id='delete-movielist_movies'>
           Remove
         </button>
             );
@@ -23,15 +23,15 @@ class MovieIndexItem extends React.Component {
     const fullstar = <img
       className="icon"
       src="http://res.cloudinary.com/dufjsfgjv/image/upload/v1490030369/star-icon_bnkv7r.png"
-      width="12"
-      height="12"
+      width="14"
+      height="14"
       />;
 
     const emptystar = <img
       className="icon"
       src="http://res.cloudinary.com/dufjsfgjv/image/upload/v1490030471/outline-star-xxl_jbipvt.png"
-      width="12"
-      height="12"
+      width="14"
+      height="14"
       />;
 
     return(

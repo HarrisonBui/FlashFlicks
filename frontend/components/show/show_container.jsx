@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import { requestMovies } from '../../actions/movie_actions';
+import { requestAllMovielists } from '../../actions/movielist_actions';
 import Show from './show';
 
 const mapStateToProps = (state) => ({
@@ -8,7 +9,8 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  requestMovies: () => dispatch(requestMovies())
+  requestMovies: () => dispatch(requestMovies()),
+  requestAllMovielists: () => dispatch(requestAllMovielists())
 });
 
 export default connect(
