@@ -24,14 +24,16 @@ export const requestReviews = (movieId) => dispatch => (
     rev => dispatch(receiveReviews(rev)))
 );
 
-export const createReview = (review) => dispatch => (
+export const createReview = (review) => (dispatch) => (
   APIutil.createReview(review)
-  .then( rev =>  dispatch(receiveReview(rev)))
+  .then(rev => {dispatch(receiveReview(rev)); return rev;
+  })
 );
 
 export const updateReview = (review) => dispatch => (
   APIutil.updateReview(review)
-  .then( rev =>  dispatch(receiveReview(rev)))
+  .then( rev => {dispatch(receiveReview(rev)); return rev;
+  })
 );
 
 export const deleteReview = (review) => dispatch => (

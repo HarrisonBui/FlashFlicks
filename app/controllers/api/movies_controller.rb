@@ -17,6 +17,14 @@ class Api::MoviesController < ApplicationController
 
   def movie_detail
     @movie = Movie.find(params[:id])
+    if current_user
+      @review = @movie.reviews.where('user_id = ?', current_user.id).first
+    end
+    render 'api/movies/movie_detail'
+  end
+
+  def destroy
+
   end
 
   private

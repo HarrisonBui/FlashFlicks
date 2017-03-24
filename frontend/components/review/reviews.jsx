@@ -98,46 +98,46 @@ class Reviews extends React.Component {
       );
     }
 
-    // const reviewList = (
-    //   Object.values(this.props.reviews).reverse().map((review) => {
-    //     let deleteReviewButton;
-    //     if (this.props.usersReview &&
-    //           this.props.usersReview.id === review.id) {
-    //       deleteReviewButton = (
-    //         <button onClick={this.handleDelete} className='small-delete'
-    //                 title='delete review'>
-    //           x
-    //         </button>
-    //       );
-    //     } else {
-    //       deleteReviewButton = '';
-    //     }
-    //
-    //     return (
-    //       <li className='review-item'
-    //           key={review.id}>
-    //         {deleteReviewButton}
-    //         <h4>{review.userName}</h4>
-    //         <StarRatingComponent
-    //            className='stars'
-    //            name="rating"
-    //            starCount={5}
-    //            value={review.rating}
-    //            starColor={'#e6994c'}
-    //            emptyStarColor={'#ccc'}
-    //            editing={false}/>
-    //          <p>{review.body}</p>
-    //       </li>
-    //     );
-    //   })
-    // );
-    // <ul className='review-list'>
-    //   {reviewList}
-    // </ul>
+    const reviewList = (
+      Object.values(this.props.reviews).reverse().map((review) => {
+        let deleteReviewButton;
+        if (this.props.usersReview &&
+              this.props.usersReview.id === review.id) {
+          deleteReviewButton = (
+            <button onClick={this.handleDelete} className='small-delete'
+                    title='delete review'>
+              x
+            </button>
+          );
+        } else {
+          deleteReviewButton = '';
+        }
+
+        return (
+          <li className='review-item'
+              key={review.id}>
+            {deleteReviewButton}
+            <h4>{review.userName}</h4>
+            <StarRatingComponent
+               className='stars'
+               name="rating"
+               starCount={5}
+               value={review.rating}
+               starColor={'#e6994c'}
+               emptyStarColor={'#ccc'}
+               editing={false}/>
+             <p>{review.body}</p>
+          </li>
+        );
+      })
+    );
     return(
       <div className='reviews-container'>
         <h2>Reviews</h2>
         { reviewButton }
+        <ul className='review-list'>
+          {reviewList}
+        </ul>
 
 
         <Modal isOpen={this.state.modalOpen}

@@ -8,7 +8,8 @@ const mapStateToProps = (state, ownProps) => ({
   currentUser: state.session.currentUser,
   movies: ownProps.movies,
   title: ownProps.title,
-  movielist: ownProps.movielist
+  movielist: ownProps.movielist,
+  review: ownProps.review
 });
 
 const mapDispatchToProps = (dispatch) => ({

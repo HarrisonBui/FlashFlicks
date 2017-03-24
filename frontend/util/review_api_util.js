@@ -6,13 +6,16 @@ export const fetchReviews = (movieId) => (
   })
 );
 
-export const createReview = (review) => (
+export const createReview = (review) => {
+  debugger;
+  return (
   $.ajax({
     method: 'POST',
     url: 'api/reviews',
     data: { review }
   })
 );
+};
 
 export const updateReview = (review) => (
   $.ajax({

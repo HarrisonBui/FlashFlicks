@@ -4,6 +4,6 @@ class Movie < ActiveRecord::Base
 
   belongs_to :user
 
-  has_many :movielistmoives
+  has_many :movielist_movies
   has_many :reviews
 end

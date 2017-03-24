@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
 
   attr_reader :password
 
-  has_many :movielist
+  has_many :movielists
   has_many :movies, through: :movielists
   has_many :reviews
 

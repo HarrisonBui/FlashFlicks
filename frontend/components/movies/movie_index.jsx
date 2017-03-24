@@ -8,30 +8,24 @@ class MovieIndex extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(e) {
-  if (e.target.id === 'delete-movielist_movies') {
-    e.preventDefault();
-    const movieId = parseInt(e.target.parentElement.parentElement.parentElement.id);
-    const idx = this.props.movielist.movies.indexOf(movieId);
-    let newMovies = this.props.movielist.movies;
-    newMovies.splice(idx, 1);
-    if ( newMovies.length === 0) {
-      newMovies = [''];
-    }
+  componentDidMount(){
+    this.props.requestReviews(this.props.params.id);
+  }
 
-    this.props.updateMovielist({
-      id: this.props.movielist.id,
-      movie_ids: newMovies
-    });
-    e.stopPropagation();
-  } else if (e.target.className !== 'movie-list') {
-      let el = e.target;
-      while (el.className !== 'movie-index-item') {
-        el = el.parentElement;
+  handleClick(e) {
+    if (e.target.id === 'delete-movielist_movies') {
+      e.preventDefault();
+      const movieId = parseInt(e.target.parentElement.parentElement.parentElement.id);
+      const idx = this.props.movielist.movies.indexOf(movieId);
+      let newMovies = this.props.movielist.movies;
+      newMovies.splice(idx, 1);
+      if (newMovies.length === 0) {
+          newMovies = [''];
       }
-    this.props.router.push(`/movie-detail/${el.id}`);
+
+      this.props.updateMovielist({id: this.props.movielist.id, movie_ids: newMovies});
+      this.props.router.push('movielists');
     }
-    e.stopPropagation();
   }
 
   render() {
@@ -44,7 +38,7 @@ class MovieIndex extends React.Component {
     ));
     return(
       <div>
-        <div>
+        <div className='movie-header'>
           <h2>{this.props.title}</h2>
         </div>
         <div className='outside-movie'>

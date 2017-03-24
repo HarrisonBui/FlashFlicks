@@ -14,7 +14,7 @@ export const createMovielist = (movielist) => (
 );
 
 export const updateMovielist = (movielist) => {
-  debugger;
+
   return (
     $.ajax({
       method: 'PATCH',
