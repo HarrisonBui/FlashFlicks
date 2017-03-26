@@ -26,6 +26,11 @@ class Reviews extends React.Component {
     this.handleRatingInput = this.handleRatingInput.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
+
+  }
+  
+  componentDidMount() {
+    this.props.requestReviews(this.props.movieId);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -131,6 +136,7 @@ class Reviews extends React.Component {
         );
       })
     );
+
     return(
       <div className='reviews-container'>
         <h2>Reviews</h2>
