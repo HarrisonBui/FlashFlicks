@@ -247,7 +247,7 @@ movie28 = Movie.create(title: "Doctor Strange",
                       description: "Dr. Stephen Strange's (Benedict Cumberbatch) life changes after a car accident robs him of the use of his hands. When traditional medicine fails him, he looks for healing, and hope, in a mysterious enclave. He quickly learns that the enclave is at the front line of a battle against unseen dark forces bent on destroying reality. Before long, Strange is forced to choose between his life of fortune and status or leave it all behind to defend the world as the most powerful sorcerer in existence.",
                       rating: 4,
                       year: 2016,
-                      image_url: 'http://www.imdb.com/title/tt1211837/mediaviewer/rm4139858176'
+                      image_url: 'http://www.impawards.com/2016/posters/doctor_strange_ver3_xxlg.jpg'
                       )
 movie30 = Movie.create(title: "Hacksaw Ridge",
                       director: 'Mel Gibson',
@@ -282,7 +282,7 @@ movie33 = Movie.create(title: "Deadpool",
                       description: "Wade Wilson (Ryan Reynolds) is a former Special Forces operative who now works as a mercenary. His world comes crashing down when evil scientist Ajax (Ed Skrein) tortures, disfigures and transforms him into Deadpool. The rogue experiment leaves Deadpool with accelerated healing powers and a twisted sense of humor. With help from mutant allies Colossus and Negasonic Teenage Warhead (Brianna Hildebrand), Deadpool uses his new skills to hunt down the man who nearly destroyed his life.",
                       rating: 5,
                       year: 2016,
-                      image_url: 'http://t1.gstatic.com/images?q=tbn:ANd9GcR-fLY3Z9Vn28UB-A3X_w0vjmkHcXG89HWwul5w6-sg3IonPXA'
+                      image_url: 'http://www.impawards.com/2016/posters/deadpool_ver4.jpg'
                       )
 movie34 = Movie.create(title: "The Conjuring",
                       director: 'James Wan',
