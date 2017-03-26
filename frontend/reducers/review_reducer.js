@@ -8,6 +8,7 @@ const ReviewReducer = (state = {}, action) => {
   let newState;
   switch( action.type ) {
     case RECEIVE_REVIEWS:
+    debugger;
      return action.reviews;
     case RECEIVE_REVIEW:
        newState = merge({}, state, action.review);

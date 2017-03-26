@@ -10,9 +10,9 @@ class MovieDetail extends React.Component{
     super(props);
     this.state = {
       movielistModalOpen: false,
-      movielists: this.props.movielists
+      movielists: this.props.movielists,
+      reviews: this.props.reviews
     };
-    console.log(this.props);
 
     this.handleInput = this.handleInput.bind(this);
     this.updateMovielist_movies = this.updateMovielist_movies.bind(this);
@@ -31,6 +31,9 @@ class MovieDetail extends React.Component{
     if ( this.props.movielists !== nextProps.movielists ) {
       this.setState({movielists: nextProps.movielists});
     }
+    if ( this.props.reviews !== nextProps.reviews ) {
+      this.setState({reviews: nextProps.reviews});
+    }
   }
 
   handleInput(e) {
@@ -48,18 +51,18 @@ class MovieDetail extends React.Component{
   }
 
   updateMovielist_movies(e) {
-  e.preventDefault();
-  Object.values(this.state.movielists).forEach((movielist) => {
-    let movie_ids = movielist.movies;
-    if ( movie_ids.length === 0) {
-      movie_ids = [''];
-    }
-    this.props.updateMovielist({
-      id: movielist.id,
-      movie_ids
+    e.preventDefault();
+    Object.values(this.state.movielists).forEach((movielist) => {
+      let movie_ids = movielist.movies;
+      if ( movie_ids.length === 0) {
+        movie_ids = [''];
+      }
+      this.props.updateMovielist({
+        id: movielist.id,
+        movie_ids
+      });
     });
-  });
-  this.setState({movielistModalOpen: false});
+    this.setState({movielistModalOpen: false});
 }
 
   render(){
@@ -135,7 +138,7 @@ class MovieDetail extends React.Component{
             </div>
           </div>
 
-
+          <ReviewsContainer />
 
           <Modal isOpen={this.state.movielistModalOpen}
              onRequestClose={() => this.setState({movielistModalOpen: false})}

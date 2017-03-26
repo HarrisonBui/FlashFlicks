@@ -29,7 +29,7 @@ class Api::ReviewsController < ApplicationController
     @review = Review.find(params[:id])
     @review.destroy
     @movie = Movie.find(@review.movie_id)
-    render "api/reviews/show"
+    render @review
   end
 
   private

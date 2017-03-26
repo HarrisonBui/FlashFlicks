@@ -4,6 +4,6 @@ class Movie < ActiveRecord::Base
 
   belongs_to :user, optional: true
 
-  has_many :movielist_movies
-  has_many :reviews
+  has_many :movielist_movies, dependent: :destroy
+  has_many :reviews, dependent: :destroy
 end
