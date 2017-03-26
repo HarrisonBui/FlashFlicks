@@ -28,9 +28,10 @@ class Reviews extends React.Component {
     this.handleDelete = this.handleDelete.bind(this);
 
   }
-  
+
   componentDidMount() {
-    this.props.requestReviews(this.props.movieId);
+    this.props.requestMovieDetail().then(
+    this.props.requestReviews(this.props.movieId));
   }
 
   componentWillReceiveProps(nextProps) {

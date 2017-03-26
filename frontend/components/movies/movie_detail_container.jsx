@@ -6,6 +6,7 @@ import { requestReviews } from '../../actions/review_actions';
 
 const mapStateToProps = (state, ownProps) => ({
   movie: state.movieDetail,
+  url_id: ownProps.params.id,
   currentUser: state.session.currentUser,
   movielists: state.movielists,
   reviews: state.reviews

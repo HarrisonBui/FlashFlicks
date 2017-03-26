@@ -31,9 +31,6 @@ class MovieDetail extends React.Component{
     if ( this.props.movielists !== nextProps.movielists ) {
       this.setState({movielists: nextProps.movielists});
     }
-    if ( this.props.reviews !== nextProps.reviews ) {
-      this.setState({reviews: nextProps.reviews});
-    }
   }
 
   handleInput(e) {
