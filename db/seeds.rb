@@ -333,3 +333,17 @@ movie40 = Movie.create(title: "Men in Black",
                       year: 1997,
                       image_url: 'http://www.gstatic.com/tv/thumb/movieposters/19526/p19526_p_v8_aa.jpg'
                       )
+movie41 = Movie.create(title: "Forgetting Sarah Marshall",
+                      director: 'Nicholas Stoller',
+                      description: "Struggling musician Peter Bretter (Jason Segel) is better-known as the boyfriend of TV star Sarah Marshall (Kristen Bell). After she unceremoniously dumps him, he feels lost and alone but makes a last-ditch bid to get over it by going to Hawaii. However, she and her new boyfriend (Russell Brand) are there in the same hotel.",
+                      rating: 5,
+                      year: 2008,
+                      image_url: 'https://images-na.ssl-images-amazon.com/images/I/51c8wZcMS1L.jpg'
+                      )
+movie42 = Movie.create(title: "Harry Potter and the Goblet of Fire",
+                      director: 'Mike Newell',
+                      description: "The fourth movie in the Harry Potter franchise sees Harry (Daniel Radcliffe) returning for his fourth year at Hogwarts School of Witchcraft and Wizardry, along with his friends, Ron (Rupert Grint) and Hermione (Emma Watson). There is an upcoming tournament between the three major schools of magic, with one participant selected from each school by the Goblet of Fire. When Harry's name is drawn, even though he is not eligible and is a fourth player, he must compete in the dangerous contest.",
+                      rating: 5,
+                      year: 2005,
+                      image_url: 'http://www.gstatic.com/tv/thumb/movieposters/90599/p90599_p_v8_aq.jpg'
+                      )
