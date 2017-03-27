@@ -30,8 +30,8 @@ class Reviews extends React.Component {
   }
 
   componentDidMount() {
-    this.props.requestMovieDetail().then(
-    this.props.requestReviews(this.props.movieId));
+
+    this.props.requestReviews(this.props.movieId);
   }
 
   componentWillReceiveProps(nextProps) {
