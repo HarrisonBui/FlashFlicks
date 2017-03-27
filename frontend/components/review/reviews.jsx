@@ -16,21 +16,19 @@ class Reviews extends React.Component {
         body: ''
       }
     };
-    if ( this.props.usersReview ) {
-      this.state.review.id = this.props.usersReview.id;
-      this.state.review = this.props.usersReview;
-      this.state.review.body = this.state.review.body || '';
-    }
+    // if ( this.props.usersReview ) {
+    //   this.state.review.id = this.props.usersReview.id;
+    //   this.state.review = this.props.usersReview;
+    //   this.state.review.body = this.state.review.body || '';
+    // }
 
     this.handleBodyInput = this.handleBodyInput.bind(this);
     this.handleRatingInput = this.handleRatingInput.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
-
   }
 
   componentDidMount() {
-
     this.props.requestReviews(this.props.movieId);
   }
 

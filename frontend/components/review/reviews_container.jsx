@@ -11,7 +11,7 @@ const mapStateToProps = (state) => ({
   currentUser: state.session.currentUser,
   reviews: state.reviews,
   usersReview:  state.movieDetail.review,
-  movieId: state.movieDetail.id
+
 });
 
 const mapDispatchToProps = (dispatch) => ({

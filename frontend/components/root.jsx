@@ -38,7 +38,6 @@ const Root = ({ store }) => {
         <IndexRoute component={ShowContainer}/>
         <Route path='/movie-detail/:id' component={MovieDetail}/>
         <Route path='/movielists' component={MovielistIndexContainer}/>
-
       </Route>
     </Router>
   </Provider>
