@@ -8,7 +8,7 @@ import ShowContainer from './show/show_container';
 import MovielistIndexContainer from './movielists/movielist_index_container';
 import SessionFormContainer from './session_form/session_form_container';
 import MovieDetail from './movies/movie_detail_container';
-import { requestUserMovies, requestMovieDetail } from '../actions/movie_actions';
+import { requestMovieDetail } from '../actions/movie_actions';
 import { requestAllMovielists } from '../actions/movielist_actions';
 import { requestReviews } from '../actions/review_actions';
 

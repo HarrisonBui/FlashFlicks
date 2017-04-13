@@ -18,7 +18,7 @@ class MovieDetail extends React.Component{
     this.updateMovielist_movies = this.updateMovielist_movies.bind(this);
   }
 
-  componentWillMount(){
+  componentDidMount(){
     this.props.requestMovieDetail(this.props.params.id);
     this.props.requestReviews(this.props.params.id);
     this.props.requestAllMovielists();

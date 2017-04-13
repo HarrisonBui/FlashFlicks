@@ -77,9 +77,9 @@ class Reviews extends React.Component {
 
   render() {
     let reviewButton;
-    if ( !this.props.currentUser) {
+    if (!this.props.currentUser) {
       reviewButton = '';
-    } else if ( this.props.usersReview ) {
+    } else if (this.props.usersReview ) {
       reviewButton = (
         <button onClick={() => this.setState({modalOpen: true})}>
           Edit Review

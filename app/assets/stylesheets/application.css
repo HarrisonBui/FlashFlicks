@@ -16,9 +16,6 @@
 
 body {
   font-family: sans-serif;
-  background-image:  url("http://res.cloudinary.com/dufjsfgjv/image/upload/e_brightness:-45/v1490087330/wood_qzyogi.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 0px;
-  margin: 0px;
+  background-color: #404040;
+
 }

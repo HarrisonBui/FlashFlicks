@@ -1,6 +1,6 @@
 .header-container {
   align-items: center;
-  background-color: #8B0000;
+  background-color: #010000;
   bottom: 5px;
   box-shadow: 0px 3px 4px #000000;
   color: white;
@@ -8,7 +8,7 @@
   justify-content: space-between;
   min-width: 30%;
   min-height: 55px;
-}
+  text-shadow: #fff 0 0 10px;}
 
 .welcomeGreeting-container {
   display: flex;
@@ -17,25 +17,41 @@
   font-family: 'Cinzel', serif;
 }
 
-.title{
+.title-container {
+  display:flex;
+}
+
+.title:hover {
+  color: yellow;
+}
+
+.title {
   display: flex;
   font-size: 25px;
-  background-color: #8B0000;
+  background-color: #010000;
   color: white;
-  padding: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   height: auto;
   width: auto;
   font-family: 'Cinzel', serif;
 }
 
-.title:hover{
-  background-color: #B22222;
-  transition-duration: .4s;
+.title2 {
+  display: flex;
+  font-size: 25px;
+  background-color: #010000;
+  color: yellow;
+  padding-top: 15px;
+  height: auto;
+  width: auto;
+  font-family: 'Cinzel', serif;
 }
 
 .header-button {
   align-items: center;
-  background-color: #8B0000;
+  background-color: #010000;
   box-sizing: border-box;
   border: none;
   color: white;
@@ -48,14 +64,16 @@
   font-family: 'Cinzel', serif;
 }
 
+.header-button:hover {
+  color: yellow;
+}
+
 .header-name {
     padding: 10px;
 }
 
-
-
 .login:hover , .signup:hover {
-  background-color: #B22222;
+  background-color: #010000;
   transition-duration: .4s;
 }
 
@@ -69,13 +87,17 @@
 }
 
 .movielist-button {
-  background-color: #8B0000;
+  background-color: #010000;
   border: none;
   font-family: 'Cinzel', serif;
   font-size: 16px;
   color: white;
   cursor: pointer;
   margin-right: 20px;
+}
+
+.movielist-button:hover {
+  color: yellow;
 }
 
 .nav-buttons{

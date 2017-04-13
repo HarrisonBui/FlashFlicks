@@ -3,7 +3,7 @@ import MovielistIndex from './movielist_index';
 import { requestAllMovielists,
          createMovielist,
          deleteMovielist } from '../../actions/movielist_actions';
-import { requestUserMovies, requestMovies } from '../../actions/movie_actions';
+import { requestMovies } from '../../actions/movie_actions';
 
 const mapStateToProps = (state, ownProps) => ({
   currentUser: state.session.currentUser,
@@ -15,8 +15,7 @@ const mapDispatchToProps = (dispatch) => ({
   requestAllMovielists: () => dispatch(requestAllMovielists()),
   requestMovies: () => dispatch(requestMovies()),
   createMovielist: (movielist) => dispatch(createMovielist(movielist)),
-  deleteMovielist: (movielist) => dispatch(deleteMovielist(movielist)),
-  requestUserMovies: () => dispatch(requestUserMovies())
+  deleteMovielist: (movielist) => dispatch(deleteMovielist(movielist))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(MovielistIndex);

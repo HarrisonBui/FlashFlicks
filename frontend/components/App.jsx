@@ -5,7 +5,10 @@ import { Link } from 'react-router';
 const App = ({ children }) => (
   <div>
     <div className="header-container">
-      <Link to={'/'}className="title">FLASH  FLICKS</Link>
+      <div className="title-container">
+        <Link to={'/'}className="title">FLASH</Link>
+        <Link to={'/'}className="title2">FLICKS</Link>
+      </div>
       <GreetingContainer />
     </div>
     { children }

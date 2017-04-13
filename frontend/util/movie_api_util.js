@@ -18,10 +18,3 @@ export const fetchMovieDetail = (id) => (
     url: `api/movies/detail/${id}`
   })
 );
-
-// export const fetchUserMovies = () => (
-//   $.ajax({
-//     method: 'GET',
-//     url: 'api/movies/user_movies'
-//   })
-// );
