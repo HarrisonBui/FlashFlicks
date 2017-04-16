@@ -7,7 +7,7 @@
  *
  */
 
-var theMovieDb = {};
+let theMovieDb = {};
 
 theMovieDb.common = {
     api_key: "aa5a0b19080312882d212afcfd260652",
