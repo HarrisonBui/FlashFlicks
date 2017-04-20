@@ -5,6 +5,43 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.destroy_all
+Review.destroy_all
+
+25.times do
+  user = User.create!(username: Faker::Internet.user_name,
+    password: Faker::Internet.password);
+
+  12.times do
+    Review.create!(movie_id: Movies.all.sample.id, user_id: user.id,
+    rating: [4, 5, 5].sample,
+    body: sample_responses.sample)
+  end
+
+end
+
+sample_responses = [
+  "Great fantastic movie! Kept me engaged the entire time.",
+  "Couldn't leave my seat at the theaters!",
+  "The movie could have been better, but overall still enjoyed it.",
+  "Wow I Mean make this a sequel!",
+  "You know what you're getting before you go, and you get it.",
+  "Basically the action movie equivalent of your dad catching you smoking a cigarette and then making you finish the pack.",
+  "For a movie that pretends to be an elaborate thriller, it's ridiculously simple, and just doesn't even seem to be trying anymore.",
+  "A highly recommended movie, perfect to for the weekend.",
+  "The animation and sound effects are so superbly rendered -- the fantasy sequences have an entirely different and nifty flavor -- that a drop of drool or a puff of baby powder seems to have real texture and feeling.",
+  "A ravenous masterpiece tailor made for America's current climate.",
+  "Well cast and slickly edited... situations are horrific in their banality... who knew teacups could be sinister?",
+  "A near-perfect cinematic achievement, this movie is an intelligent, exceptionally-written, and visually-captivating thriller.",
+  "One that I think will require a rewatch. Whilst I felt somewhat disappointed by the conclusion and revelation to the story, it is nevertheless an interesting dark comedy/thriller.",
+  "What could have been a suspense film, ends up being a B cinema production, with lowly plotted characters, and stupid motivations.",
+  "What good is immortality as a math megamind if you can't snuggle with your one-eyed cat--or frolic on the playground--with your friends today?",
+  "Perceptively subtle and satisfying, it packs an emotional punch.",
+  "Went in with low expectations and left blown away by this great film.",
+  "Magic tricks become shorthand for the power of personal transformation",
+  "A a tense, well-made spacefaring war movie about a desperate and demoralized band of insurgents standing up against a rising authoritarian regime.",
+]
+
 
 user1 = User.create!(username: 'Guest', password: 'BarryAllenGuest')
 
