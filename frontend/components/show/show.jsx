@@ -17,8 +17,13 @@ class Show extends React.Component {
   render() {
     return(
       <div className='show'>
+        <div className='parent'>
+          <div className="middle-img">
+            <text className='heading-title'>Catalogue and Review Movies!!!</text>
+          </div>
+        </div>
         <MoiveIndexContainer movies={this.props.movies}
-                            title='Show Movies'/>
+                            title=''/>
       </div>
     );
   }

@@ -11,9 +11,6 @@ const App = ({ children }) => (
       </div>
       <GreetingContainer />
     </div>
-      <div className="parent">
-        <div className="middle-img"></div>
-      </div>
     { children }
   </div>
 );

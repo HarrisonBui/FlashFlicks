@@ -63,7 +63,7 @@ logout(e) {
 
     let movielistButton = (
       <button className='movielist-button' onClick={() => this.conditionalRedirect('/movielists')}>
-        Movie Lists
+        My Movie Lists
       </button>
     );
 
@@ -71,7 +71,7 @@ logout(e) {
       <div>
         <div className='welcomeGreeting-container'>
           {movielistButton}
-          
+
       <Modal isOpen={this.state.modalOpen}
              onRequestClose={this.closeModal}
              className='modal2'
