@@ -8,17 +8,6 @@
 User.destroy_all
 Review.destroy_all
 
-25.times do
-  user = User.create!(username: Faker::Internet.user_name,
-    password: Faker::Internet.password);
-
-  12.times do
-    Review.create!(movie_id: Movies.all.sample.id, user_id: user.id,
-    rating: [4, 5, 5].sample,
-    body: sample_responses.sample)
-  end
-
-end
 
 sample_responses = [
   "Great fantastic movie! Kept me engaged the entire time.",
@@ -60,7 +49,7 @@ movie1 = Movie.create(title: 'Forrest Gump',
                       year: 1994,
                       image_url: 'http://2.bp.blogspot.com/-i03dWHqsKuY/Ucw2YpUKlOI/AAAAAAAAAFQ/NqfUh7pHZZQ/s1456/forrest-gump-poster-1994-tom-hanks.png',
                       user_id: 1
-                      )
+                      ),
 
 movie2 = Movie.create(title: 'Arrival',
                       director: 'Denis Villeneuve',
@@ -77,7 +66,7 @@ movie2 = Movie.create(title: 'Arrival',
                       year: 2016,
                       image_url: 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTExMzU0ODcxNDheQTJeQWpwZ15BbWU4MDE1OTI4MzAy._V1_UX182_CR0,0,182,268_AL_.jpg',
                       user_id: 1
-                      )
+                      ),
 
 movie3 = Movie.create(title: 'Steve Jobs',
                       director: 'Danny Boyle',
@@ -93,7 +82,7 @@ movie3 = Movie.create(title: 'Steve Jobs',
                       year: 2015,
                       image_url: 'https://mymovieyear.oscars.org/sites/mymovieyear/files/styles/poster_teaser/public/posters/7SUaf2UgoY0ZRGbQtRlfDkLDBCb_0.jpg?itok=46TdRrId',
                       user_id: 1
-                      )
+                      ),
 
 movie4 = Movie.create(title: 'The Usual Suspects',
                       director: 'Bryan Singer',
@@ -102,7 +91,7 @@ movie4 = Movie.create(title: 'The Usual Suspects',
                       year: 1995,
                       image_url: 'https://lh3.googleusercontent.com/XCWuP19WyyKbcMR3iVOCSJwrvfvhJmRlZuPVwU4230VULWvFjLm9eBpG7n5HifkdnY8D=w300',
                       user_id: 1
-                      )
+                      ),
 
 movie5 = Movie.create(title: 'The Imitation Game',
                       director: 'Morten Tyldum',
@@ -111,7 +100,7 @@ movie5 = Movie.create(title: 'The Imitation Game',
                       year: 2017,
                       image_url: 'https://resizing.flixster.com/YUvRlALfyVL5_u7IUDCgYyCK8po=/206x305/v1.bTsxMTE4MDg3MTtqOzE3MzE5OzEyMDA7NTAwOzc0MA',
                       user_id: 1
-                      )
+                      ),
 
 movie6 = Movie.create(title: 'Get Out',
                       director: 'Jordan Peele',
@@ -120,7 +109,7 @@ movie6 = Movie.create(title: 'Get Out',
                       year: 2015,
                       image_url: 'https://images-na.ssl-images-amazon.com/images/M/MV5BNTE2Nzg1NjkzNV5BMl5BanBnXkFtZTgwOTgyODMyMTI@._V1_SY1000_CR0,0,631,1000_AL_.jpg',
                       user_id: 1
-                      )
+                      ),
 
 movie7 = Movie.create(title: 'La La Land',
                       director: 'Damien Chazelle',
@@ -129,7 +118,7 @@ movie7 = Movie.create(title: 'La La Land',
                       year: 2016,
                       image_url: 'http://t2.gstatic.com/images?q=tbn:ANd9GcRhFtgdSYQ89vUMjMJal2D8H39qBCkh9ptCEoZEsafOzkeQPTu2',
                       user_id: 1
-                      )
+                      ),
 
 movie8 = Movie.create(title: 'Moana',
                       director: 'John Musker, Ron Clements',
@@ -138,7 +127,7 @@ movie8 = Movie.create(title: 'Moana',
                       year: 2016,
                       image_url: 'http://t3.gstatic.com/images?q=tbn:ANd9GcTJOaSVrzlgewVqmUgUz4W5ty2KUeHH6s-aYSIr_Qw8v2EBrtCS',
                       user_id: 1
-                      )
+                      ),
 
 movie9 = Movie.create(title: 'Room',
                       director: 'Lenny Abrahamson',
@@ -147,7 +136,7 @@ movie9 = Movie.create(title: 'Room',
                       year: 2016,
                       image_url: 'http://t1.gstatic.com/images?q=tbn:ANd9GcSu9dR_6oOzsDvAq76vlBqPsyYNHdLw3jRRrmJVb7EBPTQBryV1',
                       user_id: 1
-                      )
+                      ),
 movie10 = Movie.create(title: 'Predator',
                       director: 'John McTiernan',
                       description: 'Dutch (Arnold Schwarzenegger), a soldier of fortune, is hired by the U.S. government to secretly rescue a group of politicians trapped in Guatemala. But when Dutch and his team, which includes weapons expert Blain (Jesse Ventura) and CIA agent George (Carl Weathers), land in Central America, something is gravely wrong. After finding a string of dead bodies, the crew discovers they are being hunted by a brutal creature with superhuman strength and the ability to disappear into its surroundings.',
@@ -155,7 +144,7 @@ movie10 = Movie.create(title: 'Predator',
                       year: 1987,
                       image_url: 'http://www.gstatic.com/tv/thumb/movieposters/10094/p10094_p_v8_ap.jpg',
                       user_id: 1
-                      )
+                      ),
 
 movie11 = Movie.create(title: 'Snowden',
                       director: 'Oliver Stone',
@@ -164,7 +153,7 @@ movie11 = Movie.create(title: 'Snowden',
                       year: 2016,
                       image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490037155/snowden_yyjsqc.jpg',
                       user_id: 1
-                      )
+                      ),
 
 movie12 = Movie.create(title: 'The Dark Knight',
                       director: 'Christopher Nolan',
@@ -173,7 +162,7 @@ movie12 = Movie.create(title: 'The Dark Knight',
                       year: 2008,
                       image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490050492/thedarkknight_ux9gb1.jpg',
                       user_id: 1
-                      )
+                      ),
 movie13 = Movie.create(title: 'Catch Me If You Can',
                       director: 'Steven Spielberg',
                       description: 'New Rochelle, the 1960s. High schooler Frank Abagnale Jr. idolizes his father, who is in trouble with the IRS. When his parents separate, Frank runs away to Manhattan with $25 in his checking account, vowing to regain dad losses and get his parents back together. Just a few years later, the FBI tracks him down in France; he is extradited, tried, and jailed for passing more than $4,000,000 in bad checks. Along the way, he is posed as a Pan Am pilot, a pediatrician, and an attorney. And, from nearly the beginning of this life of crime, he is been pursued by a dour FBI agent, Carl Hanratty. What starts as cat and mouse becomes something akin to father and son.',
@@ -181,7 +170,7 @@ movie13 = Movie.create(title: 'Catch Me If You Can',
                       year: 2002,
                       image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490052273/Catch_Me_If_You_Can_2002_movie_qrq8nb.jpg',
                       user_id: 1
-                      )
+                      ),
 
 movie14 = Movie.create(title: 'Logan',
                       director: 'James Mangold',
@@ -190,7 +179,7 @@ movie14 = Movie.create(title: 'Logan',
                       year: 2017,
                       image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490052434/logan_hwoyhg.jpg',
                       user_id: 1
-                      )
+                      ),
 
 movie15 = Movie.create(title: 'The Boss Baby',
                       director: 'Tom McGrath',
@@ -199,7 +188,7 @@ movie15 = Movie.create(title: 'The Boss Baby',
                       year: 2017,
                       image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490052688/bossbaby_truwqe.jpg',
                       user_id: 1
-                      )
+                      ),
 
 movie16 = Movie.create(title: 'The Prestige',
                       director: 'Christopher Nolan',
@@ -208,7 +197,7 @@ movie16 = Movie.create(title: 'The Prestige',
                       year: 2006,
                       image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490052855/Prestige_poster_is8cie.jpg',
                       user_id: 1
-                      )
+                      ),
 
 movie17 = Movie.create(title: "You've Got Mail",
                       director: 'Nora Ephron',
@@ -217,7 +206,7 @@ movie17 = Movie.create(title: "You've Got Mail",
                       year: 1998,
                       image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490052973/youvegotmail_g632gz.jpg',
                       user_id: 1
-                      )
+                      ),
 
 movie18 = Movie.create(title: "Knocked Up",
                       director: 'Judd Apatow',
@@ -226,7 +215,7 @@ movie18 = Movie.create(title: "Knocked Up",
                       year: 2007,
                       image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490053171/Knockedupmp_mm4q22.jpg',
                       user_id: 1
-                      )
+                      ),
 
 movie19 = Movie.create(title: "Hidden Figures",
                       director: 'Ted Melfi',
@@ -235,7 +224,7 @@ movie19 = Movie.create(title: "Hidden Figures",
                       year: 2017,
                       image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490053327/hiddenfigures_rqvlj5.jpg',
                       user_id: 1
-                      )
+                      ),
 
 movie20 = Movie.create(title: "Wonder Woman",
                       director: 'Patty Jenkins',
@@ -244,7 +233,7 @@ movie20 = Movie.create(title: "Wonder Woman",
                       year: 2017,
                       image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490053463/wonderwoman_vkqypd.jpg',
                       user_id: 1
-                      )
+                      ),
 
 movie21 = Movie.create(title: "Mad Max: Fury Road",
                       director: 'George Miller',
@@ -253,7 +242,7 @@ movie21 = Movie.create(title: "Mad Max: Fury Road",
                       year: 2015,
                       image_url: 'http://www.fatmovieguy.com/wp-content/uploads/2015/03/Mad-Max-Fury-Road-Movie-Poster-2.jpg',
                       user_id: 1
-                      )
+                      ),
 movie22 = Movie.create(title: "The Godfather",
                       director: 'Francis Ford Coppola',
                       description: "Widely regarded as one of the greatest films of all time, this mob drama, based on Mario Puzo's novel of the same name, focuses on the powerful Italian-American crime family of Don Vito Corleone (Marlon Brando). When the don's youngest son, Michael (Al Pacino), reluctantly joins the Mafia, he becomes involved in the inevitable cycle of violence and betrayal. Although Michael tries to maintain a normal relationship with his wife, Kay (Diane Keaton), he is drawn deeper into the family business.",
@@ -261,7 +250,7 @@ movie22 = Movie.create(title: "The Godfather",
                       year: 1972,
                       image_url: 'http://static.rogerebert.com/uploads/movie/movie_poster/the-godfather-1972/large_d4KNaTrltq6bpkFS01pYtyXa09m.jpg',
                       user_id: 1
-                      )
+                      ),
 
 movie23 = Movie.create(title: "E.T. the Extra-Terrestrial",
                       director: 'Steven Spielberg',
@@ -270,7 +259,7 @@ movie23 = Movie.create(title: "E.T. the Extra-Terrestrial",
                       year: 1982,
                       image_url: 'http://img.moviepostershop.com/et--the-extra-terrestrial-movie-poster-1982-1020141470.jpg',
                       user_id: 1
-                      )
+                      ),
 
 movie24 = Movie.create(title: "Power Rangers",
                       director: 'Dean Israelite',
@@ -280,7 +269,7 @@ movie24 = Movie.create(title: "Power Rangers",
                       year: 2017,
                       image_url: 'http://t1.gstatic.com/images?q=tbn:ANd9GcQT0t1q8_C6Rj71GrNkeSwvKbKDFTxv9_mC9fVVN4Ri25hNSHNb',
                       user_id: 1
-                      )
+                      ),
 
 movie25 = Movie.create(title: "Chips",
                       director: 'Dax Shepard',
@@ -289,7 +278,7 @@ movie25 = Movie.create(title: "Chips",
                       year: 2017,
                       image_url: 'http://t3.gstatic.com/images?q=tbn:ANd9GcRUO7VInvEbef4vqAFgFzSQ6aieDjmMLaL-zngg78LP8vhqmcQB',
                       user_id: 1
-                      )
+                      ),
 movie26 = Movie.create(title: "Rogue One: A Star Wars Story",
                       director: 'Gareth Edwards',
                       description: "Former scientist Galen Erso lives on a farm with his wife and young daughter Jyn. His peaceful existence comes crashing down when the evil Orson Krennic takes him away from his beloved family. Many years later, Galen is now the Empire's lead engineer for the most powerful weapon in the galaxy, the Death Star. Knowing that her father holds the key to its destruction, a vengeful Jyn joins forces with a spy and other resistance fighters to steal the space station's plans for the Rebel Alliance.",
@@ -297,7 +286,7 @@ movie26 = Movie.create(title: "Rogue One: A Star Wars Story",
                       year: 2016,
                       image_url: 'http://a.dilcdn.com/bl/wp-content/uploads/sites/6/2016/10/rogueone_onesheetA.jpg',
                       user_id: 1
-                      )
+                      ),
 movie27 = Movie.create(title: "Passengers",
                       director: 'Morten Tyldum',
                       description: "On a routine journey through space to a new home, two passengers, sleeping in suspended animation, are awakened 90 years too early when their ship malfunctions. As Jim and Aurora face living the rest of their lives on board, with every luxury they could ever ask for, they begin to fall for each other, unable to deny their intense attraction until they discover the ship is in grave danger. With the lives of 5,000 sleeping passengers at stake, only Jim and Aurora can save them all.",
@@ -305,7 +294,7 @@ movie27 = Movie.create(title: "Passengers",
                       year: 2016,
                       image_url: 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTk4MjU3MDIzOF5BMl5BanBnXkFtZTgwMjM2MzY2MDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
                       user_id: 1
-                      )
+                      ),
 movie28 = Movie.create(title: "Doctor Strange",
                       director: 'Scott Derrickson',
                       description: "Dr. Stephen Strange's (Benedict Cumberbatch) life changes after a car accident robs him of the use of his hands. When traditional medicine fails him, he looks for healing, and hope, in a mysterious enclave. He quickly learns that the enclave is at the front line of a battle against unseen dark forces bent on destroying reality. Before long, Strange is forced to choose between his life of fortune and status or leave it all behind to defend the world as the most powerful sorcerer in existence.",
@@ -313,7 +302,7 @@ movie28 = Movie.create(title: "Doctor Strange",
                       year: 2016,
                       image_url: 'http://www.impawards.com/2016/posters/doctor_strange_ver3_xxlg.jpg',
                       user_id: 1
-                      )
+                      ),
 movie30 = Movie.create(title: "Hacksaw Ridge",
                       director: 'Mel Gibson',
                       description: "The true story of Pfc. Desmond T. Doss (Andrew Garfield), who won the Congressional Medal of Honor despite refusing to bear arms during WWII on religious grounds. Doss was drafted and ostracized by fellow soldiers for his pacifist stance but went on to earn respect and adoration for his bravery, selflessness and compassion after he risked his life -- without firing a shot -- to save 75 men in the Battle of Okinawa.",
@@ -321,7 +310,7 @@ movie30 = Movie.create(title: "Hacksaw Ridge",
                       year: 2016,
                       image_url: 'https://upload.wikimedia.org/wikipedia/en/8/8a/Hacksaw_Ridge_poster.png',
                       user_id: 1
-                      )
+                      ),
 movie31 = Movie.create(title: "Trolls",
                       director: 'Mike Mitchell',
                       description: "After the Bergens invade Troll Village, Poppy (Anna Kendrick), the happiest Troll ever born, and the overly-cautious, curmudgeonly Branch (Justin Timberlake) set off on a journey to rescue her friends. Their mission is full of adventure and mishaps, as this mismatched duo try to tolerate each other long enough to get the job done.",
@@ -329,7 +318,7 @@ movie31 = Movie.create(title: "Trolls",
                       year: 2016,
                       image_url: 'http://t0.gstatic.com/images?q=tbn:ANd9GcRCdW5kQKWw8ILd_Nff9gfV0C92lO5fhJ9HGu_j1SDpquN0EG8L',
                       user_id: 1
-                      )
+                      ),
 movie31 = Movie.create(title: "Suicide Squad",
                       director: 'David Ayer',
                       description: "Figuring they're all expendable, a U.S. intelligence officer decides to assemble a team of dangerous, incarcerated supervillains for a top-secret mission. Now armed with government weapons, Deadshot (Will Smith), Harley Quinn (Margot Robbie), Captain Boomerang, Killer Croc and other despicable inmates must learn to work together. Dubbed Task Force X, the criminals unite to battle a mysterious and powerful entity, while the diabolical Joker (Jared Leto) launches an evil agenda of his own.",
@@ -337,7 +326,7 @@ movie31 = Movie.create(title: "Suicide Squad",
                       year: 2016,
                       image_url: 'https://upload.wikimedia.org/wikipedia/en/5/50/Suicide_Squad_%28film%29_Poster.png',
                       user_id: 1
-                      )
+                      ),
 movie32 = Movie.create(title: "Moonlight",
                       director: 'Barry Jenkins',
                       description: "A look at three defining chapters in the life of Chiron, a young black man growing up in Miami. His epic journey to manhood is guided by the kindness, support and love of the community that helps raise him.",
@@ -345,7 +334,7 @@ movie32 = Movie.create(title: "Moonlight",
                       year: 2016,
                       image_url: 'https://images-na.ssl-images-amazon.com/images/M/MV5BNzQxNTIyODAxMV5BMl5BanBnXkFtZTgwNzQyMDA3OTE@._V1_UX182_CR0,0,182,268_AL_.jpg',
                       user_id: 1
-                      )
+                      ),
 movie33 = Movie.create(title: "Deadpool",
                       director: 'Tim Miller',
                       description: "Wade Wilson (Ryan Reynolds) is a former Special Forces operative who now works as a mercenary. His world comes crashing down when evil scientist Ajax (Ed Skrein) tortures, disfigures and transforms him into Deadpool. The rogue experiment leaves Deadpool with accelerated healing powers and a twisted sense of humor. With help from mutant allies Colossus and Negasonic Teenage Warhead (Brianna Hildebrand), Deadpool uses his new skills to hunt down the man who nearly destroyed his life.",
@@ -353,7 +342,7 @@ movie33 = Movie.create(title: "Deadpool",
                       year: 2016,
                       image_url: 'http://www.impawards.com/2016/posters/deadpool_ver4.jpg',
                       user_id: 1
-                      )
+                      ),
 movie34 = Movie.create(title: "The Conjuring",
                       director: 'James Wan',
                       description: "In 1970, paranormal investigators and demonologists Lorraine (Vera Farmiga) and Ed (Patrick Wilson) Warren are summoned to the home of Carolyn (Lili Taylor) and Roger (Ron Livingston) Perron. The Perrons and their five daughters have recently moved into a secluded farmhouse, where a supernatural presence has made itself known. Though the manifestations are relatively benign at first, events soon escalate in horrifying fashion, especially after the Warrens discover the house's macabre history.",
@@ -361,7 +350,7 @@ movie34 = Movie.create(title: "The Conjuring",
                       year: 2013,
                       image_url: 'http://t2.gstatic.com/images?q=tbn:ANd9GcQnHDbJFDDZYC5g9gHa6-NqBE8JUet_iRIPXJym8CtaHsVQa76M',
                       user_id: 1
-                      )
+                      ),
 movie35 = Movie.create(title: "Inside Out",
                       director: 'Pete Docter, Ronnie del Carmen',
                       description: "Riley (Kaitlyn Dias) is a happy, hockey-loving 11-year-old Midwestern girl, but her world turns upside-down when she and her parents move to San Francisco. Riley's emotions -- led by Joy (Amy Poehler) -- try to guide her through this difficult, life-changing event. However, the stress of the move brings Sadness (Phyllis Smith) to the forefront. When Joy and Sadness are inadvertently swept into the far reaches of Riley's mind, the only emotions left in Headquarters are Anger, Fear and Disgust.",
@@ -369,7 +358,7 @@ movie35 = Movie.create(title: "Inside Out",
                       year: 2015,
                       image_url: 'http://t0.gstatic.com/images?q=tbn:ANd9GcTtZdvrahQxfjGkSBJCS-uiZKUfJNH4ddsqgCbV5oFkQiQ-tszE',
                       user_id: 1
-                      )
+                      ),
 movie36 = Movie.create(title: "The Matrix",
                       director: 'Lana Wachowski, Lilly Wachowski',
                       description: "Neo (Keanu Reeves) believes that Morpheus (Laurence Fishburne), an elusive figure considered to be the most dangerous man alive, can answer his question -- What is the Matrix? Neo is contacted by Trinity (Carrie-Anne Moss), a beautiful stranger who leads him into an underworld where he meets Morpheus. They fight a brutal battle for their lives against a cadre of viciously intelligent secret agents. It is a truth that could cost Neo something more precious than his life.",
@@ -377,7 +366,7 @@ movie36 = Movie.create(title: "The Matrix",
                       year: 1999,
                       image_url: 'http://www.madmind.de/wp-content/uploads/2009/04/the_matrix_center_small.jpg',
                       user_id: 1
-                      )
+                      ),
 movie37 = Movie.create(title: "Whiplash",
                       director: 'Damien Chazelle',
                       description: "Andrew Neiman (Miles Teller) is an ambitious young jazz drummer, in pursuit of rising to the top of his elite music conservatory. Terence Fletcher (J.K. Simmons), an instructor known for his terrifying teaching methods, discovers Andrew and transfers the aspiring drummer into the top jazz ensemble, forever changing the young man's life. But Andrew's passion to achieve perfection quickly spirals into obsession, as his ruthless teacher pushes him to the brink of his ability and his sanity.",
@@ -385,7 +374,7 @@ movie37 = Movie.create(title: "Whiplash",
                       year: 2014,
                       image_url: 'http://t3.gstatic.com/images?q=tbn:ANd9GcS_IwW5-_mWA1PXiPG4qEhLC6Q3vntQd7Bzgs_YE7HHFifItn2T',
                       user_id: 1
-                      )
+                      ),
 movie38 = Movie.create(title: "Nightcrawler",
                       director: 'Dan Gilroy',
                       description: "Los Angeles denizen Louis Bloom (Jake Gyllenhaal) survives by scavenging and petty theft. He stumbles into a new career as a cameraman and -- armed with a camcorder and police scanner -- begins nocturnal forays across the city in search of shocking and grisly crimes. When he catches the eye of a shopworn news director (Rene Russo) who welcomes the chance to raise her station's ratings, Louis goes to increasingly greater lengths to catch the money shot.",
@@ -393,7 +382,7 @@ movie38 = Movie.create(title: "Nightcrawler",
                       year: 2014,
                       image_url: 'http://t0.gstatic.com/images?q=tbn:ANd9GcSmbiO41jmiTPaGUv1I61kVqe-JPxfpkSfw20i6QfvGv5Zqd7jP',
                       user_id: 1
-                      )
+                      ),
 movie39 = Movie.create(title: "Law Abiding Citizen",
                       director: 'F. Gary Gray',
                       description: "Clyde Shelton (Gerard Butler) is an honorable family man, until the day his wife and daughter are murdered in a home invasion. He hopes for justice, but a rising prosecutor named Nick Rice (Jamie Foxx) cuts a deal with one of the killers in exchange for testimony. Ten years later, that man is found dead and Shelton coolly admits his guilt. Then he hands Rice an ultimatum: Fix the broken legal system or suffer the consequences.",
@@ -401,7 +390,7 @@ movie39 = Movie.create(title: "Law Abiding Citizen",
                       year: 2009,
                       image_url: 'http://www.gstatic.com/tv/thumb/movieposters/3632501/p3632501_p_v8_aa.jpg',
                       user_id: 1
-                      )
+                      ),
 movie40 = Movie.create(title: "Men in Black",
                       director: 'Barry Sonnenfeld',
                       description: "They are the best-kept secret in the universe. Working for a highly funded yet unofficial government agency, Kay (Tommy Lee Jones) and Jay (Will Smith) are the Men in Black, providers of immigration services and regulators of all things alien on Earth. While investigating a series of unregistered close encounters, the MIB agents uncover the deadly plot of an intergalactic terrorist who is on a mission to assassinate two ambassadors from opposing galaxies currently in residence in New York City.",
@@ -409,7 +398,7 @@ movie40 = Movie.create(title: "Men in Black",
                       year: 1997,
                       image_url: 'http://www.gstatic.com/tv/thumb/movieposters/19526/p19526_p_v8_aa.jpg',
                       user_id: 1
-                      )
+                      ),
 movie41 = Movie.create(title: "Forgetting Sarah Marshall",
                       director: 'Nicholas Stoller',
                       description: "Struggling musician Peter Bretter (Jason Segel) is better-known as the boyfriend of TV star Sarah Marshall (Kristen Bell). After she unceremoniously dumps him, he feels lost and alone but makes a last-ditch bid to get over it by going to Hawaii. However, she and her new boyfriend (Russell Brand) are there in the same hotel.",
@@ -417,7 +406,7 @@ movie41 = Movie.create(title: "Forgetting Sarah Marshall",
                       year: 2008,
                       image_url: 'https://images-na.ssl-images-amazon.com/images/I/51c8wZcMS1L.jpg',
                       user_id: 1
-                      )
+                      ),
 movie42 = Movie.create(title: "Harry Potter and the Goblet of Fire",
                       director: 'Mike Newell',
                       description: "The fourth movie in the Harry Potter franchise sees Harry (Daniel Radcliffe) returning for his fourth year at Hogwarts School of Witchcraft and Wizardry, along with his friends, Ron (Rupert Grint) and Hermione (Emma Watson). There is an upcoming tournament between the three major schools of magic, with one participant selected from each school by the Goblet of Fire. When Harry's name is drawn, even though he is not eligible and is a fourth player, he must compete in the dangerous contest.",
