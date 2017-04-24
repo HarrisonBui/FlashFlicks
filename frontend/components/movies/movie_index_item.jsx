@@ -34,11 +34,13 @@ class MovieIndexItem extends React.Component {
       height="14"
       />;
 
+    console.log(this.props.movie);
+
     return(
       <div className='movie-index-item'  id={this.props.movie.id} key={this.props.movie.id}>
         <div className='cover'></div>
         <Link to={`movie-detail/${this.props.movie.id}`}className='movie-list-item'>
-          <img className="movie-img" src={this.props.movie.image_url}></img>
+          <img className="movie-img" src={("https://image.tmdb.org/t/p/w500" + this.props.movie.poster_path)}></img>
           <div className="show-title-rating">
             <h4>{this.props.movie.title}</h4>
               <Rating

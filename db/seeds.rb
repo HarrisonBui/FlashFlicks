@@ -415,3 +415,18 @@ movie42 = Movie.create(title: "Harry Potter and the Goblet of Fire",
                       image_url: 'http://www.gstatic.com/tv/thumb/movieposters/90599/p90599_p_v8_aq.jpg',
                       user_id: 1
                       )
+
+
+
+25.times do
+  user = User.new(username: Faker::Internet.user_name,
+    password: Faker::Internet.password);
+  if user.save
+
+    12.times do
+      Review.create(movie_id: Movie.all.sample.id, user_id: user.id,
+      rating: [4, 5, 5].sample,
+      body: sample_responses.sample)
+    end
+  end
+end
