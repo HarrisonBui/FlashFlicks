@@ -42,8 +42,6 @@ class MovieIndex extends React.Component {
         ));
       }
 
-      debugger;
-
     return(
       <div>
         <div className='movie-header'>

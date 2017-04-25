@@ -34,7 +34,6 @@ class MovieIndexItem extends React.Component {
       height="14"
       />;
 
-    console.log(this.props.movie);
 
     return(
       <div className='movie-index-item'  id={this.props.movie.id} key={this.props.movie.id}>
@@ -43,12 +42,7 @@ class MovieIndexItem extends React.Component {
           <img className="movie-img" src={("https://image.tmdb.org/t/p/w500" + this.props.movie.poster_path)}></img>
           <div className="show-title-rating">
             <h4>{this.props.movie.title}</h4>
-              <Rating
-                  full={ fullstar }
-                  empty={ emptystar }
-                  initialRate={ this.props.movie.rating }
-                  readonly={ true }
-                  />
+            <h4>Rating: {this.props.movie.vote_average}</h4>
                 {removeMovielist_moviesButton}
             </div>
         </Link>
