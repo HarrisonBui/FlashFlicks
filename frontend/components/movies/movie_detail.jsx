@@ -122,7 +122,7 @@ class MovieDetail extends React.Component{
             <div className='movie-detail-items'>
               <div className='movie-info'>
               <h2 className='title-detail'>{this.props.movie.title}</h2>
-              <h4>Rated: {this.props.movie.vote_average}</h4>
+              <h4>Rating: {this.props.movie.vote_average}</h4>
 
               <h5 className='year-detail'>Year Released: {this.props.movie.release_date}</h5>
               <p>{this.props.movie.overview}</p>
