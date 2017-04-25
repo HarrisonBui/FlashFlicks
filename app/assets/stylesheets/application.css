@@ -17,5 +17,15 @@
 body {
   font-family: sans-serif;
   background-color: #404040;
+  height: 100%;
+    display: flex;
+  justify-content: space-between;
+flex-direction: column;
+}
 
+
+html {
+  height: 100%;
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
 }
