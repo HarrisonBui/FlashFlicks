@@ -1,3 +1,7 @@
+.movie-detail-items {
+  padding-left: 80px;
+}
+
 .movie-detail-img {
   max-height: 379px;
   min-height: 379px;
@@ -9,7 +13,7 @@
 
 .movie-detail-container {
   display: flex;
-  width: 85vw;
+  width: 75vw;
   margin: auto;
   color: 	white;
   font-size: 20px;
@@ -17,13 +21,11 @@
 
 .movie-detail {
   display: flex;
-  text-align: center;
 
 }
 
 .title-detail {
   padding-top: 80px;
-  text-align: center;
   margin: 1px;
 }
 
@@ -32,15 +34,13 @@
 }
 
 .movie-detail p {
-  padding-top: 40px;
-  padding-left: 80px;
-  padding-right: 80px;
   text-align: left;
   font-family: 'Frank Ruhl Libre', sans-serif;
   line-height:  170%;
   letter-spacing: 1px;
   font-size: 15px;
   min-width: 20px;
+  max-width: 720px;
 }
 
 .rating {

@@ -116,21 +116,29 @@ class MovieDetail extends React.Component{
         <div className='move-detail-cont2'>
           <div className='movie-detail'>
             <div className='movie-picture'>
-              <img className='movie-detail-img' src={("https://image.tmdb.org/t/p/w500" + this.props.movie.poster_path)}></img>
-              {movielistButton}
+               <img className='movie-detail-img' src={this.props.movie.image_url}></img>
             </div>
             <div className='movie-detail-items'>
               <div className='movie-info'>
               <h2 className='title-detail'>{this.props.movie.title}</h2>
-              <h4>Rating: {this.props.movie.vote_average}</h4>
-
-              <h5 className='year-detail'>Year Released: {this.props.movie.release_date}</h5>
-              <p>{this.props.movie.overview}</p>
+              <Rating
+               full={ fullstar }
+               empty={ emptystar }
+               initialRate={ this.props.movie.rating }
+               readonly={ true }
+             />
+             <h4 className='director-detail'>Directed By: {this.props.movie.director}</h4>
+             <h5 className='year-detail'>Year Released: {this.props.movie.year}</h5>
+             {movielistButton}
+             <br></br>
+             <h5>Overview</h5>
+             <br></br>
+             <p>{this.props.movie.description}</p>
+             <ReviewsContainer movieId={this.props.params.id} />
               </div>
             </div>
           </div>
 
-          <ReviewsContainer movieId={this.props.params.id} />
 
           <Modal isOpen={this.state.movielistModalOpen}
              onRequestClose={() => this.setState({movielistModalOpen: false})}

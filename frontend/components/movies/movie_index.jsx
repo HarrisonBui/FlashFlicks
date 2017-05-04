@@ -12,9 +12,6 @@ class MovieIndex extends React.Component {
     this.props.requestReviews(this.props.params.id);
   }
 
-  componentWillMount(){
-  }
-
   handleClick(e) {
     if (e.target.id === 'delete-movielist_movies') {
       e.preventDefault();
@@ -32,16 +29,13 @@ class MovieIndex extends React.Component {
   }
 
   render() {
-    let movies;
-      if (this.props.movies.length) {
-        movies = this.props.movies[1].map((movie, idx) => (
-          <MovieIndexItem key={movie.id}
-            movie={movie}
-            movielist={this.props.movielist}
-            updateMovielist={this.props.updateMovielist}/>
-        ));
-      }
 
+    const movies = this.props.movies.map((movie, idx) => (
+      <MovieIndexItem key={movie.id}
+                     movie={movie}
+                     movielist={this.props.movielist}
+                     updateMovielist={this.props.updateMovielist}/>
+    ));
     return(
       <div>
         <div className='movie-header'>
