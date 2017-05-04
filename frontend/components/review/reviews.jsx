@@ -88,7 +88,7 @@ class Reviews extends React.Component {
     } else {
       reviewButton = (
         <button onClick={() => this.setState({modalOpen: true})}>
-          Review Movie
+          Add Review
         </button>
       );
     }
@@ -96,8 +96,8 @@ class Reviews extends React.Component {
     let deleteButton = '';
     if ( this.props.usersReview ) {
       deleteButton = (
-        <button onClick={this.handleDelete}>
-          Delete Review
+        <button className='review-submit'onClick={this.handleDelete}>
+          Delete
         </button>
       );
     }
@@ -120,7 +120,7 @@ class Reviews extends React.Component {
         return (
           <li className='review-item'
               key={review.id}>
-            {deleteReviewButton}
+
             <h4>By   {review.userName}</h4>
             <StarRatingComponent
                className='stars'
@@ -139,43 +139,34 @@ class Reviews extends React.Component {
     return(
       <div className='reviews-container'>
         <h2 className='review-header'>Reviews</h2>
-        { reviewButton }
+        <br></br>
+        <form className='review-form'>
+          <div className='review-inside'>
+            <div className='reviewing'>
+              <h5>Rating:</h5> <StarRatingComponent
+                name="rating"
+                starCount={5}
+                value={this.state.review.rating}
+                onStarClick={this.handleRatingInput}
+                starColor={'#FFD700'}
+                emptyStarColor={'#ccc'}/>
+            </div>
+
+            <div>
+              <h5>Review:</h5>
+              <textarea onChange={this.handleBodyInput}
+                name='body'
+                value={this.state.review.body}></textarea>
+            </div>
+
+            <button className='review-submit' onClick={this.handleSubmit}>Submit</button>
+            {deleteButton}
+          </div>
+        </form>
+        <br></br>
         <ul className='review-list'>
           {reviewList}
         </ul>
-
-
-        <Modal isOpen={this.state.modalOpen}
-               onRequestClose={() => this.setState({modalOpen: false})}
-               className='modal-review'
-               style={modalStyle}
-               contentLabel='Modal'>
-
-
-              <form className='review-form'>
-                <h3>Review this Movie</h3>
-                <div>
-                  <h5>Rating:</h5>
-                  <StarRatingComponent
-                     name="rating"
-                     starCount={5}
-                     value={this.state.review.rating}
-                     onStarClick={this.handleRatingInput}
-                     starColor={'#FFD700'}
-                     emptyStarColor={'#ccc'}/>
-                 </div>
-
-                <div>
-                  <h5>Review:</h5>
-                  <textarea onChange={this.handleBodyInput}
-                    name='body'
-                    value={this.state.review.body}></textarea>
-                </div>
-
-                <button onClick={this.handleSubmit}>Submit</button>
-                {deleteButton}
-              </form>
-        </Modal>
       </div>
     );
   }

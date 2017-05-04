@@ -1,3 +1,20 @@
+.reviewing {
+  display: flex;
+  flex-direction: row;
+}
+
+.review-inside {
+  width: 80%;
+  text-align: center;
+}
+
+.review-inside h5 {
+  text-align: left;
+}
+
+.review-submit {
+  max-width: 100px;
+}
 
 .modal-review {
   position: fixed;
@@ -58,7 +75,6 @@
   font-family: 'Cinzel', serif;
   padding: none;
   margin: none;
-
 }
 
 .reviews-container button {
@@ -66,14 +82,16 @@
   padding: 2px 8px;
   margin: 0;
   margin-bottom: 5px;
-  background: #010000;
-  border-radius: 12px;
+  border-style: solid;
+  border-color: white;
   color: white;
-  border: none;
+  background-color: Transparent;
 }
 
 .reviews-container button:hover {
   cursor: pointer;
+  background-color: white;
+  color: black;
 }
 
 .review-item {
@@ -121,36 +139,37 @@
 }
 
 .review-form {
-  width: 200px;
+  border-color: yellow;
+  border-style: solid;
+  border-radius: 30px;
+  min-width: 120px;
+  max-width: 380px;
 }
 
 .review-form > * {
   margin: 7px auto;
-  width: 100%
 }
 
 .review-form h3 {
   font-family: 'Cinzel', serif;
   margin-top: 0;
+  color: white;
 }
 
 .review-form  {
-  color: #010000;
+  color: white;
   h5 {
     font-weight: 500;
     margin: 5px 0;
     font-family: 'Cinzel', serif;
+
   }
   h3 {
     font-family: 'Cinzel', serif;
     margin-top: 0;
   }
   button {
-    background: #010000;
-    border-radius: 12px;
-    color: white;
-    border: none;
-    font-family: 'Cinzel', serif;
+
   }
 }
 
