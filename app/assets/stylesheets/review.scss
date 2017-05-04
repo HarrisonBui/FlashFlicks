@@ -50,7 +50,7 @@
 
 .movielist_movies-form{
   font-family: 'Cinzel', serif;
-  color: #8B0000;
+  color: black;
   font-size: 13px;
   display: flex;
   flex-direction: column;
@@ -64,10 +64,13 @@
   button {
     display: flex;
     justify-content: center;
-    background-color: #8B0000;
+    background-color: black;
     border-radius: 12px;
     color: white;
     font-family: 'Cinzel', serif;
+  }
+  button:hover {
+    cursor: pointer;
   }
 }
 

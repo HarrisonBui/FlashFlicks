@@ -1,8 +1,12 @@
 .login-form{
-  color: #8B0000;
+  color: black;
   position: absolute;
   bottom: 29px;
   left: 50px;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
 }
 
 .submit{
@@ -10,13 +14,14 @@
   margin-bottom: 6px;
   border-radius: 4px;
   cursor: pointer;
-  background-color: #8B0000;
+  background-color: black;
   color: white;
   width: 120px;
 }
 
 .submit:hover{
-  background-color: #B22222;
+  background-color: white;
+  color: black;
   transition-duration: .2s;
 }
 
@@ -43,7 +48,7 @@
   transform: translate(-50%, -50%);
   width: 200px;
   height: 194px;
-  border: 1px solid red;
+  border: 1px solid black;
   border-radius: 2px;
   background-color: #EEEEEE;
   padding: 15px;
@@ -59,7 +64,7 @@
   transform: translate(-50%, -50%);
   width: 200px;
   height: auto;
-  border: 1px solid red;
+  border: 1px solid black;
   border-radius: 2px;
   background-color: #EEEEEE;
   padding: 15px;

@@ -122,15 +122,15 @@ class Reviews extends React.Component {
               key={review.id}>
 
             <h4>By   {review.userName}</h4>
-            <StarRatingComponent
-               className='stars'
-               name="rating"
-               starCount={5}
-               value={review.rating}
-               starColor={'#FFD700'}
-               emptyStarColor={'#ccc'}
-               editing={false}/>
-             <p>{review.body}</p>
+              <StarRatingComponent
+                 className='stars'
+                 name="rating"
+                 starCount={5}
+                 value={review.rating}
+                 starColor={'#FFD700'}
+                 emptyStarColor={'#ccc'}
+                 editing={false}/>
+               <p>{review.body}</p>
           </li>
         );
       })

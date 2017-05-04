@@ -79,7 +79,7 @@ logout(e) {
              contentLabel='Modal'>
         <div className='auth-required'>
           <h3>Members Only</h3>
-          <p>Please Login or Signup to view the page.</p>
+          <p>Please Log In or Sign Up to view the page.</p>
         </div>
         </Modal>
         {this.props.currentUser ? this.welcomeGreeting(this.props.currentUser, this.props.logout) : this.sessionLinks()}
