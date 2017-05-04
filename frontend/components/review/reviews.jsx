@@ -121,7 +121,7 @@ class Reviews extends React.Component {
           <li className='review-item'
               key={review.id}>
             {deleteReviewButton}
-            <h4>By: {review.userName}</h4>
+            <h4>By   {review.userName}</h4>
             <StarRatingComponent
                className='stars'
                name="rating"

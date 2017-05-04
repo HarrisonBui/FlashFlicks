@@ -120,20 +120,19 @@ class MovieDetail extends React.Component{
             </div>
             <div className='movie-detail-items'>
               <div className='movie-info'>
-              <h2 className='title-detail'>{this.props.movie.title}</h2>
+              <h1 className='title-detail'>{this.props.movie.title} ({this.props.movie.year})</h1>
+              <h5 className='director-detail'>Directed By: {this.props.movie.director}</h5>
               <Rating
                full={ fullstar }
                empty={ emptystar }
                initialRate={ this.props.movie.rating }
                readonly={ true }
              />
-             <h4 className='director-detail'>Directed By: {this.props.movie.director}</h4>
-             <h5 className='year-detail'>Year Released: {this.props.movie.year}</h5>
+
+             <br></br>
              {movielistButton}
-             <br></br>
-             <h5>Overview</h5>
-             <br></br>
-             <p>{this.props.movie.description}</p>
+             <h5 className='overview-title'>Overview</h5>
+             <p className='overview'>{this.props.movie.description}</p>
              <ReviewsContainer movieId={this.props.params.id} />
               </div>
             </div>
