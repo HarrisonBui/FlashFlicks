@@ -22,6 +22,7 @@
   font-size: 12px;
   margin-top: 21px;
   width: 190px;
+  border-style: dotted;
 }
 
 .movielist-list:hover {
@@ -32,6 +33,7 @@
   padding: 10px;
   font-family: 'Cinzel', serif;
   font-size: 20px;
+  border-bottom: solid;
 }
 
 .movielist-wrapper {
@@ -39,13 +41,24 @@
   flex-direction: row;
 }
 
+.movielist-list {
+  padding: 10px;
+}
+
 .movielist-list h5 {
   padding: 5px;
   font-size: 12px;
+  letter-spacing: 2px;
 }
 
 .movielist:hover h5 {
-  background-color: #B22222;
+  color: black;
+  transition-duration: .4s;
+}
+
+.movielist:hover {
+  background-color: white;
+  color: black;
   transition-duration: .4s;
 }
 
@@ -78,9 +91,10 @@
 .movielist {
   display: flex;
   button {
-    color: white;
+    color: red;
     border: none;
     background-color: Transparent;
     cursor: pointer;
+    font-size: 18px;
   }
 }
