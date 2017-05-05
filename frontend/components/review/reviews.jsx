@@ -8,7 +8,7 @@ import { merge } from 'lodash';
 class Reviews extends React.Component {
   constructor(props) {
     super(props);
-    this.state ={
+    this.state = {
       modalOpen: false,
       review: {
         movie_id: this.props.movieId,
