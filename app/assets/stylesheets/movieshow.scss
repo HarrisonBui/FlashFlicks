@@ -33,9 +33,9 @@
 .movie-list-ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding-bottom: 100px;
-
+  flex-direction: row;
 }
 
 *{
