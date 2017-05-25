@@ -68,11 +68,15 @@
 
 .remove-movie{
   cursor: pointer;
-  background-color: #B22222;
-  transition-duration: .2s;
-  border-radius: 12px;
+  background-color: red;
   border: none;
   color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  border-radius: 10px;
 }
 
 .movielist-header {
