@@ -98,7 +98,7 @@ movie5 = Movie.create(title: 'The Imitation Game',
                       description: 'In 1939, newly created British intelligence agency MI6 recruits Cambridge mathematics alumnus Alan Turing (Benedict Cumberbatch) to crack Nazi codes, including Enigma -- which cryptanalysts had thought unbreakable. Turing team, including Joan Clarke (Keira Knightley), analyze Enigma messages while he builds a machine to decipher them. Turing and team finally succeed and become heroes, but in 1952, the quiet genius encounters disgrace when authorities reveal he is gay and send him to prison.',
                       rating: 4.7,
                       year: 2017,
-                      image_url: 'https://resizing.flixster.com/YUvRlALfyVL5_u7IUDCgYyCK8po=/206x305/v1.bTsxMTE4MDg3MTtqOzE3MzE5OzEyMDA7NTAwOzc0MA',
+                      image_url: 'https://coolpapaesreviews.files.wordpress.com/2015/02/the-imitation-game-wallpaper.jpg',
                       user_id: 1
                       ),
 
