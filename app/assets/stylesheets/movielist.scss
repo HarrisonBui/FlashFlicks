@@ -8,6 +8,7 @@
   color: white;
   display: flex;
   flex-direction: row;
+  height: 100vh;
 }
 
 .selector-list {
@@ -20,9 +21,8 @@
   display: inline-block;
   font-family: 'Cinzel', serif;
   font-size: 12px;
-  margin-top: 21px;
   width: 190px;
-  border-style: dotted;
+  border-style: double;
 }
 
 .movielist-list:hover {
