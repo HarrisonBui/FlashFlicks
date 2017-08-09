@@ -1,0 +1,861 @@
+/* line 1, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/footer.scss */
+.footer {
+  min-height: 30px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  margin-top: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 14, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/footer.scss */
+.github-holder {
+  width: 30px;
+  height: 30px;
+}
+
+/* line 19, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/footer.scss */
+.tmdb-holder {
+  margin-left: 40px;
+  width: 75px;
+}
+
+/* line 24, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/footer.scss */
+.github {
+  height: 35px;
+  width: 35px;
+}
+
+/* line 29, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/footer.scss */
+.moviedb {
+  height: 35px;
+  width: 70px;
+}
+/* line 1, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/header.scss */
+.parent {
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+
+/* line 7, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/header.scss */
+.middle-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border-radius: 40px;
+  display: flex;
+  width: 97%;
+  height: 400px;
+  background-image: url("http://getreelcinemas.com/wp-content/uploads/2015/02/Background-Narrow.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* line 20, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/header.scss */
+.heading-title {
+  color: yellow;
+  margin: auto;
+  font-family: 'Cinzel', serif;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+/* line 28, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/header.scss */
+.header-container {
+  align-items: center;
+  background-color: #010000;
+  bottom: 5px;
+  box-shadow: 0px 3px 4px #000000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  min-width: 30%;
+  min-height: 55px;
+  text-shadow: #fff 0 0 10px;
+}
+
+/* line 40, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/header.scss */
+.welcomeGreeting-container {
+  display: flex;
+  float: right;
+  font-size: 10px;
+  font-family: 'Cinzel', serif;
+}
+
+/* line 47, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/header.scss */
+.title-container {
+  display: flex;
+}
+
+/* line 51, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/header.scss */
+.title:hover {
+  color: yellow;
+}
+
+/* line 55, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/header.scss */
+.title {
+  display: flex;
+  font-size: 25px;
+  background-color: #010000;
+  color: white;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: auto;
+  width: auto;
+  font-family: 'Cinzel', serif;
+}
+
+/* line 68, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/header.scss */
+.title2 {
+  display: flex;
+  font-size: 24px;
+  background-color: #010000;
+  color: yellow;
+  padding-top: 15px;
+  height: auto;
+  width: auto;
+  font-family: 'Cinzel', serif;
+}
+
+/* line 79, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/header.scss */
+.header-button {
+  align-items: center;
+  background-color: #010000;
+  box-sizing: border-box;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  max-height: 100%;
+  padding: 11px;
+  padding-left: 8px;
+  font-family: 'Cinzel', serif;
+}
+
+/* line 94, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/header.scss */
+.header-button:hover {
+  color: yellow;
+}
+
+/* line 98, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/header.scss */
+.header-name {
+  padding: 10px;
+}
+
+/* line 102, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/header.scss */
+.login:hover, .signup:hover {
+  background-color: #010000;
+  cursor: pointer;
+  color: yellow;
+  border-bottom: solid yellow;
+  border-width: medium;
+}
+
+/* line 110, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/header.scss */
+.login, .signup {
+  box-sizing: border-box;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+}
+
+/* line 119, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/header.scss */
+.movielist-button {
+  background-color: #010000;
+  border: none;
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* line 129, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/header.scss */
+.movielist-button:hover {
+  color: yellow;
+}
+
+/* line 133, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/header.scss */
+.nav-buttons {
+  display: flex;
+}
+/* line 1, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/modal.scss */
+.login-form {
+  color: black;
+  position: absolute;
+  bottom: 29px;
+  left: 50px;
+}
+
+/* line 8, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/modal.scss */
+.login-form a:hover {
+  text-decoration: underline;
+}
+
+/* line 12, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/modal.scss */
+.submit {
+  margin-top: 15px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  width: 120px;
+}
+
+/* line 22, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/modal.scss */
+.submit:hover {
+  background-color: white;
+  color: black;
+  transition-duration: .2s;
+}
+
+/* line 28, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/modal.scss */
+.navlink, .guest {
+  right: -50%;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 10px;
+  padding-top: 5px;
+}
+
+/* line 37, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/modal.scss */
+.errors {
+  font-size: 15px;
+  margin-top: 2px;
+  bottom: 29px;
+}
+
+/* line 43, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/modal.scss */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 194px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: #EEEEEE;
+  padding: 15px;
+  outline: none;
+  box-shadow: 0px 2px 10px #AAAAAA;
+  text-align: center;
+}
+
+/* line 59, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/modal.scss */
+.modal2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: #EEEEEE;
+  padding: 15px;
+  outline: none;
+  box-shadow: 0px 2px 10px #AAAAAA;
+  text-align: center;
+}
+
+/* line 75, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/modal.scss */
+.modal-newmovielist {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: #EEEEEE;
+  padding: 15px;
+  outline: none;
+  box-shadow: 0px 2px 10px #AAAAAA;
+  text-align: center;
+}
+/* line 7, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movielist.scss */
+.movielist-view {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+/* line 14, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movielist.scss */
+.selector-list {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+}
+
+/* line 19, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movielist.scss */
+.movielist-sidebar {
+  display: inline-block;
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  width: 190px;
+  border-style: double;
+}
+
+/* line 28, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movielist.scss */
+.movielist-list:hover {
+  cursor: pointer;
+}
+
+/* line 32, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movielist.scss */
+.movielist-title {
+  padding: 10px;
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  border-bottom: solid;
+}
+
+/* line 39, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movielist.scss */
+.movielist-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 44, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movielist.scss */
+.movielist-list {
+  padding: 10px;
+}
+
+/* line 48, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movielist.scss */
+.movielist-list h5 {
+  padding: 5px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+/* line 54, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movielist.scss */
+.movielist:hover h5 {
+  color: black;
+  transition-duration: .4s;
+}
+
+/* line 59, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movielist.scss */
+.movielist:hover {
+  background-color: white;
+  color: black;
+  transition-duration: .4s;
+}
+
+/* line 65, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movielist.scss */
+.add-button {
+  color: yellow;
+}
+
+/* line 69, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movielist.scss */
+.remove-movie {
+  cursor: pointer;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  border-radius: 10px;
+}
+
+/* line 82, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movielist.scss */
+.movielist-header {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  font-size: 29px;
+  color: yellow;
+  height: 10%;
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+  text-shadow: 0px 7px 7px #000000;
+  text-align: center;
+  text-shadow: #fff 0 0 10px;
+}
+
+/* line 95, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movielist.scss */
+.movielist {
+  display: flex;
+}
+/* line 97, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movielist.scss */
+.movielist button {
+  color: red;
+  border: none;
+  background-color: Transparent;
+  cursor: pointer;
+  font-size: 18px;
+}
+/* line 1, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movies-detail.scss */
+.movie-detail-items {
+  padding-left: 80px;
+}
+
+/* line 5, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movies-detail.scss */
+.overview {
+  padding-bottom: 40px;
+}
+
+/* line 9, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movies-detail.scss */
+.overview-title {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-family: 'Cinzel', serif;
+}
+
+/* line 15, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movies-detail.scss */
+.movie-detail-img {
+  max-height: 379px;
+  min-height: 379px;
+  max-width: 273px;
+  min-width: 273px;
+  padding-left: 20px;
+  padding-top: 80px;
+}
+
+/* line 24, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movies-detail.scss */
+.movie-detail-container {
+  display: flex;
+  width: 75vw;
+  margin: auto;
+  color: white;
+  font-size: 20px;
+}
+
+/* line 32, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movies-detail.scss */
+.movie-detail {
+  display: flex;
+}
+
+/* line 37, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movies-detail.scss */
+.title-detail {
+  padding-top: 80px;
+  margin: 1px;
+  font-family: 'Cinzel', serif;
+}
+
+/* line 43, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movies-detail.scss */
+.year-detail {
+  margin: 1px;
+}
+
+/* line 47, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movies-detail.scss */
+.movie-detail p {
+  text-align: left;
+  font-family: 'Frank Ruhl Libre', sans-serif;
+  line-height: 170%;
+  letter-spacing: 1px;
+  font-size: 15px;
+  min-width: 20px;
+  max-width: 720px;
+}
+
+/* line 57, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movies-detail.scss */
+.rating {
+  z-index: 1;
+  padding-top: 41px;
+}
+/* line 1, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movieshow.scss */
+.movie-img {
+  max-height: 250px;
+  min-height: 250px;
+  max-width: 220px;
+  min-width: 190px;
+}
+
+/* line 8, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movieshow.scss */
+.movie-img:hover {
+  opacity: .3;
+}
+
+/* line 12, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movieshow.scss */
+.add-toMovielist {
+  font-family: 'Cinzel', serif;
+  padding: 2px 8px;
+  margin: 0;
+  margin-bottom: 5px;
+  background: #010000;
+  border-radius: 12px;
+  color: white;
+  border: none;
+}
+
+/* line 23, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movieshow.scss */
+.add-toMovielist {
+  cursor: pointer;
+}
+
+/* line 27, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movieshow.scss */
+.movie-index {
+  display: flex;
+  justify-content: center;
+  max-width: 90%;
+}
+
+/* line 33, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movieshow.scss */
+.movie-list-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 100px;
+  flex-direction: row;
+}
+
+/* line 41, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movieshow.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 46, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movieshow.scss */
+.movie-index-item h6, h4 {
+  margin: 1px;
+}
+
+/* line 50, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movieshow.scss */
+.movie-index-item:hover {
+  background-color: black;
+  transition-duration: .2s;
+}
+
+/* line 55, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movieshow.scss */
+.movie-index-item {
+  padding: 5px;
+  max-height: 250px;
+  padding-bottom: 25px;
+}
+
+/* line 61, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movieshow.scss */
+.movie-index-item:hover .show-title-rating {
+  transition-duration: .2s;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+/* line 68, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movieshow.scss */
+.show-title-rating {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  max-width: 190px;
+  display: none;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  bottom: 145px;
+  z-index: 1;
+}
+
+/* line 80, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movieshow.scss */
+.outside-movie {
+  justify-content: center;
+  display: flex;
+}
+
+/* line 85, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movieshow.scss */
+.show h2 {
+  padding-top: 30px;
+  padding-bottom: 22px;
+  color: #FEFEFE;
+  height: 10%;
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+  font-size: 45px;
+  margin: -1px;
+  text-shadow: 0px 7px 7px #000000;
+}
+
+/* line 97, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movieshow.scss */
+.show {
+  text-align: center;
+}
+
+/* line 101, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movieshow.scss */
+.movie-list-item h4, h6 {
+  color: yellow;
+  font-size: 16px;
+  z-index: 10;
+  background-color: none;
+}
+
+/* line 108, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movieshow.scss */
+.cover {
+  background-color: black;
+  opacity: .1;
+  z-index: 2;
+  position: absolute;
+}
+
+/* line 115, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movieshow.scss */
+.movie-index-item:hover .cover {
+  z-index: 100;
+  background: black;
+  opacity: 0.3;
+}
+
+/* line 122, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/movieshow.scss */
+a {
+  text-decoration: none;
+}
+/* line 1, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.reviewing {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 6, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.review-inside {
+  width: 80%;
+  text-align: center;
+}
+
+/* line 11, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.review-inside h5 {
+  text-align: left;
+}
+
+/* line 15, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.review-submit {
+  max-width: 100px;
+}
+
+/* line 19, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.modal-review {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: auto;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  background-color: #EEEEEE;
+  padding: 15px;
+  outline: none;
+  box-shadow: 0px 2px 10px #AAAAAA;
+}
+
+/* line 34, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.modal-check {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: auto;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  background-color: #EEEEEE;
+  padding: 15px;
+  outline: none;
+  box-shadow: 0px 2px 10px #AAAAAA;
+}
+
+/* line 51, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.movielist_movies-form {
+  font-family: 'Cinzel', serif;
+  color: black;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 57, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.movielist_movies-form h4 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* line 64, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.movielist_movies-form button {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  border-radius: 12px;
+  color: white;
+  font-family: 'Cinzel', serif;
+}
+/* line 72, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.movielist_movies-form button:hover {
+  cursor: pointer;
+}
+
+/* line 77, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.reviews-container h2 {
+  font-family: 'Cinzel', serif;
+  padding: none;
+  margin: none;
+}
+
+/* line 83, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.reviews-container button {
+  font-family: 'Cinzel', serif;
+  padding: 2px 8px;
+  margin: 0;
+  margin-bottom: 5px;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  background-color: Transparent;
+}
+
+/* line 94, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.reviews-container button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+/* line 100, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.review-item {
+  position: relative;
+  list-style: none;
+  border-top: 1px solid lightgrey;
+  max-width: 800px;
+}
+
+/* line 107, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.review-item h4 {
+  font-family: 'Cinzel', serif;
+}
+
+/* line 111, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.review-item * {
+  margin: 5px;
+}
+
+/* line 115, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.review-item i {
+  font-size: 11px;
+}
+
+/* line 119, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.review-item p {
+  font-size: 16px;
+}
+
+/* line 123, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.small-delete {
+  position: absolute;
+  top: -3px;
+  left: -6px;
+  font-size: 14px;
+  background-color: inherit;
+  visibility: hidden;
+  display: float;
+}
+
+/* line 133, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.review-item:hover .small-delete {
+  visibility: visible;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+/* line 139, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.review-item .dv-star-rating-star {
+  margin: -6px;
+  padding: 1px;
+}
+
+/* line 144, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.review-form {
+  border-color: yellow;
+  border-style: solid;
+  border-radius: 30px;
+  min-width: 120px;
+  max-width: 380px;
+}
+
+/* line 152, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.review-form * {
+  margin: 7px auto;
+}
+
+/* line 156, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.review-form h3 {
+  font-family: 'Cinzel', serif;
+  margin-top: 0;
+  color: white;
+}
+
+/* line 162, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.review-form {
+  color: white;
+}
+/* line 164, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.review-form h5 {
+  font-weight: 500;
+  margin: 5px 0;
+  font-family: 'Cinzel', serif;
+}
+/* line 170, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.review-form h3 {
+  font-family: 'Cinzel', serif;
+  margin-top: 0;
+}
+
+/* line 179, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.review-form textarea {
+  resize: none;
+  max-width: 97%;
+  width: 97%;
+  height: 50px;
+  padding: 3px;
+  border: none;
+  border-radius: 1px;
+  box-shadow: inset 0 1px 1px #CCCCCC;
+}
+
+/* line 190, /Users/hsbui/Desktop/FlashFlicks/app/assets/stylesheets/review.scss */
+.dv-star-rating {
+  text-align: left;
+  margin: 0;
+  padding-left: 7px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+body {
+  background-color: #301212;
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+
+html {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+}
