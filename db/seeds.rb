@@ -257,7 +257,7 @@ movie23 = Movie.create(title: "E.T. the Extra-Terrestrial",
                       description: "After a gentle alien becomes stranded on Earth, the being is discovered and befriended by a young boy named Elliott (Henry Thomas). Bringing the extraterrestrial into his suburban California house, Elliott introduces E.T., as the alien is dubbed, to his brother and his little sister, Gertie (Drew Barrymore), and the children decide to keep its existence a secret. Soon, however, E.T. falls ill, resulting in government intervention and a dire situation for both Elliott and the alien.",
                       rating: 5,
                       year: 1982,
-                      image_url: 'http://img.moviepostershop.com/et--the-extra-terrestrial-movie-poster-1982-1020141470.jpg',
+                      image_url: 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ2ODFlMDAtNzdhOC00ZDYzLWE3YTMtNDU4ZGFmZmJmYTczXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY1200_CR69,0,630,1200_AL_.jpg',
                       user_id: 1
                       ),
 
