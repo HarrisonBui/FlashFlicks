@@ -19,7 +19,7 @@ class Show extends React.Component {
       <div className='show'>
         <div className='parent'>
           <div className="middle-img">
-            <text className='heading-title'>Catalogue and Review Movies!!!</text>
+            <text className='heading-title'>Catalogue and Review Movies</text>
           </div>
         </div>
         <MoiveIndexContainer movies={this.props.movies}
