@@ -1,13 +1,13 @@
 /*!
  * jQuery JavaScript Library v1.12.4
- * http://jquery.com/
+ * https://jquery.com/
  *
  * Includes Sizzle.js
- * http://sizzlejs.com/
+ * https://sizzlejs.com/
  *
  * Copyright jQuery Foundation and other contributors
  * Released under the MIT license
- * http://jquery.org/license
+ * https://jquery.org/license
  *
  * Date: 2016-05-20T17:17Z
  */
@@ -339,7 +339,7 @@ jQuery.extend( {
 	},
 
 	// Workarounds based on findings by Jim Driscoll
-	// http://weblogs.java.net/blog/driscoll/archive/2009/09/08/eval-javascript-global-context
+	// https://weblogs.java.net/blog/driscoll/archive/2009/09/08/eval-javascript-global-context
 	globalEval: function( data ) {
 		if ( data && jQuery.trim( data ) ) {
 
@@ -580,11 +580,11 @@ function isArrayLike( obj ) {
 var Sizzle =
 /*!
  * Sizzle CSS Selector Engine v2.2.1
- * http://sizzlejs.com/
+ * https://sizzlejs.com/
  *
  * Copyright jQuery Foundation and other contributors
  * Released under the MIT license
- * http://jquery.org/license
+ * https://jquery.org/license
  *
  * Date: 2015-10-17
  */
@@ -638,7 +638,7 @@ var i,
 	push = arr.push,
 	slice = arr.slice,
 	// Use a stripped-down indexOf as it's faster than native
-	// http://jsperf.com/thor-indexof-vs-for/5
+	// https://jsperf.com/thor-indexof-vs-for/5
 	indexOf = function( list, elem ) {
 		var i = 0,
 			len = list.length;
@@ -654,13 +654,13 @@ var i,
 
 	// Regular expressions
 
-	// http://www.w3.org/TR/css3-selectors/#whitespace
+	// https://www.w3.org/TR/css3-selectors/#whitespace
 	whitespace = "[\\x20\\t\\r\\n\\f]",
 
-	// http://www.w3.org/TR/CSS21/syndata.html#value-def-identifier
+	// https://www.w3.org/TR/CSS21/syndata.html#value-def-identifier
 	identifier = "(?:\\\\.|[\\w-]|[^\\x00-\\xa0])+",
 
-	// Attribute selectors: http://www.w3.org/TR/selectors/#attribute-selectors
+	// Attribute selectors: https://www.w3.org/TR/selectors/#attribute-selectors
 	attributes = "\\[" + whitespace + "*(" + identifier + ")(?:" + whitespace +
 		// Operator (capture 2)
 		"*([*^$|!~]?=)" + whitespace +
@@ -717,7 +717,7 @@ var i,
 	rsibling = /[+~]/,
 	rescape = /'|\\/g,
 
-	// CSS escapes http://www.w3.org/TR/CSS21/syndata.html#escaped-characters
+	// CSS escapes https://www.w3.org/TR/CSS21/syndata.html#escaped-characters
 	runescape = new RegExp( "\\\\([\\da-f]{1,6}" + whitespace + "?|(" + whitespace + ")|.)", "ig" ),
 	funescape = function( _, escaped, escapedWhitespace ) {
 		var high = "0x" + escaped - 0x10000;
@@ -1209,7 +1209,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 	// We allow this because of a bug in IE8/9 that throws an error
 	// whenever `document.activeElement` is accessed on an iframe
 	// So, we allow :focus to pass through QSA all the time to avoid the IE error
-	// See http://bugs.jquery.com/ticket/13378
+	// See https://bugs.jquery.com/ticket/13378
 	rbuggyQSA = [];
 
 	if ( (support.qsa = rnative.test( document.querySelectorAll )) ) {
@@ -1220,7 +1220,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 			// This is to test IE's treatment of not explicitly
 			// setting a boolean content attribute,
 			// since its presence should be enough
-			// http://bugs.jquery.com/ticket/12359
+			// https://bugs.jquery.com/ticket/12359
 			docElem.appendChild( div ).innerHTML = "<a id='" + expando + "'></a>" +
 				"<select id='" + expando + "-\r\\' msallowcapture=''>" +
 				"<option selected=''></option></select>";
@@ -1228,7 +1228,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 			// Support: IE8, Opera 11-12.16
 			// Nothing should be selected when empty strings follow ^= or $= or *=
 			// The test attribute must be unknown in Opera but "safe" for WinRT
-			// http://msdn.microsoft.com/en-us/library/ie/hh465388.aspx#attribute_section
+			// https://msdn.microsoft.com/en-us/library/ie/hh465388.aspx#attribute_section
 			if ( div.querySelectorAll("[msallowcapture^='']").length ) {
 				rbuggyQSA.push( "[*^$]=" + whitespace + "*(?:''|\"\")" );
 			}
@@ -1245,7 +1245,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 			}
 
 			// Webkit/Opera - :checked should return selected option elements
-			// http://www.w3.org/TR/2011/REC-css3-selectors-20110929/#checked
+			// https://www.w3.org/TR/2011/REC-css3-selectors-20110929/#checked
 			// IE8 throws error here and will not see later tests
 			if ( !div.querySelectorAll(":checked").length ) {
 				rbuggyQSA.push(":checked");
@@ -1842,7 +1842,7 @@ Expr = Sizzle.selectors = {
 
 		"PSEUDO": function( pseudo, argument ) {
 			// pseudo-class names are case-insensitive
-			// http://www.w3.org/TR/selectors/#pseudo-classes
+			// https://www.w3.org/TR/selectors/#pseudo-classes
 			// Prioritize by case sensitivity in case custom pseudos are added with uppercase letters
 			// Remember that setFilters inherits from pseudos
 			var args,
@@ -1929,7 +1929,7 @@ Expr = Sizzle.selectors = {
 		// or beginning with the identifier C immediately followed by "-".
 		// The matching of C against the element's language value is performed case-insensitively.
 		// The identifier C does not have to be a valid language name."
-		// http://www.w3.org/TR/selectors/#lang-pseudo
+		// https://www.w3.org/TR/selectors/#lang-pseudo
 		"lang": markFunction( function( lang ) {
 			// lang value must be a valid identifier
 			if ( !ridentifier.test(lang || "") ) {
@@ -1976,7 +1976,7 @@ Expr = Sizzle.selectors = {
 
 		"checked": function( elem ) {
 			// In CSS3, :checked should return both checked and selected elements
-			// http://www.w3.org/TR/2011/REC-css3-selectors-20110929/#checked
+			// https://www.w3.org/TR/2011/REC-css3-selectors-20110929/#checked
 			var nodeName = elem.nodeName.toLowerCase();
 			return (nodeName === "input" && !!elem.checked) || (nodeName === "option" && !!elem.selected);
 		},
@@ -1993,7 +1993,7 @@ Expr = Sizzle.selectors = {
 
 		// Contents
 		"empty": function( elem ) {
-			// http://www.w3.org/TR/selectors/#empty-pseudo
+			// https://www.w3.org/TR/selectors/#empty-pseudo
 			// :empty is negated by element (1) or content nodes (text: 3; cdata: 4; entity ref: 5),
 			//   but not by others (comment: 8; processing instruction: 7; etc.)
 			// nodeType < 6 works because attributes (2) do not appear as children
@@ -2667,7 +2667,7 @@ support.sortDetached = assert(function( div1 ) {
 
 // Support: IE<8
 // Prevent attribute/property "interpolation"
-// http://msdn.microsoft.com/en-us/library/ms536429%28VS.85%29.aspx
+// https://msdn.microsoft.com/en-us/library/ms536429%28VS.85%29.aspx
 if ( !assert(function( div ) {
 	div.innerHTML = "<a href='#'></a>";
 	return div.firstChild.getAttribute("href") === "#" ;
@@ -3667,7 +3667,7 @@ jQuery.ready.promise = function( obj ) {
 						try {
 
 							// Use the trick by Diego Perini
-							// http://javascript.nwbox.com/IEContentLoaded/
+							// https://javascript.nwbox.com/IEContentLoaded/
 							top.doScroll( "left" );
 						} catch ( e ) {
 							return window.setTimeout( doScrollCheck, 50 );
@@ -5554,7 +5554,7 @@ jQuery.Event = function( src, props ) {
 };
 
 // jQuery.Event is based on DOM3 Events as specified by the ECMAScript Language Binding
-// http://www.w3.org/TR/2003/WD-DOM-Level-3-Events-20030331/ecma-script-binding.html
+// https://www.w3.org/TR/2003/WD-DOM-Level-3-Events-20030331/ecma-script-binding.html
 jQuery.Event.prototype = {
 	constructor: jQuery.Event,
 	isDefaultPrevented: returnFalse,
@@ -5776,7 +5776,7 @@ if ( !support.change ) {
 //
 // Support: Chrome, Safari
 // focus(in | out) events fire after focus & blur events,
-// which is spec violation - http://www.w3.org/TR/DOM-Level-3-Events/#events-focusevent-event-order
+// which is spec violation - https://www.w3.org/TR/DOM-Level-3-Events/#events-focusevent-event-order
 // Related ticket - https://code.google.com/p/chromium/issues/detail?id=449857
 if ( !support.focusin ) {
 	jQuery.each( { focus: "focusin", blur: "focusout" }, function( orig, fix ) {
@@ -6149,7 +6149,7 @@ jQuery.extend( {
 		if ( ( !support.noCloneEvent || !support.noCloneChecked ) &&
 				( elem.nodeType === 1 || elem.nodeType === 11 ) && !jQuery.isXMLDoc( elem ) ) {
 
-			// We eschew Sizzle here for performance reasons: http://jsperf.com/getall-vs-sizzle/2
+			// We eschew Sizzle here for performance reasons: https://jsperf.com/getall-vs-sizzle/2
 			destElements = getAll( clone );
 			srcElements = getAll( elem );
 
@@ -6733,7 +6733,7 @@ if ( window.getComputedStyle ) {
 			// Safari 5.1.7 (at least) returns percentage for a larger set of values,
 			// but width seems to be reliably pixels
 			// this is against the CSSOM draft spec:
-			// http://dev.w3.org/csswg/cssom/#resolved-values
+			// https://dev.w3.org/csswg/cssom/#resolved-values
 			if ( !support.pixelMarginRight() && rnumnonpx.test( ret ) && rmargin.test( name ) ) {
 
 				// Remember the original values
@@ -6777,7 +6777,7 @@ if ( window.getComputedStyle ) {
 		}
 
 		// From the awesome hack by Dean Edwards
-		// http://erik.eae.net/archives/2007/07/27/18.54.15/#comment-102291
+		// https://erik.eae.net/archives/2007/07/27/18.54.15/#comment-102291
 
 		// If we're not dealing with a regular pixel number
 		// but a number that has a weird ending, we need to convert it to pixels
@@ -8110,7 +8110,7 @@ jQuery.fx.speeds = {
 
 
 // Based off of the plugin by Clint Helfers, with permission.
-// http://web.archive.org/web/20100324014747/http://blindsignals.com/index.php/2009/07/jquery-delay/
+// https://web.archive.org/web/20100324014747/https://blindsignals.com/index.php/2009/07/jquery-delay/
 jQuery.fn.delay = function( time, type ) {
 	time = jQuery.fx ? jQuery.fx.speeds[ time ] || time : time;
 	type = type || "fx";
@@ -8708,7 +8708,7 @@ jQuery.extend( {
 
 				// elem.tabIndex doesn't always return the
 				// correct value when it hasn't been explicitly set
-				// http://fluidproject.org/blog/2008/01/09/getting-setting-and-removing-tabindex-values-with-javascript/
+				// https://fluidproject.org/blog/2008/01/09/getting-setting-and-removing-tabindex-values-with-javascript/
 				// Use proper attribute retrieval(#12072)
 				var tabindex = jQuery.find.attr( elem, "tabindex" );
 
@@ -8729,7 +8729,7 @@ jQuery.extend( {
 } );
 
 // Some attributes require a special call on IE
-// http://msdn.microsoft.com/en-us/library/ms536429%28VS.85%29.aspx
+// https://msdn.microsoft.com/en-us/library/ms536429%28VS.85%29.aspx
 if ( !support.hrefNormalized ) {
 
 	// href/src property should get the full normalized URL (#10299/#12915)
@@ -9603,8 +9603,8 @@ jQuery.extend( {
 			parts = rurl.exec( s.url.toLowerCase() );
 			s.crossDomain = !!( parts &&
 				( parts[ 1 ] !== ajaxLocParts[ 1 ] || parts[ 2 ] !== ajaxLocParts[ 2 ] ||
-					( parts[ 3 ] || ( parts[ 1 ] === "http:" ? "80" : "443" ) ) !==
-						( ajaxLocParts[ 3 ] || ( ajaxLocParts[ 1 ] === "http:" ? "80" : "443" ) ) )
+					( parts[ 3 ] || ( parts[ 1 ] === "https:" ? "80" : "443" ) ) !==
+						( ajaxLocParts[ 3 ] || ( ajaxLocParts[ 1 ] === "https:" ? "80" : "443" ) ) )
 			);
 		}
 
@@ -10159,15 +10159,15 @@ jQuery.ajaxSettings.xhr = window.ActiveXObject !== undefined ?
 
 		// Support: IE<9
 		// oldIE XHR does not support non-RFC2616 methods (#13240)
-		// See http://msdn.microsoft.com/en-us/library/ie/ms536648(v=vs.85).aspx
-		// and http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9
+		// See https://msdn.microsoft.com/en-us/library/ie/ms536648(v=vs.85).aspx
+		// and https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9
 		// Although this check for six methods instead of eight
 		// since IE also does not support "trace" and "connect"
 		return /^(get|post|head|put|delete|options)$/i.test( this.type ) &&
 			createStandardXHR() || createActiveXHR();
 	} :
 
-	// For all other browsers, use the standard XMLHttpRequest object
+	// For all other browsers, use the standard XMLhttpsRequest object
 	createStandardXHR;
 
 var xhrId = 0,
@@ -10194,7 +10194,7 @@ if ( xhrSupported ) {
 
 	jQuery.ajaxTransport( function( options ) {
 
-		// Cross domain only allowed if supported through XMLHttpRequest
+		// Cross domain only allowed if supported through XMLhttpsRequest
 		if ( !options.crossDomain || support.cors ) {
 
 			var callback;
@@ -10232,7 +10232,7 @@ if ( xhrSupported ) {
 					// (it can always be set on a per-request basis or even using ajaxSetup)
 					// For same-domain requests, won't change header if already provided.
 					if ( !options.crossDomain && !headers[ "X-Requested-With" ] ) {
-						headers[ "X-Requested-With" ] = "XMLHttpRequest";
+						headers[ "X-Requested-With" ] = "XMLhttpsRequest";
 					}
 
 					// Set headers
@@ -10346,13 +10346,13 @@ if ( xhrSupported ) {
 // Functions to create xhrs
 function createStandardXHR() {
 	try {
-		return new window.XMLHttpRequest();
+		return new window.XMLhttpsRequest();
 	} catch ( e ) {}
 }
 
 function createActiveXHR() {
 	try {
-		return new window.ActiveXObject( "Microsoft.XMLHTTP" );
+		return new window.ActiveXObject( "Microsoft.XMLhttps" );
 	} catch ( e ) {}
 }
 
@@ -11175,7 +11175,7 @@ return jQuery;
         };
 
         // There is no withCredentials for IE6-8 when
-        // "Enable native XMLHTTP support" is disabled
+        // "Enable native XMLhttps support" is disabled
         if (withCredentials) {
           options.xhrFields = {
             withCredentials: withCredentials
@@ -12007,7 +12007,7 @@ module.exports = warning;
 function reactProdInvariant(code) {
   var argCount = arguments.length - 1;
 
-  var message = 'Minified React error #' + code + '; visit ' + 'http://facebook.github.io/react/docs/error-decoder.html?invariant=' + code;
+  var message = 'Minified React error #' + code + '; visit ' + 'https://facebook.github.io/react/docs/error-decoder.html?invariant=' + code;
 
   for (var argIdx = 0; argIdx < argCount; argIdx++) {
     message += '&args[]=' + encodeURIComponent(arguments[argIdx + 1]);
@@ -12458,12 +12458,12 @@ if (process.env.NODE_ENV !== 'production') {
   };
 
   // By explicitly using `prop-types` you are opting into new development behavior.
-  // http://fb.me/prop-types-in-prod
+  // https://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
   module.exports = __webpack_require__(127)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
-  // http://fb.me/prop-types-in-prod
+  // https://fb.me/prop-types-in-prod
   module.exports = __webpack_require__(296)();
 }
 
@@ -13304,7 +13304,7 @@ var shouldBeReleasedProperties = ['dispatchConfig', '_targetInst', 'nativeEvent'
 
 /**
  * @interface Event
- * @see http://www.w3.org/TR/DOM-Level-3-Events/
+ * @see https://www.w3.org/TR/DOM-Level-3-Events/
  */
 var EventInterface = {
   type: null,
@@ -13789,8 +13789,8 @@ var ATTRIBUTE_NAME_START_CHAR = ':A-Z_a-z\\u00C0-\\u00D6\\u00D8-\\u00F6\\u00F8-\
  *
  * Although this may be confusing, it performs better in general.
  *
- * @see http://jsperf.com/key-exists
- * @see http://jsperf.com/key-missing
+ * @see https://jsperf.com/key-exists
+ * @see https://jsperf.com/key-missing
  */
 var DOMProperty = {
 
@@ -14133,7 +14133,7 @@ var deleteMovielist = exports.deleteMovielist = function deleteMovielist(movieli
 
 /**
  * Checks if `value` is the
- * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+ * [language type](https://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
  * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
  *
  * @static
@@ -14656,7 +14656,7 @@ module.exports = ReactElement;
 function reactProdInvariant(code) {
   var argCount = arguments.length - 1;
 
-  var message = 'Minified React error #' + code + '; visit ' + 'http://facebook.github.io/react/docs/error-decoder.html?invariant=' + code;
+  var message = 'Minified React error #' + code + '; visit ' + 'https://facebook.github.io/react/docs/error-decoder.html?invariant=' + code;
 
   for (var argIdx = 0; argIdx < argCount; argIdx++) {
     message += '&args[]=' + encodeURIComponent(arguments[argIdx + 1]);
@@ -15647,7 +15647,7 @@ module.exports = isObjectLike;
  * Lodash <https://lodash.com/>
  * Copyright JS Foundation and other contributors <https://js.foundation/>
  * Released under MIT license <https://lodash.com/license>
- * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+ * Based on Underscore.js 1.8.3 <https://underscorejs.org/LICENSE>
  * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
  */
 ;(function() {
@@ -15792,7 +15792,7 @@ module.exports = isObjectLike;
 
   /**
    * Used to match `RegExp`
-   * [syntax characters](http://ecma-international.org/ecma-262/7.0/#sec-patterns).
+   * [syntax characters](https://ecma-international.org/ecma-262/7.0/#sec-patterns).
    */
   var reRegExpChar = /[\\^$.*+?()[\]{}|]/g,
       reHasRegExpChar = RegExp(reRegExpChar.source);
@@ -15815,7 +15815,7 @@ module.exports = isObjectLike;
 
   /**
    * Used to match
-   * [ES template delimiters](http://ecma-international.org/ecma-262/7.0/#sec-template-literal-lexical-components).
+   * [ES template delimiters](https://ecma-international.org/ecma-262/7.0/#sec-template-literal-lexical-components).
    */
   var reEsTemplate = /\$\{([^\\}]*(?:\\.[^\\}]*)*)\}/g;
 
@@ -15917,7 +15917,7 @@ module.exports = isObjectLike;
     rsEmoji
   ].join('|'), 'g');
 
-  /** Used to detect strings with [zero-width joiners or code points from the astral planes](http://eev.ee/blog/2015/09/12/dark-corners-of-unicode/). */
+  /** Used to detect strings with [zero-width joiners or code points from the astral planes](https://eev.ee/blog/2015/09/12/dark-corners-of-unicode/). */
   var reHasUnicode = RegExp('[' + rsZWJ + rsAstralRange  + rsComboRange + rsVarRange + ']');
 
   /** Used to detect strings that need a more robust regexp to match words. */
@@ -17107,7 +17107,7 @@ module.exports = isObjectLike;
 
     /**
      * Used to resolve the
-     * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+     * [`toStringTag`](https://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
      * of values.
      */
     var nativeObjectToString = objectProto.toString;
@@ -18125,7 +18125,7 @@ module.exports = isObjectLike;
 
     /**
      * Assigns `value` to `key` of `object` if the existing value is not equivalent
-     * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * using [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons.
      *
      * @private
@@ -20665,7 +20665,7 @@ module.exports = isObjectLike;
     function createCtor(Ctor) {
       return function() {
         // Use a `switch` statement to work with class constructors. See
-        // http://ecma-international.org/ecma-262/7.0/#sec-ecmascript-function-objects-call-thisargument-argumentslist
+        // https://ecma-international.org/ecma-262/7.0/#sec-ecmascript-function-objects-call-thisargument-argumentslist
         // for more details.
         var args = arguments;
         switch (args.length) {
@@ -21401,7 +21401,7 @@ module.exports = isObjectLike;
         case regexpTag:
         case stringTag:
           // Coerce regexes to strings and treat strings, primitives and objects,
-          // as equal. See http://www.ecma-international.org/ecma-262/7.0/#sec-regexp.prototype.tostring
+          // as equal. See https://www.ecma-international.org/ecma-262/7.0/#sec-regexp.prototype.tostring
           // for more details.
           return object == (other + '');
 
@@ -22187,7 +22187,7 @@ module.exports = isObjectLike;
 
     /**
      * This function is like
-     * [`Object.keys`](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+     * [`Object.keys`](https://ecma-international.org/ecma-262/7.0/#sec-object.keys)
      * except that it includes inherited enumerable properties.
      *
      * @private
@@ -22586,7 +22586,7 @@ module.exports = isObjectLike;
 
     /**
      * Creates an array of `array` values not included in the other given arrays
-     * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * using [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons. The order and references of result values are
      * determined by the first array.
      *
@@ -23087,7 +23087,7 @@ module.exports = isObjectLike;
 
     /**
      * Gets the index at which the first occurrence of `value` is found in `array`
-     * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * using [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons. If `fromIndex` is negative, it's used as the
      * offset from the end of `array`.
      *
@@ -23141,7 +23141,7 @@ module.exports = isObjectLike;
 
     /**
      * Creates an array of unique values that are included in all given arrays
-     * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * using [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons. The order and references of result values are
      * determined by the first array.
      *
@@ -23335,7 +23335,7 @@ module.exports = isObjectLike;
 
     /**
      * Removes all given values from `array` using
-     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons.
      *
      * **Note:** Unlike `_.without`, this method mutates `array`. Use `_.remove`
@@ -23954,7 +23954,7 @@ module.exports = isObjectLike;
 
     /**
      * Creates an array of unique values, in order, from all given arrays using
-     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons.
      *
      * @static
@@ -24032,7 +24032,7 @@ module.exports = isObjectLike;
 
     /**
      * Creates a duplicate-free version of an array, using
-     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons, in which only the first occurrence of each element
      * is kept. The order of result values is determined by the order they occur
      * in the array.
@@ -24175,7 +24175,7 @@ module.exports = isObjectLike;
 
     /**
      * Creates an array excluding all given values using
-     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons.
      *
      * **Note:** Unlike `_.pull`, this method returns a new array.
@@ -25062,7 +25062,7 @@ module.exports = isObjectLike;
     /**
      * Checks if `value` is in `collection`. If `collection` is a string, it's
      * checked for a substring of `value`, otherwise
-     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * is used for equality comparisons. If `fromIndex` is negative, it's used as
      * the offset from the end of `collection`.
      *
@@ -25767,7 +25767,7 @@ module.exports = isObjectLike;
      *
      * This method differs from `_.bind` by allowing bound functions to reference
      * methods that may be redefined or don't yet exist. See
-     * [Peter Michaux's article](http://peter.michaux.ca/articles/lazy-function-definition-pattern)
+     * [Peter Michaux's article](https://peter.michaux.ca/articles/lazy-function-definition-pattern)
      * for more details.
      *
      * The `_.bindKey.placeholder` value, which defaults to `_` in monolithic
@@ -26161,7 +26161,7 @@ module.exports = isObjectLike;
      * **Note:** The cache is exposed as the `cache` property on the memoized
      * function. Its creation may be customized by replacing the `_.memoize.Cache`
      * constructor with one whose instances implement the
-     * [`Map`](http://ecma-international.org/ecma-262/7.0/#sec-properties-of-the-map-prototype-object)
+     * [`Map`](https://ecma-international.org/ecma-262/7.0/#sec-properties-of-the-map-prototype-object)
      * method interface of `clear`, `delete`, `get`, `has`, and `set`.
      *
      * @static
@@ -26461,7 +26461,7 @@ module.exports = isObjectLike;
     /**
      * Creates a function that invokes `func` with the `this` binding of the
      * create function and an array of arguments much like
-     * [`Function#apply`](http://www.ecma-international.org/ecma-262/7.0/#sec-function.prototype.apply).
+     * [`Function#apply`](https://www.ecma-international.org/ecma-262/7.0/#sec-function.prototype.apply).
      *
      * **Note:** This method is based on the
      * [spread operator](https://mdn.io/spread_operator).
@@ -26809,7 +26809,7 @@ module.exports = isObjectLike;
 
     /**
      * Performs a
-     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+     * [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * comparison between two values to determine if they are equivalent.
      *
      * @static
@@ -27346,7 +27346,7 @@ module.exports = isObjectLike;
      * Checks if `value` is a valid array-like length.
      *
      * **Note:** This method is loosely based on
-     * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+     * [`ToLength`](https://ecma-international.org/ecma-262/7.0/#sec-tolength).
      *
      * @static
      * @memberOf _
@@ -27375,7 +27375,7 @@ module.exports = isObjectLike;
 
     /**
      * Checks if `value` is the
-     * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+     * [language type](https://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
      * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
      *
      * @static
@@ -28029,7 +28029,7 @@ module.exports = isObjectLike;
      * Converts `value` to an integer.
      *
      * **Note:** This method is loosely based on
-     * [`ToInteger`](http://www.ecma-international.org/ecma-262/7.0/#sec-tointeger).
+     * [`ToInteger`](https://www.ecma-international.org/ecma-262/7.0/#sec-tointeger).
      *
      * @static
      * @memberOf _
@@ -28063,7 +28063,7 @@ module.exports = isObjectLike;
      * array-like object.
      *
      * **Note:** This method is based on
-     * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+     * [`ToLength`](https://ecma-international.org/ecma-262/7.0/#sec-tolength).
      *
      * @static
      * @memberOf _
@@ -28901,7 +28901,7 @@ module.exports = isObjectLike;
      * Creates an array of the own enumerable property names of `object`.
      *
      * **Note:** Non-object values are coerced to objects. See the
-     * [ES spec](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+     * [ES spec](https://ecma-international.org/ecma-262/7.0/#sec-object.keys)
      * for more details.
      *
      * @static
@@ -29856,7 +29856,7 @@ module.exports = isObjectLike;
      * (under "semi-related fun fact") for more details.
      *
      * When working with HTML you should always
-     * [quote attribute values](http://wonko.com/post/html-escaping) to reduce
+     * [quote attribute values](https://wonko.com/post/html-escaping) to reduce
      * XSS vectors.
      *
      * @static
@@ -30293,7 +30293,7 @@ module.exports = isObjectLike;
      * object is given, it takes precedence over `_.templateSettings` values.
      *
      * **Note:** In the development build `_.template` utilizes
-     * [sourceURLs](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/#toc-sourceurl)
+     * [sourceURLs](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/#toc-sourceurl)
      * for easier debugging.
      *
      * For more information on precompiling templates see
@@ -30391,7 +30391,7 @@ module.exports = isObjectLike;
      */
     function template(string, options, guard) {
       // Based on John Resig's `tmpl` implementation
-      // (http://ejohn.org/blog/javascript-micro-templating/)
+      // (https://ejohn.org/blog/javascript-micro-templating/)
       // and Laura Doktorova's doT.js (https://github.com/olado/doT).
       var settings = lodash.templateSettings;
 
@@ -32704,7 +32704,7 @@ module.exports = isObjectLike;
   if (true) {
     // Expose Lodash on the global object to prevent errors when Lodash is
     // loaded by a script tag in the presence of an AMD loader.
-    // See http://requirejs.org/docs/errors.html#mismatch for more details.
+    // See https://requirejs.org/docs/errors.html#mismatch for more details.
     // Use `_.noConflict` to remove Lodash from the global object.
     root._ = _;
 
@@ -33230,7 +33230,7 @@ var getEventTarget = __webpack_require__(87);
 
 /**
  * @interface UIEvent
- * @see http://www.w3.org/TR/DOM-Level-3-Events/
+ * @see https://www.w3.org/TR/DOM-Level-3-Events/
  */
 var UIEventInterface = {
   view: function (event) {
@@ -33708,7 +33708,7 @@ module.exports = nativeCreate;
 
 /**
  * Performs a
- * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+ * [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
  * comparison between two values to determine if they are equivalent.
  *
  * @static
@@ -34235,7 +34235,7 @@ var ReactBrowserEventEmitter = _assign({}, ReactEventEmitterMixin, {
    * top-level listeners to the document object only, at least for these
    * movement types of events and possibly all events.
    *
-   * @see http://www.quirksmode.org/blog/archives/2010/09/click_event_del.html
+   * @see https://www.quirksmode.org/blog/archives/2010/09/click_event_del.html
    *
    * Also, `keyup`/`keypress`/`keydown` do not bubble to the window on IE, but
    * they bubble to document.
@@ -34258,7 +34258,7 @@ var ReactBrowserEventEmitter = _assign({}, ReactEventEmitterMixin, {
             ReactBrowserEventEmitter.ReactEventListener.trapBubbledEvent('topWheel', 'mousewheel', mountAt);
           } else {
             // Firefox needs to capture a different mouse scroll event.
-            // @see http://www.quirksmode.org/dom/events/tests/scroll.html
+            // @see https://www.quirksmode.org/dom/events/tests/scroll.html
             ReactBrowserEventEmitter.ReactEventListener.trapBubbledEvent('topWheel', 'DOMMouseScroll', mountAt);
           }
         } else if (dependency === 'topScroll') {
@@ -34275,7 +34275,7 @@ var ReactBrowserEventEmitter = _assign({}, ReactEventEmitterMixin, {
             ReactBrowserEventEmitter.ReactEventListener.trapCapturedEvent('topBlur', 'blur', mountAt);
           } else if (isEventSupported('focusin')) {
             // IE has `focusin` and `focusout` events which bubble.
-            // @see http://www.quirksmode.org/blog/archives/2008/04/delegating_the.html
+            // @see https://www.quirksmode.org/blog/archives/2008/04/delegating_the.html
             ReactBrowserEventEmitter.ReactEventListener.trapBubbledEvent('topFocus', 'focusin', mountAt);
             ReactBrowserEventEmitter.ReactEventListener.trapBubbledEvent('topBlur', 'focusout', mountAt);
           }
@@ -34322,7 +34322,7 @@ var ReactBrowserEventEmitter = _assign({}, ReactEventEmitterMixin, {
    *
    * NOTE: Scroll events do not bubble.
    *
-   * @see http://www.quirksmode.org/dom/events/scroll.html
+   * @see https://www.quirksmode.org/dom/events/scroll.html
    */
   ensureScrollValueMonitoring: function () {
     if (hasEventPageXY === undefined) {
@@ -34363,7 +34363,7 @@ var getEventModifierState = __webpack_require__(86);
 
 /**
  * @interface MouseEvent
- * @see http://www.w3.org/TR/DOM-Level-3-Events/
+ * @see https://www.w3.org/TR/DOM-Level-3-Events/
  */
 var MouseEventInterface = {
   screenX: null,
@@ -35804,9 +35804,9 @@ module.exports = DOMChildrenOperations;
 
 
 var DOMNamespaces = {
-  html: 'http://www.w3.org/1999/xhtml',
-  mathml: 'http://www.w3.org/1998/Math/MathML',
-  svg: 'http://www.w3.org/2000/svg'
+  html: 'https://www.w3.org/1999/xhtml',
+  mathml: 'https://www.w3.org/1998/Math/MathML',
+  svg: 'https://www.w3.org/2000/svg'
 };
 
 module.exports = DOMNamespaces;
@@ -36738,7 +36738,7 @@ module.exports = getEventCharCode;
 
 /**
  * Translation from modifier key to the associated property in the event.
- * @see http://www.w3.org/TR/DOM-Level-3-Events/#keys-Modifiers
+ * @see https://www.w3.org/TR/DOM-Level-3-Events/#keys-Modifiers
  */
 
 var modifierKeyToProp = {
@@ -36801,7 +36801,7 @@ function getEventTarget(nativeEvent) {
   }
 
   // Safari may fire events on text nodes (Node.TEXT_NODE is 3).
-  // @see http://www.quirksmode.org/js/events_properties.html
+  // @see https://www.quirksmode.org/js/events_properties.html
   return target.nodeType === 3 ? target.parentNode : target;
 }
 
@@ -36830,7 +36830,7 @@ var useHasFeature;
 if (ExecutionEnvironment.canUseDOM) {
   useHasFeature = document.implementation && document.implementation.hasFeature &&
   // always returns true in newer browsers as per the standard.
-  // @see http://dom.spec.whatwg.org/#dom-domimplementation-hasfeature
+  // @see https://dom.spec.whatwg.org/#dom-domimplementation-hasfeature
   document.implementation.hasFeature('', '') !== true;
 }
 
@@ -37962,7 +37962,7 @@ module.exports = ReactNoopUpdateQueue;
 function isCrushed() {}
 
 if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' && isCrushed.name !== 'isCrushed') {
-  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__utils_warning__["a" /* default */])('You are currently using minified code outside of NODE_ENV === \'production\'. ' + 'This means that you are running a slower development build of Redux. ' + 'You can use loose-envify (https://github.com/zertosh/loose-envify) for browserify ' + 'or DefinePlugin for webpack (http://stackoverflow.com/questions/30030031) ' + 'to ensure you have the correct code for your production build.');
+  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__utils_warning__["a" /* default */])('You are currently using minified code outside of NODE_ENV === \'production\'. ' + 'This means that you are running a slower development build of Redux. ' + 'You can use loose-envify (https://github.com/zertosh/loose-envify) for browserify ' + 'or DefinePlugin for webpack (https://stackoverflow.com/questions/30030031) ' + 'to ensure you have the correct code for your production build.');
 }
 
 
@@ -38147,7 +38147,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -38713,7 +38713,7 @@ var Symbol = __WEBPACK_IMPORTED_MODULE_0__root_js__["a" /* default */].Symbol;
  * Build: `lodash modularize exports="npm" -o ./`
  * Copyright jQuery Foundation and other contributors <https://jquery.org/>
  * Released under MIT license <https://lodash.com/license>
- * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+ * Based on Underscore.js 1.8.3 <https://underscorejs.org/LICENSE>
  * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
  */
 
@@ -38789,7 +38789,7 @@ var hasOwnProperty = objectProto.hasOwnProperty;
 
 /**
  * Used to resolve the
- * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * [`toStringTag`](https://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
  * of values.
  */
 var objectToString = objectProto.toString;
@@ -38833,7 +38833,7 @@ function arrayLikeKeys(value, inherited) {
 
 /**
  * Assigns `value` to `key` of `object` if the existing value is not equivalent
- * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+ * using [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
  * for equality comparisons.
  *
  * @private
@@ -39014,7 +39014,7 @@ function isPrototype(value) {
 
 /**
  * Performs a
- * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+ * [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
  * comparison between two values to determine if they are equivalent.
  *
  * @static
@@ -39183,7 +39183,7 @@ function isFunction(value) {
  * Checks if `value` is a valid array-like length.
  *
  * **Note:** This method is loosely based on
- * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+ * [`ToLength`](https://ecma-international.org/ecma-262/7.0/#sec-tolength).
  *
  * @static
  * @memberOf _
@@ -39212,7 +39212,7 @@ function isLength(value) {
 
 /**
  * Checks if `value` is the
- * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+ * [language type](https://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
  * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
  *
  * @static
@@ -39316,7 +39316,7 @@ var assign = createAssigner(function(object, source) {
  * Creates an array of the own enumerable property names of `object`.
  *
  * **Note:** Non-object values are coerced to objects. See the
- * [ES spec](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+ * [ES spec](https://ecma-international.org/ecma-262/7.0/#sec-object.keys)
  * for more details.
  *
  * @static
@@ -39647,7 +39647,7 @@ var MAX_SAFE_INTEGER = 9007199254740991;
  * Checks if `value` is a valid array-like length.
  *
  * **Note:** This method is loosely based on
- * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+ * [`ToLength`](https://ecma-international.org/ecma-262/7.0/#sec-tolength).
  *
  * @static
  * @memberOf _
@@ -39944,7 +39944,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
             false,
             'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
             'Use `PropTypes.checkPropTypes()` to call them. ' +
-            'Read more at http://fb.me/use-check-prop-types'
+            'Read more at https://fb.me/use-check-prop-types'
           );
         } else if (process.env.NODE_ENV !== 'production' && typeof console !== 'undefined') {
           // Old behavior for people using React.PropTypes
@@ -40371,7 +40371,7 @@ Object.keys(isUnitlessNumber).forEach(function (prop) {
  * Most style properties can be unset by doing .style[prop] = '' but IE8
  * doesn't like doing that with shorthand properties so for the properties that
  * IE8 breaks on, which are listed here, we instead unset each of the
- * individual properties. See http://bugs.jquery.com/ticket/12385.
+ * individual properties. See https://bugs.jquery.com/ticket/12385.
  * The 4-value 'clock' properties like margin, padding, border-width seem to
  * behave without any problems. Curiously, list-style works too without any
  * special prodding.
@@ -41454,7 +41454,7 @@ function unmountComponentFromNode(instance, container, safely) {
     container = container.documentElement;
   }
 
-  // http://jsperf.com/emptying-a-node
+  // https://jsperf.com/emptying-a-node
   while (container.lastChild) {
     container.removeChild(container.lastChild);
   }
@@ -42269,7 +42269,7 @@ module.exports = instantiateReactComponent;
 
 
 /**
- * @see http://www.whatwg.org/specs/web-apps/current-work/multipage/the-input-element.html#input-type-attr-summary
+ * @see https://www.whatwg.org/specs/web-apps/current-work/multipage/the-input-element.html#input-type-attr-summary
  */
 
 var supportedInputTypes = {
@@ -42552,13 +42552,13 @@ module.exports = traverseAllChildren;
 /*!
  * Adapted from jQuery UI core
  *
- * http://jqueryui.com
+ * https://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
  * Released under the MIT license.
- * http://jquery.org/license
+ * https://jquery.org/license
  *
- * http://api.jqueryui.com/category/ui-core/
+ * https://api.jqueryui.com/category/ui-core/
  */
 
 function focusable(element, isTabIndexNotNaN) {
@@ -45514,14 +45514,14 @@ var MovieDetail = function (_React$Component) {
 
       var fullstar = _react2.default.createElement('img', {
         className: 'icon',
-        src: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490030369/star-icon_bnkv7r.png',
+        src: 'https://res.cloudinary.com/dufjsfgjv/image/upload/v1490030369/star-icon_bnkv7r.png',
         width: '12',
         height: '12'
       });
 
       var emptystar = _react2.default.createElement('img', {
         className: 'icon',
-        src: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490030471/outline-star-xxl_jbipvt.png',
+        src: 'https://res.cloudinary.com/dufjsfgjv/image/upload/v1490030471/outline-star-xxl_jbipvt.png',
         width: '12',
         height: '12'
       });
@@ -46905,7 +46905,7 @@ var signup = exports.signup = function signup(user) {
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
   Copyright (c) 2016 Jed Watson.
   Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
+  https://jedwatson.github.io/classnames
 */
 /* global define */
 
@@ -47866,7 +47866,7 @@ var msPattern = /^-ms-/;
  *   < "msTransition"
  *
  * As Andi Smith suggests
- * (http://www.andismith.com/blog/2012/02/modernizr-prefixed/), an `-ms` prefix
+ * (https://www.andismith.com/blog/2012/02/modernizr-prefixed/), an `-ms` prefix
  * is converted to lowercase `ms`.
  *
  * @param {string} string
@@ -48187,7 +48187,7 @@ var selectWrap = [1, '<select multiple="true">', '</select>'];
 var tableWrap = [1, '<table>', '</table>'];
 var trWrap = [3, '<table><tbody><tr>', '</tr></tbody></table>'];
 
-var svgWrap = [1, '<svg xmlns="http://www.w3.org/2000/svg">', '</svg>'];
+var svgWrap = [1, '<svg xmlns="https://www.w3.org/2000/svg">', '</svg>'];
 
 var markupWrap = {
   '*': [1, '?<div>', '</div>'],
@@ -48361,7 +48361,7 @@ var msPattern = /^ms-/;
  *   > hyphenateStyleName('msTransition')
  *   < "-ms-transition"
  *
- * As Modernizr suggests (http://modernizr.com/docs/#prefixed), an `ms` prefix
+ * As Modernizr suggests (https://modernizr.com/docs/#prefixed), an `ms` prefix
  * is converted to `-ms-`.
  *
  * @param {string} string
@@ -49264,7 +49264,7 @@ var hasOwnProperty = objectProto.hasOwnProperty;
 
 /**
  * Used to resolve the
- * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * [`toStringTag`](https://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
  * of values.
  */
 var nativeObjectToString = objectProto.toString;
@@ -49312,7 +49312,7 @@ var objectProto = Object.prototype;
 
 /**
  * Used to resolve the
- * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * [`toStringTag`](https://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
  * of values.
  */
 var nativeObjectToString = objectProto.toString;
@@ -49624,7 +49624,7 @@ var hasOwnProperty = objectProto.hasOwnProperty;
 
 /**
  * Assigns `value` to `key` of `object` if the existing value is not equivalent
- * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+ * using [`SameValueZero`](https://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
  * for equality comparisons.
  *
  * @private
@@ -49736,7 +49736,7 @@ var isFunction = __webpack_require__(75),
 
 /**
  * Used to match `RegExp`
- * [syntax characters](http://ecma-international.org/ecma-262/7.0/#sec-patterns).
+ * [syntax characters](https://ecma-international.org/ecma-262/7.0/#sec-patterns).
  */
 var reRegExpChar = /[\\^$.*+?()[\]{}|]/g;
 
@@ -50384,7 +50384,7 @@ var hasOwnProperty = objectProto.hasOwnProperty;
 
 /**
  * Used to resolve the
- * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * [`toStringTag`](https://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
  * of values.
  */
 var nativeObjectToString = objectProto.toString;
@@ -50954,7 +50954,7 @@ module.exports = mapCacheSet;
 
 /**
  * This function is like
- * [`Object.keys`](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+ * [`Object.keys`](https://ecma-international.org/ecma-262/7.0/#sec-object.keys)
  * except that it includes inherited enumerable properties.
  *
  * @private
@@ -51012,7 +51012,7 @@ var objectProto = Object.prototype;
 
 /**
  * Used to resolve the
- * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * [`toStringTag`](https://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
  * of values.
  */
 var nativeObjectToString = objectProto.toString;
@@ -51656,7 +51656,7 @@ module.exports = function() {
       false,
       'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
       'Use PropTypes.checkPropTypes() to call them. ' +
-      'Read more at http://fb.me/use-check-prop-types'
+      'Read more at https://fb.me/use-check-prop-types'
     );
   };
   shim.isRequired = shim;
@@ -51840,7 +51840,7 @@ exports.parse = function (str, opts) {
 		var val = parts.length > 0 ? parts.join('=') : undefined;
 
 		// missing `=` should be `null`:
-		// http://w3.org/TR/2012/WD-url-20120524/#collect-url-parameters
+		// https://w3.org/TR/2012/WD-url-20120524/#collect-url-parameters
 		val = val === undefined ? null : decodeURIComponent(val);
 
 		formatter(decodeURIComponent(key), val, ret);
@@ -52373,7 +52373,7 @@ function extractBeforeInputEvent(topLevelType, targetInst, nativeEvent, nativeEv
 
 /**
  * Create an `onBeforeInput` event to match
- * http://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105/#events-inputevents.
+ * https://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105/#events-inputevents.
  *
  * This event plugin is based on the native `textInput` event
  * available in Chrome, Safari, Opera, and IE. This event fires after
@@ -53341,7 +53341,7 @@ var HTMLDOMPropertyConfig = {
     href: 0,
     hrefLang: 0,
     htmlFor: 0,
-    httpEquiv: 0,
+    httpsEquiv: 0,
     icon: 0,
     id: 0,
     inputMode: 0,
@@ -53444,7 +53444,7 @@ var HTMLDOMPropertyConfig = {
     // color is for Safari mask-icon link
     color: 0,
     // itemProp, itemScope, itemType are for
-    // Microdata support. See http://schema.org/docs/gs.html
+    // Microdata support. See https://schema.org/docs/gs.html
     itemProp: 0,
     itemScope: HAS_BOOLEAN_VALUE,
     itemType: 0,
@@ -53466,7 +53466,7 @@ var HTMLDOMPropertyConfig = {
     acceptCharset: 'accept-charset',
     className: 'class',
     htmlFor: 'for',
-    httpEquiv: 'http-equiv'
+    httpsEquiv: 'https-equiv'
   },
   DOMPropertyNames: {},
   DOMMutationMethods: {
@@ -54676,8 +54676,8 @@ if (process.env.NODE_ENV !== 'production') {
       // If we're in Chrome or Firefox, provide a download link if not installed.
       if (navigator.userAgent.indexOf('Chrome') > -1 && navigator.userAgent.indexOf('Edge') === -1 || navigator.userAgent.indexOf('Firefox') > -1) {
         // Firefox does not have the issue with devtools loaded over file://
-        var showFileUrlMessage = window.location.protocol.indexOf('http') === -1 && navigator.userAgent.indexOf('Firefox') === -1;
-        console.debug('Download the React DevTools ' + (showFileUrlMessage ? 'and use an HTTP server (instead of a file: URL) ' : '') + 'for a better development experience: ' + 'https://fb.me/react-devtools');
+        var showFileUrlMessage = window.location.protocol.indexOf('https') === -1 && navigator.userAgent.indexOf('Firefox') === -1;
+        console.debug('Download the React DevTools ' + (showFileUrlMessage ? 'and use an https server (instead of a file: URL) ' : '') + 'for a better development experience: ' + 'https://fb.me/react-devtools');
       }
     }
 
@@ -54688,7 +54688,7 @@ if (process.env.NODE_ENV !== 'production') {
     // information on preventing compatibility mode
     var ieCompatibilityMode = document.documentMode && document.documentMode < 8;
 
-    process.env.NODE_ENV !== 'production' ? warning(!ieCompatibilityMode, 'Internet Explorer is running in compatibility mode; please add the ' + 'following tag to your HTML to prevent this from happening: ' + '<meta http-equiv="X-UA-Compatible" content="IE=edge" />') : void 0;
+    process.env.NODE_ENV !== 'production' ? warning(!ieCompatibilityMode, 'Internet Explorer is running in compatibility mode; please add the ' + 'following tag to your HTML to prevent this from happening: ' + '<meta https-equiv="X-UA-Compatible" content="IE=edge" />') : void 0;
 
     var expectedFeatures = [
     // shims
@@ -55053,7 +55053,7 @@ var voidElementTags = _assign({
 
 // We accept any tag to be rendered but since this gets injected into arbitrary
 // HTML, we want to make sure that it's a safe tag.
-// http://www.w3.org/TR/REC-xml/#NT-Name
+// https://www.w3.org/TR/REC-xml/#NT-Name
 
 var VALID_TAG_REGEX = /^[a-zA-Z][a-zA-Z:_\.\-\d]*$/; // Simplified subset
 var validatedTagCache = {};
@@ -55286,7 +55286,7 @@ ReactDOMComponent.Mixin = {
    * This method has side effects because events get registered.
    *
    * Iterating over object properties is faster than iterating over arrays.
-   * @see http://jsperf.com/obj-vs-arr-iteration
+   * @see https://jsperf.com/obj-vs-arr-iteration
    *
    * @private
    * @param {ReactReconcileTransaction|ReactServerRenderingTransaction} transaction
@@ -55384,11 +55384,11 @@ ReactDOMComponent.Mixin = {
       // a newline specifically to get eaten by the parser. (Alternately for
       // textareas, replacing "^\n" with "\r\n" doesn't get eaten, and the first
       // \r is normalized out by HTMLTextAreaElement#value.)
-      // See: <http://www.w3.org/TR/html-polyglot/#newlines-in-textarea-and-pre>
-      // See: <http://www.w3.org/TR/html5/syntax.html#element-restrictions>
-      // See: <http://www.w3.org/TR/html5/syntax.html#newlines>
+      // See: <https://www.w3.org/TR/html-polyglot/#newlines-in-textarea-and-pre>
+      // See: <https://www.w3.org/TR/html5/syntax.html#element-restrictions>
+      // See: <https://www.w3.org/TR/html5/syntax.html#newlines>
       // See: Parsing of "textarea" "listing" and "pre" elements
-      //  from <http://www.w3.org/TR/html5/syntax.html#parsing-main-inbody>
+      //  from <https://www.w3.org/TR/html5/syntax.html#parsing-main-inbody>
       return '\n' + ret;
     } else {
       return ret;
@@ -55952,7 +55952,7 @@ function isControlled(props) {
  * The rendered element will be initialized as unchecked (or `defaultChecked`)
  * with an empty value (or `defaultValue`).
  *
- * @see http://www.w3.org/TR/2012/WD-html5-20121025/the-input-element.html
+ * @see https://www.w3.org/TR/2012/WD-html5-20121025/the-input-element.html
  */
 var ReactDOMInput = {
   getHostProps: function (inst, props) {
@@ -59343,8 +59343,8 @@ module.exports = '15.5.4';
 
 
 var NS = {
-  xlink: 'http://www.w3.org/1999/xlink',
-  xml: 'http://www.w3.org/XML/1998/namespace'
+  xlink: 'https://www.w3.org/1999/xlink',
+  xml: 'https://www.w3.org/XML/1998/namespace'
 };
 
 // We use attributes for everything SVG so let's avoid some duplication and run
@@ -59955,7 +59955,7 @@ var SimpleEventPlugin = {
       case 'topVolumeChange':
       case 'topWaiting':
         // HTML Events
-        // @see http://www.w3.org/TR/html5/index.html#events-0
+        // @see https://www.w3.org/TR/html5/index.html#events-0
         EventConstructor = SyntheticEvent;
         break;
       case 'topKeyPress':
@@ -60039,7 +60039,7 @@ var SimpleEventPlugin = {
     // non-interactive elements, which means delegated click listeners do not
     // fire. The workaround for this bug involves attaching an empty click
     // listener on the target node.
-    // http://www.quirksmode.org/blog/archives/2010/09/click_event_del.html
+    // https://www.quirksmode.org/blog/archives/2010/09/click_event_del.html
     if (registrationName === 'onClick' && !isInteractive(inst._tag)) {
       var key = getDictionaryKey(inst);
       var node = ReactDOMComponentTree.getNodeFromInstance(inst);
@@ -60083,7 +60083,7 @@ var SyntheticEvent = __webpack_require__(17);
 
 /**
  * @interface Event
- * @see http://www.w3.org/TR/css3-animations/#AnimationEvent-interface
+ * @see https://www.w3.org/TR/css3-animations/#AnimationEvent-interface
  * @see https://developer.mozilla.org/en-US/docs/Web/API/AnimationEvent
  */
 var AnimationEventInterface = {
@@ -60127,7 +60127,7 @@ var SyntheticEvent = __webpack_require__(17);
 
 /**
  * @interface Event
- * @see http://www.w3.org/TR/clipboard-apis/
+ * @see https://www.w3.org/TR/clipboard-apis/
  */
 var ClipboardEventInterface = {
   clipboardData: function (event) {
@@ -60170,7 +60170,7 @@ var SyntheticEvent = __webpack_require__(17);
 
 /**
  * @interface Event
- * @see http://www.w3.org/TR/DOM-Level-3-Events/#events-compositionevents
+ * @see https://www.w3.org/TR/DOM-Level-3-Events/#events-compositionevents
  */
 var CompositionEventInterface = {
   data: null
@@ -60211,7 +60211,7 @@ var SyntheticMouseEvent = __webpack_require__(59);
 
 /**
  * @interface DragEvent
- * @see http://www.w3.org/TR/DOM-Level-3-Events/
+ * @see https://www.w3.org/TR/DOM-Level-3-Events/
  */
 var DragEventInterface = {
   dataTransfer: null
@@ -60252,7 +60252,7 @@ var SyntheticUIEvent = __webpack_require__(44);
 
 /**
  * @interface FocusEvent
- * @see http://www.w3.org/TR/DOM-Level-3-Events/
+ * @see https://www.w3.org/TR/DOM-Level-3-Events/
  */
 var FocusEventInterface = {
   relatedTarget: null
@@ -60293,7 +60293,7 @@ var SyntheticEvent = __webpack_require__(17);
 
 /**
  * @interface Event
- * @see http://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105
+ * @see https://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105
  *      /#events-inputevents
  */
 var InputEventInterface = {
@@ -60339,7 +60339,7 @@ var getEventModifierState = __webpack_require__(86);
 
 /**
  * @interface KeyboardEvent
- * @see http://www.w3.org/TR/DOM-Level-3-Events/
+ * @see https://www.w3.org/TR/DOM-Level-3-Events/
  */
 var KeyboardEventInterface = {
   key: getEventKey,
@@ -60426,7 +60426,7 @@ var getEventModifierState = __webpack_require__(86);
 
 /**
  * @interface TouchEvent
- * @see http://www.w3.org/TR/touch-events/
+ * @see https://www.w3.org/TR/touch-events/
  */
 var TouchEventInterface = {
   touches: null,
@@ -60474,7 +60474,7 @@ var SyntheticEvent = __webpack_require__(17);
 
 /**
  * @interface Event
- * @see http://www.w3.org/TR/2009/WD-css3-transitions-20090320/#transition-events-
+ * @see https://www.w3.org/TR/2009/WD-css3-transitions-20090320/#transition-events-
  * @see https://developer.mozilla.org/en-US/docs/Web/API/TransitionEvent
  */
 var TransitionEventInterface = {
@@ -60518,7 +60518,7 @@ var SyntheticMouseEvent = __webpack_require__(59);
 
 /**
  * @interface WheelEvent
- * @see http://www.w3.org/TR/DOM-Level-3-Events/
+ * @see https://www.w3.org/TR/DOM-Level-3-Events/
  */
 var WheelEventInterface = {
   deltaX: function (event) {
@@ -60737,7 +60737,7 @@ function dangerousStyleValue(name, value, component) {
   // the markup. If you provide unsafe user data here they can inject
   // arbitrary CSS which may be problematic (I couldn't repro this):
   // https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet
-  // http://www.thespanner.co.uk/2007/11/26/ultimate-xss-css-injection/
+  // https://www.thespanner.co.uk/2007/11/26/ultimate-xss-css-injection/
   // This is not an XSS hole but instead a potential CSS injection issue
   // which has lead to a greater discussion about how we're going to
   // trust URLs moving forward. See #2115901
@@ -66125,14 +66125,14 @@ var MovieIndexItem = function (_React$Component) {
 
       var fullstar = _react2.default.createElement('img', {
         className: 'icon',
-        src: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490030369/star-icon_bnkv7r.png',
+        src: 'https://res.cloudinary.com/dufjsfgjv/image/upload/v1490030369/star-icon_bnkv7r.png',
         width: '14',
         height: '14'
       });
 
       var emptystar = _react2.default.createElement('img', {
         className: 'icon',
-        src: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1490030471/outline-star-xxl_jbipvt.png',
+        src: 'https://res.cloudinary.com/dufjsfgjv/image/upload/v1490030471/outline-star-xxl_jbipvt.png',
         width: '14',
         height: '14'
       });
@@ -66210,7 +66210,7 @@ exports.default = MovieIndexItem;
             a = document.createElement("a");
             a.href = url;
             a.href = a.href;
-            a.protocol = a.protocol.replace("http", "ws");
+            a.protocol = a.protocol.replace("https", "ws");
             return a.href;
           } else {
             return url;
@@ -66862,7 +66862,7 @@ theMovieDb.common = {
 
         method = options.method || "GET";
         status = options.status || 200;
-        xhr = new XMLHttpRequest();
+        xhr = new XMLhttpsRequest();
 
         xhr.ontimeout = function () {
             error('{"status_code":408,"status_message":"Request timed out"}');
