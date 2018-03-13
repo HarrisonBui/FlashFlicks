@@ -98,7 +98,7 @@ movie5 = Movie.create(title: 'The Imitation Game',
                       description: 'In 1939, newly created British intelligence agency MI6 recruits Cambridge mathematics alumnus Alan Turing (Benedict Cumberbatch) to crack Nazi codes, including Enigma -- which cryptanalysts had thought unbreakable. Turing team, including Joan Clarke (Keira Knightley), analyze Enigma messages while he builds a machine to decipher them. Turing and team finally succeed and become heroes, but in 1952, the quiet genius encounters disgrace when authorities reveal he is gay and send him to prison.',
                       rating: 4.7,
                       year: 2017,
-                      image_url: 'https://cdn5.thr.com/sites/default/files/2014/09/the_imitation_game_a_p.jpg',
+                      image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1520976851/imitationGame_evekud.jpg',
                       user_id: 1
                       ),
 
@@ -267,7 +267,7 @@ movie24 = Movie.create(title: "Power Rangers",
 ",
                       rating: 2,
                       year: 2017,
-                      image_url: 'https://t1.gstatic.com/images?q=tbn:ANd9GcQT0t1q8_C6Rj71GrNkeSwvKbKDFTxv9_mC9fVVN4Ri25hNSHNb',
+                      image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1520976756/powerrangers_jpjjfr.jpg',
                       user_id: 1
                       ),
 
@@ -300,7 +300,7 @@ movie28 = Movie.create(title: "Doctor Strange",
                       description: "Dr. Stephen Strange's (Benedict Cumberbatch) life changes after a car accident robs him of the use of his hands. When traditional medicine fails him, he looks for healing, and hope, in a mysterious enclave. He quickly learns that the enclave is at the front line of a battle against unseen dark forces bent on destroying reality. Before long, Strange is forced to choose between his life of fortune and status or leave it all behind to defend the world as the most powerful sorcerer in existence.",
                       rating: 4,
                       year: 2016,
-                      image_url: 'https://www.impawards.com/2016/posters/doctor_strange_ver3_xxlg.jpg',
+                      image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1520977047/doctor_strange_mpo0hg.jpg',
                       user_id: 1
                       ),
 movie30 = Movie.create(title: "Hacksaw Ridge",

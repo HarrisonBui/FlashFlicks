@@ -33,9 +33,10 @@
 .movie-list-ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   padding-bottom: 100px;
   flex-direction: row;
+  padding-left: 30px;
 }
 
 *{
@@ -79,6 +80,8 @@
 .outside-movie {
   justify-content: center;
   display: flex;
+  width: 96vw;
+  margin: 0 auto;
 }
 
 .show h2 {
