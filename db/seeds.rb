@@ -80,7 +80,7 @@ movie3 = Movie.create(title: 'Steve Jobs',
                       and about to revolutionize the industry once again with the iMac.',
                       rating: 4,
                       year: 2015,
-                      image_url: 'https://mymovieyear.oscars.org/sites/mymovieyear/files/styles/poster_teaser/public/posters/7SUaf2UgoY0ZRGbQtRlfDkLDBCb_0.jpg?itok=46TdRrId',
+                      image_url: 'http://res.cloudinary.com/dufjsfgjv/image/upload/v1525372690/steve_jobs_esp62y.jpg',
                       user_id: 1
                       ),
 
